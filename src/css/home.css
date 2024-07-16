@@ -1,0 +1,22 @@
+
+ *{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    margin: 10px 0;
+  }
+
+/*# sourceMappingURL=style.css.map */
+
+
+/* @media screen and (max-width:700px
+@media screen and (max-width:980px)
