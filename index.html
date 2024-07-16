@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BeatSchool</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/home.css">
 </head>
 <body>
-    
+    <div class="container__header" >
+        <header>
+           
+               <a href="#home">
+                  <img src="public/assets/img/logoBeatSchool.png" class="logo" alt="logo">
+                </a>
+           
+           <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#aboutus">Sobre Nosotros </a></li>
+                    <li><a href="#instruments">Instrumentos</a></li>
+                    <li><a href="pages/contact.html">Contacto</a></li>
+                </ul>
+           </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>  
+    </div>
+
+
+    <!-- aqui empezamos la parte del home slider  -->
+
+     <section class="container__home" id="home">
+
+     </section>
+
+    <!-- esta seria la parte del sobre nosotros  -->
+
+     <section class="container__aboutus" id="aboutus">
+
+     </section>
+
+     <!-- la barra de texto  -->
+     <section class="container__introduce">
+
+     </section>
+
+
+     <!-- la parte de los instrumentos  -->
+     <section class="container__instruments" id="instruments">
+
+     </section>
+
+     <footer>
+         <div class="left">
+             <img src="public/assets/img/redes.png" alt="">
+             <img src="public/assets/img/youtube.png" alt="">
+             <img src="public/assets/img/linkedin.png" alt="">
+             <img src="public/assets/img/facebook.png" alt="">
+         </div>
+         <div class="right">
+             <img src="public/assets/img/autor.png" alt="">
+         </div>
+     </footer> 
+     <script src="src/JS/index.js"></script>
 </body>
 </html>
