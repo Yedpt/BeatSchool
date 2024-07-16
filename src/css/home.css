@@ -1,23 +1,21 @@
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  /* background-color: violet; */
+  margin: 0;
+  padding: 0;
+}
 
- *{
-    box-sizing: border-box;
-    font-family: 'Work Sans';
-    /* background-color: violet; */
-    margin: 0;
-    padding: 0;
-  }
-  
-  html{
-    /* me permite deslizar cuando hago clic en los links del menu */
-    scroll-behavior: smooth;
-  }
-  
-  section {
-    margin: 10px 0;
-  }
+html {
+  /* me permite deslizar cuando hago clic en los links del menu */
+  scroll-behavior: smooth;
+}
+
+section {
+  margin: 10px 0;
+}
 
 .container__header {
-  
   background-color: #dfe2e5;
   color: #fff;
   position: relative;
@@ -55,13 +53,13 @@
   font-size: 28px;
   text-decoration: none;
 }
-.container__header header nav ul li a:hover{
+.container__header header nav ul li a:hover {
   color: #c7327f;
 }
 
-.nav-responsive{
-  background-color: #1CB698;
-  color:#fff;
+.nav-responsive {
+  background-color: #1cb698;
+  color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -70,16 +68,10 @@
 
 /* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
 
-
-
-
-
-
-
 footer {
   /* text-align: center; */
   padding: 40px 20px;
-  box-shadow:inset;
+  box-shadow: inset;
 }
 
 footer .left {
@@ -91,30 +83,28 @@ footer .right {
 }
 /*# sourceMappingURL=style.css.map */
 
-
-@media screen and (max-width:700px) {
-  nav{
+@media screen and (max-width: 700px) {
+  nav {
     display: none;
-}
-.nav-responsive{
+  }
+  .nav-responsive {
     display: block;
-}
-nav.responsive{
+  }
+  nav.responsive {
     display: block;
     position: absolute;
     right: 0;
     top: 75px;
-    background-color: #252A2E;
+    background-color: #252a2e;
     width: 180px;
-}
-nav.responsive ul{
+  }
+  nav.responsive ul {
     display: block !important;
-}
-nav.responsive ul li{
+  }
+  nav.responsive ul li {
     border-bottom: 1px solid #fff;
     padding: 10px 0;
+  }
 }
-}
-@media screen and (max-width:980px) {
-
+@media screen and (max-width: 980px) {
 }
