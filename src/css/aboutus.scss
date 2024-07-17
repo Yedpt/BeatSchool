@@ -1,0 +1,83 @@
+$color-fondo: #480859;
+$color-secundario: #d936ce;
+$blanco: #ffffff;
+$textos :  "Itim";
+$titulos :"Jua";
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    /* background-color: violet; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+  }
+
+  .aboutUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vw;
+    flex-direction: column;
+    background-color: #d936ce;
+    background-image: url("../public\assets\img\AboutUS\imgAboutUs.png");
+    font-size: 100px;
+    color: $blanco;
+  }
+   
+  .section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #480859;
+  }
+
+  .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    margin-right:5%;
+    margin-left:5%;
+  }
+  
+  .imgCard{
+    width: 5000px;
+    height: 100%;
+  }
+    
+  figcaption{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $textos;
+    color: $blanco;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  h2{
+    font-family: $titulos;
+  }
+
+  h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $titulos;
+    font-size: 100px;
+    color: $blanco;
+
+  }
+
+  p{
+    font-family: $textos;
+  }
