@@ -1,4 +1,11 @@
 /*Variables*/
+
+$color-fondo: #480859;
+$color-secundario: #d936ce;
+$blanco: #ffffff;
+$textos: "Itim";
+$titulos: "Jua";
+
 * {
   box-sizing: border-box;
   font-family: "Work Sans";
@@ -25,7 +32,7 @@ html {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
   flex-direction: row;
   padding: 5%;
   gap: 3%;
@@ -35,30 +42,31 @@ html {
   background-color: #d936ce;
 }
 
+
 .photo {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 1;
 }
 
-.link--page {
+.link--page{
   width: 50%;
-  padding: 0;
+  padding:0;
 }
 
 .text--white {
   color: #ffffff;
-  font-family: "Itim";
+  font-family: $textos;
   font-size: 9vw;
   text-align: center;
   width: 40%;
   text-decoration: 0;
-  padding: 0%;
+  padding:0%
 }
 
 .text--pink {
-  color: #d936ce;
-  font-family: "Itim";
+  color: $color-secundario;
+  font-family: $textos;
   font-size: 9vw;
   text-align: center;
   margin: 0;
@@ -67,7 +75,7 @@ html {
   padding: 0%;
 }
 
-footer {
+footer{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,19 +95,17 @@ footer {
   margin: 0;
 }
 
-.footer__container--left {
+.footer__container--left{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5%;
+  width:  5%;
   margin: 0;
 }
 
-.footer__container--right {
+.footer__container--right{
   display: flex;
   justify-content: center;
   widht: 5%;
   margin: 0;
 }
-
-/*# sourceMappingURL=home.css.map */
