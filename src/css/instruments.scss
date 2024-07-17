@@ -1,0 +1,229 @@
+//Variables
+
+$color-fondo: #480859;
+$color-secundario: #d936ce;
+$blanco: #ffffff;
+$textos: "Itim";
+$titulos: "Jua";
+
+* {
+    box-sizing: border-box;
+    font-family: $textos;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+section {
+    margin: 10px 0;
+}
+
+.container__header {
+    background-color: #dfe2e5;
+    color: $blanco;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.container__header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 150px; /* Tamaño deseado para la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.container__header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.container__header header nav ul li a {
+    text-align: none;
+    color: $blanco;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.5s;
+    font-size: 28px;
+    text-decoration: none;
+}
+.container__header header nav ul li a:hover {
+    color: #c7327f;
+}
+
+.nav-responsive {
+    background-color: #1cb698;
+    color: $blanco;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
+
+.container {
+    background-color: $color-fondo;
+    width: 100%;
+}
+
+h2 {
+    font-family: $titulos;
+    color: $color-secundario;
+    font-size: 250%;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    padding-right: 8%;
+}
+
+p {
+    color: $blanco;
+    font-family: $textos;
+    font-size: 150%;
+    padding-left: 7%;
+    padding-bottom: 3%;
+    padding-right: 8%;
+}
+
+/*.intro{
+    background-color: aqua;
+    }*/
+
+.acoustic_drum {
+//    background-color: #a13456;//
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_drum {
+    width: 70%;
+    object-fit: cover;
+}
+
+.sounds {
+    display: flex;
+    flex-direction: column;
+}
+
+.drums_list {
+    color: $blanco;
+    font-size: 150%;
+    padding-left: 35%;
+}
+
+.keyboard {
+    background-color: darkolivegreen;
+}
+
+// .demo{
+//   background-color: hotpink;
+// }
+
+.demos {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+
+.demo_1, .demo_2 {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    width: 70%;
+    height: 30vw;
+}
+
+footer {
+    /* text-align: center; */
+    padding: 40px 20px;
+    box-shadow: inset;
+}
+
+footer .left {
+    text-align: left;
+}
+
+footer .right {
+    text-align: right;
+}
+/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 700px) {
+    nav {
+        display: none;
+    }
+    .nav-responsive {
+        display: block;
+    }
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+    }
+    nav.responsive ul {
+        display: block !important;
+    }
+    nav.responsive ul li {
+        border-bottom: 1px solid $blanco;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 980px) {
+}
+
+@media (max-width: 700px) {
+    .acoustic_drum {
+        height: 100px;
+    }
+
+    .img_drum {
+        transform: rotate(90deg);
+        transition: 1s;
+        min-device-width: 100%;
+    }
+
+    .demos{
+        display: flex;
+        flex-direction: column;  
+        width:100%;
+        align-content: center;
+        justify-content: center;
+    }
+    .demo_1, .demo_2{
+        width:100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    } 
+}
+
+@media (min-width: 700px) {
+    .drums_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 0%;
+    }
+    }

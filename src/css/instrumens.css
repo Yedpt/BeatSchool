@@ -1,7 +1,7 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-  font-family: "Itim";
+  font-family: "Work Sans";
   margin: 0;
   padding: 0;
 }
@@ -17,7 +17,7 @@ section {
 
 .container__header {
   background-color: #dfe2e5;
-  color: #ffffff;
+  color: #fff;
   position: relative;
   width: 100%;
   top: 0;
@@ -46,7 +46,7 @@ section {
 
 .container__header header nav ul li a {
   text-align: none;
-  color: #ffffff;
+  color: #fff;
   margin: 0 15px;
   padding: 3px;
   transition: 0.5s;
@@ -59,8 +59,8 @@ section {
 }
 
 .nav-responsive {
-  background-color: #1cb698;
-  color: #ffffff;
+  background-color: #1CB698;
+  color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -74,69 +74,47 @@ section {
 }
 
 h2 {
-  font-family: "Jua";
   color: #d936ce;
-  font-size: 250%;
+  font-size: 300%;
   padding-top: 3%;
-  padding-left: 10%;
+  padding-left: 12%;
   padding-bottom: 3%;
-  padding-right: 8%;
 }
 
 p {
   color: #ffffff;
-  font-family: "Itim";
-  font-size: 150%;
-  padding-left: 7%;
+  font-size: 180%;
+  padding-left: 8%;
   padding-bottom: 3%;
   padding-right: 8%;
 }
 
-/*.intro{
-    background-color: aqua;
-    }*/
-.acoustic_drum {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.intro {
+  background-color: aqua;
 }
 
-.img_drum {
-  width: 70%;
-  object-fit: cover;
+.acoustic_drum {
+  background-color: chartreuse;
+  display: flex;
+  justify-content: center;
 }
 
 .sounds {
+  background-color: coral;
   display: flex;
-  flex-direction: column;
 }
 
 .drums_list {
   color: #ffffff;
-  font-size: 150%;
-  padding-left: 35%;
+  font-size: 34px;
 }
 
 .keyboard {
   background-color: darkolivegreen;
 }
 
-.demos {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 5%;
-}
-
-.demo_1, .demo_2 {
-  width: 50%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.video {
-  width: 70%;
-  height: 30vw;
+.demo {
+  background-color: hotpink;
 }
 
 footer {
@@ -166,46 +144,16 @@ footer .right {
     position: absolute;
     right: 0;
     top: 75px;
-    background-color: #252a2e;
+    background-color: #252A2E;
     width: 180px;
   }
   nav.responsive ul {
     display: block !important;
   }
   nav.responsive ul li {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #fff;
     padding: 10px 0;
   }
 }
-@media (max-width: 700px) {
-  .acoustic_drum {
-    height: 100px;
-  }
-  .img_drum {
-    transform: rotate(90deg);
-    transition: 1s;
-    min-device-width: 100%;
-  }
-  .demos {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-  }
-  .demo_1, .demo_2 {
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-}
-@media (min-width: 700px) {
-  .drums_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-left: 0%;
-  }
-}
 
-/*# sourceMappingURL=instruments.css.map */
+/*# sourceMappingURL=instrumens.css.map */
