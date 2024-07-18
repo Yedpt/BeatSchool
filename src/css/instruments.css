@@ -99,8 +99,7 @@ p {
 }
 
 .img_drum {
-  width: 70%;
-  object-fit: cover;
+  width: 60%;
 }
 
 .sounds {
@@ -259,11 +258,17 @@ footer {
 }
 @media (max-width: 700px) {
   .acoustic_drum {
-    height: 100px;
+    width: 100%;
+    height: 90vh;
   }
   .img_drum {
     transform: rotate(90deg);
     transition: 1s;
+    width: 80vh;
+  }
+  .img_keyboard {
+    width: 90%;
+    height: 20%;
   }
   .demos {
     display: flex;
