@@ -112,4 +112,44 @@ p {
   font-family: "Itim";
 }
 
+/* Comienzan media Queries */
+/* @media (min-width: 480px){
+  .fondoimg{
+    height: 70vw;
+  }
+  .aboutUs{
+    font-size: 4.5vw;
+  }
+} */
+@media (min-width: 960px) {
+  .fondoimg {
+    background-size: cover;
+    height: 40vw;
+  }
+  .aboutUs {
+    font-size: 3vw;
+  }
+  .section2 {
+    flex-direction: row;
+  }
+  .h2section2 {
+    font-size: 8vw;
+  }
+  .card {
+    flex-direction: row;
+    width: 100%;
+    position: 0;
+    margin: 0;
+  }
+  .imgCard {
+    width: 18vw;
+  }
+  .figcaption {
+    font-size: 1.5vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+}
+
 /*# sourceMappingURL=aboutus.css.map */
