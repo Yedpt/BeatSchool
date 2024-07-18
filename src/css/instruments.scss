@@ -99,12 +99,7 @@ p {
     padding-right: 8%;
 }
 
-/*.intro{
-    background-color: aqua;
-    }*/
-
 .acoustic_drum {
-//    background-color: #a13456;//
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,45 +121,129 @@ p {
     padding-left: 35%;
 }
 
-.keyboard {
-    background-color: darkolivegreen;
+//.keyboard {
+//    background-color: darkolivegreen;
+//}
+
+.keyboard_cont {
+    display: flex;
+    justify-content: center;
 }
 
-// .demo{
-//   background-color: hotpink;
-// }
+.img_keyboard {
+    width: 50%;
+    height: 10%;
+}
 
+.master_keyboard {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+details {
+    background-color: $color-secundario;
+    //width: 100%;
+    margin-bottom: 2rem;
+    color: $blanco;
+    position: relative;
+}
+
+details summary {
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 5%;
+}
+details p {
+    padding: 1rem;
+    background: $blanco;
+    color: $color-fondo;
+}
+
+details summary::before {
+    position: absolute;
+    content: "👇";
+    font-size: 1.75rem;
+    top: 10px;
+    right: 0;
+}
+
+details[open] summary::before {
+    -webkit-animation: rotate 0.6s ease-in-out both;
+    animation: rotate-emoji 0.6s ease-in-out both;
+}
+
+@keyframes rotate-emoji {
+    0% {
+        -webkit-transform: rotate(0);
+        //          transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        //          transform: rotate(180deg);
+    }
+}
+//DEMOS:
 .demos {
     display: flex;
     flex-direction: row;
     padding-bottom: 5%;
 }
-
-.demo_1, .demo_2 {
+.demo_1,
+.demo_2 {
     width: 50%;
     height: auto;
     display: flex;
     justify-content: center;
 }
-
-.video{
+.video {
     width: 70%;
     height: 30vw;
 }
-
+//footer
 footer {
-    /* text-align: center; */
-    padding: 40px 20px;
-    box-shadow: inset;
+    width: 100%;
+    padding: 10% 0;
+    background-color: $blanco;
+    display: flex;
+    justify-content: center;
 }
 
-footer .left {
-    text-align: left;
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
 }
 
-footer .right {
-    text-align: right;
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
 }
+
+.left img {
+    width: 5vw;
+}
+
+.right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.right h1 {
+    font-family: $textos;
+    color: $color-secundario;
+    font-size: 2.5vw;
+}
+
 /*# sourceMappingURL=style.css.map */
 
 @media screen and (max-width: 700px) {
@@ -202,21 +281,22 @@ footer .right {
     .img_drum {
         transform: rotate(90deg);
         transition: 1s;
-        min-device-width: 100%;
+    //    min-device-width: 100%;
     }
 
-    .demos{
+    .demos {
         display: flex;
-        flex-direction: column;  
-        width:100%;
+        flex-direction: column;
+        width: 100%;
         align-content: center;
         justify-content: center;
     }
-    .demo_1, .demo_2{
-        width:100%;
+    .demo_1,
+    .demo_2 {
+        width: 100%;
         padding-top: 5%;
         padding-bottom: 5%;
-    } 
+    }
 }
 
 @media (min-width: 700px) {
@@ -226,4 +306,18 @@ footer .right {
         justify-content: space-evenly;
         padding-left: 0%;
     }
+
+    .master_keyboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10%;
     }
+
+    .instruction_keyboard {
+        width: 25%;
+    }
+}
