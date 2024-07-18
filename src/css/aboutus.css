@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   font-family: "Work Sans";
@@ -12,6 +11,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.fondoimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vw;
+  background-image: url("../../public/assets/img/AboutUS/imgAboutUs.png");
+  background-size: cover;
+}
+
 .aboutUs {
   display: flex;
   justify-content: center;
@@ -19,10 +28,10 @@ html {
   width: 100%;
   height: 40vw;
   flex-direction: column;
-  background-color: #d936ce;
-  background-image: url("../public\assetsimg«outUSimgAboutUs.png");
   font-size: 100px;
   color: #ffffff;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .section2 {
@@ -30,6 +39,11 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #480859;
+}
+
+.h2section2 {
+  font-size: 150px;
+  color: #d936ce;
 }
 
 .card {
@@ -40,11 +54,13 @@ html {
   width: 20%;
   margin-right: 5%;
   margin-left: 5%;
+  margin-top: 20px;
 }
 
 .imgCard {
-  width: 5000px;
+  width: 100%;
   height: 100%;
+  margin-top: 20px;
 }
 
 figcaption {
@@ -56,7 +72,7 @@ figcaption {
   color: #ffffff;
   font-size: 60px;
   text-align: center;
-  margin-top: 3px;
+  margin-top: 20px;
 }
 
 h2 {
