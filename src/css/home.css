@@ -12,76 +12,83 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 700px) {
+.container__instruments {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.drum--guitar,
+.piano--saxophone {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5%;
+  gap: 3%;
+}
+
+.drum--guitar {
+  background-color: #d936ce;
+}
+
+.photo {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.link--page {
+  width: 50%;
+  padding: 0;
+}
+
+.text--white {
+  color: #ffffff;
+  font-family: "Itim";
+  font-size: 9vw;
+  text-align: center;
+  width: 40%;
+  text-decoration: 0;
+  padding: 0%;
+}
+
+.text--pink {
+  color: #d936ce;
+  font-family: "Itim";
+  font-size: 9vw;
+  text-align: center;
+  margin: 0;
+  width: 40%;
+  text-decoration: none;
+  padding: 0%;
+}
+
+@media (min-width: 1024px) {
   .container__instruments {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: column;
+    position: relative;
   }
   .drum--guitar,
   .piano--saxophone {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5%;
-    gap: 3%;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
   }
-  .drum--guitar {
-    background-color: #d936ce;
+  .link--page {
+    width: 100%;
+    position: relative;
   }
   .photo {
     width: 100%;
     object-fit: cover;
-    aspect-ratio: 1;
-  }
-  .link--page {
-    width: 50%;
-    padding: 0;
-  }
-  .text--white {
-    color: #ffffff;
-    font-family: "Itim";
-    font-size: 9vw;
-    text-align: center;
-    width: 40%;
-    text-decoration: 0;
-    padding: 0%;
-  }
-  .text--pink {
-    color: #d936ce;
-    font-family: "Itim";
-    font-size: 9vw;
-    text-align: center;
-    margin: 0;
-    width: 40%;
-    text-decoration: none;
-    padding: 0%;
-  }
-}
-@media (max-width: 1920px) {
-  .container__instruments {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-  }
-  .drum--guitar,
-  .piano--saxophone {
-    flex-direction: column;
-    padding: 0;
-    position: relative;
-  }
-  .link--page {
-    width: 100%;
-    position: relative;
-  }
-  .photo {
-    width: 100%;
+    aspect-ratio: 16/8;
   }
   .text--white,
   .text--pink {

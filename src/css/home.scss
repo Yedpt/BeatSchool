@@ -18,7 +18,7 @@ html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
 }
-@media screen and (max-width:700px) {
+
 .container__instruments {
   width: 100%;
   display: flex;
@@ -74,9 +74,9 @@ html {
   text-decoration: none;
   padding: 0%;
 }
-}
 
-@media (max-width: 1920px) {
+
+@media (min-width: 1024px) {
   .container__instruments {
     width: 100%;
     display: flex;
@@ -92,6 +92,7 @@ html {
     position: relative; 
   }
 
+
   .link--page {
     width: 100%;
     position: relative; 
@@ -99,7 +100,9 @@ html {
 
   .photo {
     width: 100%;
-  }
+    object-fit: cover;
+    aspect-ratio: 16/8;
+}
 
   .text--white,
   .text--pink {
@@ -116,7 +119,7 @@ html {
     font-family: $textos;
     z-index: 1;
    color: transparent;
-    transition: color 0.3s ease;
+  transition: color 0.3s ease;
   }
 
   .text--pink:hover,
