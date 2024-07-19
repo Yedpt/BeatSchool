@@ -120,7 +120,7 @@ footer {
   font-size: 2.5vw;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
   .container__instruments {
     width: 100%;
     display: flex;
@@ -168,5 +168,9 @@ footer {
   .text--pink:hover,
   .text--white:hover {
     color: $blanco;
+  }
+
+  footer {
+    padding: 4% 0;
   }
 }
