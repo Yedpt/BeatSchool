@@ -1,22 +1,30 @@
-@charset "UTF-8";
-* {
-  box-sizing: border-box;
-  font-family: "Work Sans";
-  /* background-color: violet; */
-  margin: 0;
-  padding: 0;
-}
 
-html {
-  /* me permite deslizar cuando hago clic en los links del menu */
-  scroll-behavior: smooth;
-}
+$color-fondo: #480859;
+$color-secundario: #d936ce;
+$blanco: #ffffff;
 
-section {
-  margin: 10px 0;
-}
+$textos :  "Itim";
+$titulos :"Jua";
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    /* background-color: violet; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    margin: 10px 0;
+  }
 
 .container__header {
+  
   background-color: #dfe2e5;
   color: #fff;
   position: relative;
@@ -54,14 +62,13 @@ section {
   font-size: 28px;
   text-decoration: none;
 }
-
-.container__header header nav ul li a:hover {
+.container__header header nav ul li a:hover{
   color: #c7327f;
 }
 
-.nav-responsive {
+.nav-responsive{
   background-color: #1CB698;
-  color: #fff;
+  color:#fff;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -69,10 +76,17 @@ section {
 }
 
 /* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
+
+
+
+
+
+
+
 footer {
   /* text-align: center; */
   padding: 40px 20px;
-  box-shadow: inset;
+  box-shadow:inset;
 }
 
 footer .left {
@@ -82,38 +96,46 @@ footer .left {
 footer .right {
   text-align: right;
 }
+/*# sourceMappingURL=style.css.map */
 
 
-@media screen and (max-width: 700px) {
-  nav {
+@media screen and (max-width:700px) {
+  nav{
     display: none;
-  }
-  .nav-responsive {
+}
+.nav-responsive{
     display: block;
-  }
-  nav.responsive {
+}
+nav.responsive{
     display: block;
     position: absolute;
     right: 0;
     top: 75px;
     background-color: #252A2E;
     width: 180px;
-  }
-  nav.responsive ul {
+}
+nav.responsive ul{
     display: block !important;
-  }
-  nav.responsive ul li {
+}
+nav.responsive ul li{
     border-bottom: 1px solid #fff;
     padding: 10px 0;
-  }
 }
+}
+@media screen and (max-width:980px) {
+
+}
+
+//aca empieza el formulario de contacto
+
 body {
-  font-family: "Itim";
+ font-family: $textos ;
 }
 
 .contactanos {
   text-align: center;
   color: white;
+
 }
 
 h2 {
@@ -140,7 +162,7 @@ label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: white;
+  color:white;
 }
 
 input,
@@ -150,7 +172,7 @@ textarea {
   border: 1px solid #D936CE;
   border-radius: 4px;
   font-size: 14px;
-  background-color: rgba(252, 253, 254, 0.2705882353);
+background-color: #fcfdfe45;
   margin-bottom: 10px;
 }
 
@@ -169,10 +191,9 @@ button {
   cursor: pointer;
   font-size: 16px;
   width: 100%;
+  
 }
 
 button:hover {
   background-color: #9b33b7;
 }
-
-/*# sourceMappingURL=contact.css.map */
