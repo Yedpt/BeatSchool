@@ -164,9 +164,9 @@ nav.responsive ul li {
   margin: auto;
   padding: 3px;
   transition: 0.5s;
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 .container__introduce .container__section__introduce h2 {
@@ -233,16 +233,14 @@ footer {
   header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 40px 0;
+    padding: 0 10% 0;
     margin: auto;
   }
   .container__header header div .logo {
     height: 85px;
-    width: 15vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 5%;
     width: 100%;
   }
   .container__header header nav {
@@ -294,22 +292,27 @@ footer {
   .slider-section video {
     height: auto; /* Asegura que los videos mantengan su relación de aspecto */
   }
+  .container__aboutus {
+    width: 100%;
+    height: 50vh;
+    padding: 0 10% 0;
+  }
   .container__aboutus .container__section h2 {
     padding: 20px 20px;
     text-align: center;
     font-family: "Jua";
-    font-size: 38px;
+    font-size: 40px;
   }
   .container__aboutus .container__section p {
     text-align: center;
     font-family: "Itim";
     color: #ffffff;
     margin: auto;
-    padding: 3px;
+    padding: 35px;
     transition: 0.5s;
     font-size: 28px;
     text-decoration: none;
-    line-height: 22px;
+    line-height: normal;
   }
 }
 /* Utility classes for better accessibility */
@@ -317,15 +320,19 @@ footer {
   display: none;
 }
 
-@media (min-width: 520px) and (max-width: 1024px) {
+@media (min-width: 520px) and (max-width: 959px) {
   header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 0 10% 0;
+    margin: auto;
   }
   .container__header header div .logo {
-    width: 100px;
-    height: 80px;
+    height: 85px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
   }
   .container__header header nav {
     display: flex;
@@ -334,7 +341,6 @@ footer {
     height: auto;
     background-color: transparent;
     color: #480859;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
@@ -363,36 +369,41 @@ footer {
   }
   .container-carousel {
     width: 100%;
-    height: 70vh;
+    height: 40vh;
     overflow: hidden;
     position: relative;
   }
   .btn-left, .btn-right {
-    font-size: 2.5rem;
-    padding: 12px;
-  }
-  .container__aboutus .container__section h2 {
-    padding: 20px 20px;
-    text-align: center;
-    font-family: "Jua";
-    font-size: 28px;
-  }
-  .container__aboutus .container__section p {
-    text-align: justify;
-    font-family: "Itim";
-    color: #ffffff;
-    margin: auto;
-    padding: 3px;
-    transition: 0.5s;
-    font-size: 28px;
-    text-decoration: none;
-    line-height: 22px;
+    font-size: 3rem;
+    padding: 15px;
   }
   .container__introduce h2, .container__introduce h3 {
     text-align: center;
   }
   .slider-section video {
     height: auto; /* Asegura que los videos mantengan su relación de aspecto */
+  }
+  .container__aboutus {
+    width: 100%;
+    height: 55vh;
+    padding: 0 10% 0;
+  }
+  .container__aboutus .container__section h2 {
+    padding: 20px 20px;
+    text-align: center;
+    font-family: "Jua";
+    font-size: 40px;
+  }
+  .container__aboutus .container__section p {
+    text-align: center;
+    font-family: "Itim";
+    color: #ffffff;
+    margin: auto;
+    padding: 35px;
+    transition: 0.5s;
+    font-size: 28px;
+    text-decoration: none;
+    line-height: normal;
   }
 }
 
