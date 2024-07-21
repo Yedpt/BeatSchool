@@ -128,9 +128,6 @@ nav.responsive ul li{
 
 //aca empieza el formulario de contacto
 
-body {
- font-family: $textos ;
-}
 
 .contactanos {
   text-align: center;
@@ -138,10 +135,16 @@ body {
 
 }
 
+h1{
+  font-family: 'Jua', sans-serif;
+}
 h2 {
   color: white;
+  font-family: 'Jua', sans-serif;
 }
-
+p {
+  font-family: 'Itim', sans-serif;
+}
 .wrapper4 {
   background-color: #480859;
   width: 100vw;
@@ -163,6 +166,7 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
   color:white;
+  font-family: 'Itim', sans-serif;
 }
 
 input,
@@ -191,9 +195,10 @@ button {
   cursor: pointer;
   font-size: 16px;
   width: 100%;
+  font-family: 'Itim', sans-serif;
   
 }
 
 button:hover {
-  background-color: #9b33b7;
+  background-color: #480859;
 }
