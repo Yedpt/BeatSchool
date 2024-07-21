@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+$textos : "Itim";
+$titulos :"Jua";
+
+
 html{
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
@@ -70,6 +74,10 @@ display: none;
 
 /* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
 
+h1 {
+  font-family: 'Jua', sans-serif;
+  color: #c7327f;
+}
 body {
   margin: 0;
   padding: 0;
@@ -93,13 +101,7 @@ body {
 
 .message {
   font-size: 2rem;
-  color: #333;
-}
-
-@media (max-width: 600px) {
-  .message {
-      font-size: 1.5rem;
-  }
+  color: #5f0b0b;
 }
 
 
