@@ -46,16 +46,14 @@ $titulos :"Jua";
     flex-direction: column;
     font-size: 5.5vw;
     color: $blanco;
-/*     margin-left: 5vw;
-    margin-right: 5vw; */
     text-align: center;
   }
    
   .section2{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     background-color: #480859;
     padding-bottom: 20% ;
     position: relative;
@@ -73,36 +71,31 @@ $titulos :"Jua";
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  /*   position: relative; */
     width: 80%;
-/*     margin-right:5%;
-    margin-left:5%; */
     margin-top: 5vw;
   }
+
   .card__container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-/*     row-gap: 5%; */
   }
+
   .cardMargin{
     margin-top: 10vw;
-
   }
 
   .imgCard{
-    margin-top: 1.2vw;
+    margin-top: 3vw;
     width: 100%;
-  /*   height: 100%; */
     aspect-ratio: 1;
     object-fit: cover;
   }
 
   figcaption{
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -110,7 +103,7 @@ $titulos :"Jua";
     color: $blanco;
     font-size: 6vw;
     text-align: center;
-    margin-top: 1.2vw;
+    margin-top: 4vw;
   }
 
   h2{
@@ -125,12 +118,12 @@ $titulos :"Jua";
     color: $blanco;
     font-weight: lighter;
     text-align: center;
-
   }
 
   p{
     font-family: $textos;
   }
+
   /* Comienzan media Queries */
 
   /* @media (min-width: 480px){
@@ -143,6 +136,7 @@ $titulos :"Jua";
   } */
 
   @media (min-width: 960px){
+    
     .fondoimg{
       background-size: cover;
       height: 40vw;
@@ -151,18 +145,24 @@ $titulos :"Jua";
       font-size: 3vw;
     }
     .section2{
-      flex-direction: row;
+      height:73vw ;
+      display: flex;
+      position: relative;
+      padding: 0%;
     }
     .h2section2{
       font-size: 8vw;
+      margin-top: 4vw;
+      position: relative;
     }  
-/*     .card{
+    .card{
       flex-direction: column;
       width: 90%;
-      margin: 0;
+     /*  margin: 0; */
       display: flex;
       align-items: center;
-    } */
+      margin-top: 0%;
+    }
     .card__container{
       width: 100%;
       display: flex;
@@ -171,15 +171,20 @@ $titulos :"Jua";
       gap: 3vw;
       text-align: center;
     }
+    .cardMargin{
+      margin-top: 4vw;
+      margin-bottom: 4vw;
+    }
     .imgCard{
       width: 15vw;
       aspect-ratio: 1;
+      margin-top: 1.5vw;
     }
     .figcaption{
       font-size: 1.5vw;
+      margin-top: 1.3vw;
     }
     h3{
       font-size: 4vw;
     }
-
   }
