@@ -12,13 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*   .general{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-  } */
 body.no-scroll {
   overflow: hidden;
 }
@@ -103,10 +96,11 @@ nav.responsive ul li {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 85vw;
+  height: 105vw;
   background-image: url("../../public/assets/img/AboutUS/imgAboutUs.png");
   background-size: cover;
   position: relative;
+  margin-top: 20vw;
 }
 
 .aboutUs {
@@ -198,7 +192,7 @@ p {
 
 footer {
   width: 100%;
-  padding: 4% 0;
+  padding: 10% 0;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -236,15 +230,6 @@ footer {
   font-size: 2.5vw;
 }
 
-/* Comienzan media Queries */
-/* @media (min-width: 480px){
-  .fondoimg{
-    height: 70vw;
-  }
-  .aboutUs{
-    font-size: 4.5vw;
-  }
-} */
 @media (min-width: 960px) {
   header {
     flex-direction: row;
@@ -358,6 +343,7 @@ footer {
   .fondoimg {
     background-size: cover;
     height: 40vw;
+    margin-top: 5vw;
   }
   .aboutUs {
     font-size: 2.5vw;
@@ -408,6 +394,9 @@ footer {
   }
   h3 {
     font-size: 3vw;
+  }
+  footer {
+    padding: 4% 0;
   }
 }
 
