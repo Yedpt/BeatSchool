@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/css/contact.css">
-    <title>Document</title>
+    <title>Validar</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -22,6 +22,8 @@
                </section>
                
         <div class="contact-form-container">
+            <form id="formulario" action="pagina.php" method="post">
+            </form>
             <h2>Formulario de Contacto</h2>
             <form action="#" method="post">
                 <div class="form-group">
@@ -35,6 +37,7 @@
                 <div class="form-group">
                     <label for="subject">Asunto:</label>
                     <input type="text" id="subject" name="subject" required>
+                    <option value="email"></option>
                 </div>
                 <div class="form-group">
                     <label for="message">Mensaje:</label>
@@ -44,6 +47,7 @@
             </form>
         </div>
     </section>
+    <script src="../src/JS/contacto.js"></script>
 </body>
 </html>
 

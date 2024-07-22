@@ -1,0 +1,145 @@
+
+$color-fondo: #480859;
+$color-secundario: #d936ce;
+$blanco: #ffffff;
+$textos: 'Itim';
+$titulos: 'Jua';
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  /* background-color: violet; */
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* me permite deslizar cuando hago clic en los links del menu */
+  scroll-behavior: smooth;
+}
+
+section {
+  margin: 10px 0;
+}
+
+.container__header {
+  background-color: #dfe2e5;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.container__header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  width: 150px; /* Tamaño deseado para la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+.container__header header ul {
+  display: flex;
+  list-style: none;
+}
+
+.container__header header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.container__header header nav ul li a:hover {
+  color: #c7327f;
+}
+
+.nav-responsive {
+  background-color: #1CB698;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
+.construction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px); 
+  background: #fff;
+  padding: 20px;
+}
+
+.construction img {
+  max-width: 100%;
+  height: auto;
+  width: 300px; 
+}
+
+.construction h1 {
+  font-family: "Itim", cursive;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.construction p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+footer {
+    width: 100%;
+    padding: 10% 0;
+    background-color: $blanco;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+  }
+  
+  .left img { 
+    width: 5vw;
+  }
+  
+  .right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .right h1 {
+    font-family: $textos;
+    color: $color-secundario;
+    font-size: 2.5vw;
+  } 
