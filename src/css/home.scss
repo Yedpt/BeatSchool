@@ -8,7 +8,7 @@ $titulos :"Jua";
 
 *{
     box-sizing: border-box;
-    font-family: $titulos;
+    font-family: $textos;
     margin: 0;
     padding: 0;
     
@@ -22,10 +22,11 @@ $titulos :"Jua";
   body {
     background-color: $color-fondo;
   }
+
+  body.no-scroll {
+    overflow: hidden;
+}
   
-//   section {
-//     margin: 10px 0;
-//   }
   
 
   .container__header {
@@ -38,10 +39,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    margin: auto;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: $blanco;
 }
 
 .logo {
-    height: 50px;
+    height: 70px;
 }
 
 nav{
@@ -65,9 +73,8 @@ nav{
 }
 nav.responsive{
     display: flex;
-    // position: absolute;
     right: 0;
-    top: 75px;
+    top: 60px;
     background-color: $color-fondo;
     width: 100%;
 }
@@ -98,22 +105,20 @@ nav.responsive ul li{
 }
 
 
+// aqui empiezo el home 
+
 .container__home {
     width: 100%;
-    // overflow: hidden;
     position: relative;
-    // padding-top: 5px; 
-    // background-size: cover;
-    // height: 100vh;
     display: flex;
-    // align-items: center;
 }
 
 .container-carousel {
-    width: 500px; /* ancho al contenedor principa*/
+    width: 100%; /* ancho al contenedor principa*/
     height: 300px;/* altura */
     overflow: hidden;
     position: relative;
+    margin-top: 60px;
     
 }
 
@@ -192,10 +197,12 @@ nav.responsive ul li{
 }
 
 // empezamos con la parte introduce 
+.container__introduce .container__section__introduce {
+    background-color: $blanco;
+}
 .container__introduce .container__section__introduce h2 {
     padding: 20px 20px;
     text-align: center;
-    background-color: $blanco;
     font-family: $titulos;
     color: $color-secundario;
     font-size: 28px;
@@ -204,16 +211,16 @@ nav.responsive ul li{
 .container__introduce .container__section__introduce h3 {
     padding: 20px 20px;
     text-align: center;
-    background-color: $blanco;
     font-family: $titulos;
     color: $color-fondo;
     font-size: 22px;
+    
 }
 /* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
 footer {
     width: 100%;
     padding: 10% 0;
-    background-color: #ffffff;
+    background-color: $blanco;
     display: flex;
     justify-content: center;
   }
@@ -246,10 +253,11 @@ footer {
   }
   
   .right h1 {
-    font-family: "Itim";
-    color: #d936ce;
+    font-family: $textos;
+    color: $color-secundario;
     font-size: 2.5vw;
   }
+
 
 @media (min-width: 960px) {
 
@@ -258,12 +266,20 @@ footer {
         justify-content: space-between;
         padding: 0 10% 0 ;
         margin: auto;
+        position: fixed;
+        z-index: 1000;
+        height: 90px;
+        top: 0;
+        width: 100%;
+        background-color: $blanco;
     }
+
+    
 
 
     .container__header header div .logo {
         // width: 100px;
-        height: 85px;
+        height: 100px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -296,6 +312,12 @@ footer {
 
     .container__header header nav ul li a{
         color: $color-fondo;
+        font-size: 20px;
+    }
+
+    .container__header header nav ul li a:hover {
+        color: $color-secundario;
+        transform: scale(1.2);
     }
 
     .nav-responsive {
@@ -318,6 +340,7 @@ footer {
         // margin: 0 auto;
         overflow: hidden;
         position: relative;
+        margin-top: 90px;
     }
 
     .btn-left, .btn-right {
@@ -325,24 +348,21 @@ footer {
         padding: 15px;
     }
 
-    .container__introduce h2, .container__introduce h3 {
-        text-align: center;
-    }
-
     .slider-section video {
         height: auto; /* Asegura que los videos mantengan su relación de aspecto */
+        display: block;
     }
 
     .container__aboutus {
         // background-size: cover;
         width: 100%;
-        height: 50vh;
+        height: 50%;
         padding: 0 10% 0 ;
 
     }
     
     .container__aboutus .container__section h2 {
-        padding: 20px 20px;
+        padding: 30px 0 0;
         text-align: center;
         font-family: $titulos;
         font-size: 40px;
@@ -359,20 +379,50 @@ footer {
         text-decoration: none;
         line-height: normal;
     }
+
+    // empezamos con la parte introduce 
+.container__introduce .container__section__introduce h2 {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: $blanco;
+    font-family: $titulos;
+    color: $color-secundario;
+    font-size: 38px;
+    
+}
+.container__introduce h2, .container__introduce h3 {
+    text-align: center;
+}
+
+
+.container__introduce .container__section__introduce h3 {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: $blanco;
+    font-family: $titulos;
+    color: $color-fondo;
+    font-size: 28px;
+}
     
 }
 
-/* Utility classes for better accessibility */
-.hidden {
-    display: none;
-}
+// /* Utility classes for better accessibility */
+// .hidden {
+//     display: none;
+// }
 
-@media (min-width: 520px) and (max-width: 959px) {
+@media (min-width: 632px) and (max-width: 959px) {
     header {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 10% 0 ;
+        padding: 0 0 0 ;
         margin: auto;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        height: 90px;
+        width: 100%;
+        background-color: $blanco;
     }
 
 
@@ -398,19 +448,26 @@ footer {
         align-items: center;
     }
 
+    
     nav ul {
         display: flex;
         justify-content: flex-end;
     }
-
-     nav ul li {
+    
+    nav ul li {
         margin: 0 20px;
         text-decoration: none;
         list-style: none;
     }
-
+    
     .container__header header nav ul li a{
         color: $color-fondo;
+        font-size: 16px;
+    }
+    
+    .container__header header nav ul li a:hover {
+        color: $color-secundario;
+        transform: scale(1.2);
     }
 
     .nav-responsive {
@@ -429,10 +486,11 @@ footer {
 
     .container-carousel {
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         // margin: 0 auto;
         overflow: hidden;
         position: relative;
+        margin-top: 90px;
     }
 
     .btn-left, .btn-right {
@@ -451,13 +509,13 @@ footer {
     .container__aboutus {
         // background-size: cover;
         width: 100%;
-        height: 55vh;
+        height: 50%;
         padding: 0 10% 0 ;
 
     }
     
     .container__aboutus .container__section h2 {
-        padding: 20px 20px;
+        padding: 30px 0 0;  
         text-align: center;
         font-family: $titulos;
         font-size: 40px;

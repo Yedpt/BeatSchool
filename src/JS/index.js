@@ -2,15 +2,25 @@
 
 let menuVisible = false
 //funcion que oculta y muestra el menu
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList =""   /*classList: propiedad del objeto Element que nos permite acceder y manipular los datos de nodos HTML en el DOM. Esta propiedad en particular nos devuelve un listado de los valores del atributo class de un elemento (DOMTokenList). En este sentido es una propiedad de solo lectura. */
-        menuVisible = false
-    }else{
-        document.getElementById("nav").classList ="responsive"
-        menuVisible = true
+function mostrarOcultarMenu() {
+    const nav = document.getElementById("nav");
+    if (menuVisible) {
+        nav.classList.remove("responsive");
+        menuVisible = false;
+    } else {
+        nav.classList.add("responsive");
+        menuVisible = true;
     }
 }
+
+// añado un evento a cada enlace para cerrar el menú al hacer clic
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        const nav = document.getElementById("nav");
+        nav.classList.remove("responsive");
+        menuVisible = false;
+    });
+});
 // slider 
 
 const btnLeft = document.querySelector(".btn-left") /* creamos variables (constantes) y usamos el queryselector para jugar con los elementos del DOM */
