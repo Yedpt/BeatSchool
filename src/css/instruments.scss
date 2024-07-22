@@ -1,0 +1,483 @@
+//Variables
+
+$color-fondo: #480859;
+$color-secundario: #d936ce;
+$blanco: #ffffff;
+$textos: "Itim";
+$titulos: "Jua";
+
+* {
+    box-sizing: border-box;
+    font-family: $textos;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+    }
+
+body.no-scroll {
+    overflow: hidden;
+}
+  
+  
+
+  .container__header {
+    background-color: $blanco;
+   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: auto;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: $blanco;
+}
+
+.logo {
+    height: 70px;
+}
+
+nav{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-responsive{
+    display: block;
+    color: $color-secundario;
+    padding: 5px 10px;
+     border-radius: 5px;
+//   cursor: pointer; esto cuando es ordenador en la mediaquerie
+}
+nav.responsive{
+    display: flex;
+    right: 0;
+    top: 60px;
+    background-color: $color-fondo;
+    width: 100%;
+}
+nav.responsive ul{
+    display: block !important;
+    list-style: none;
+    
+}
+nav.responsive ul li{
+    padding: 15px 0;
+}
+
+.container__header header nav ul li a {
+    text-align: none;
+    color: $blanco;
+    // margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+}
+
+
+/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
+
+.container {
+    background-color: $color-fondo;
+    width: 100%;
+}
+
+h2 {
+    font-family: $titulos;
+    color: $color-secundario;
+    font-size: 240%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+
+p {
+    color: $blanco;
+    font-family: $textos;
+    font-size: 150%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+
+
+
+.acoustic_drum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drum{
+    width: 70%;
+    height: 1000px;
+    background-image: url("/public/assets/img/drums.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.hi-hat-1{
+    position:absolute;
+    margin-top: 380px;
+    margin-left: 100px;
+    width: 210px;
+    height: 200px;
+    background-image: url("/public/assets/img/hihat_1.png");
+    background-repeat: no-repeat;
+}
+
+.hi-hat-2{
+    position:absolute;
+    margin-top: 380px;
+    margin-left: 100px;
+    width: 210px;
+    height: 200px;
+    background-image: url("/public/assets/img/hihat_2.png");
+    background-repeat: no-repeat;
+}
+
+
+.sounds {
+    display: flex;
+    flex-direction: column;
+}
+
+.drums_list {
+    color: $blanco;
+    font-size: 150%;
+    padding-left: 35%;
+}
+
+.master_keyboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10%;
+}
+
+.instruction_keyboard {
+    width: 35%;
+}
+
+.keyboard_cont {
+    display: flex;
+    justify-content: center;
+}
+
+.img_keyboard {
+    width: 70%;
+    height: 20%;
+}
+
+details {
+    background-color: $color-secundario;
+    //width: 100%;
+    margin-bottom: 2rem;
+    color: $blanco;
+    position: relative;
+}
+
+details summary {
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 5%;
+}
+details p {
+    padding: 1rem;
+    background: $blanco;
+    color: $color-fondo;
+}
+
+details summary::before {
+    position: absolute;
+    content: "👇";
+    font-size: 1.75rem;
+    top: 10px;
+    right: 0;
+}
+
+details[open] summary::before {
+    -webkit-animation: rotate 0.6s ease-in-out both;
+    animation: rotate-emoji 0.6s ease-in-out both;
+}
+
+@keyframes rotate-emoji {
+    0% {
+        -webkit-transform: rotate(0);
+        //          transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        //          transform: rotate(180deg);
+    }
+}
+
+//DEMOS:
+.demos {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+.demo_1,
+.demo_2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.video {
+    width: 80%;
+    aspect-ratio: 16/9;
+}
+//footer
+footer {
+    width: 100%;
+    padding: 10% 0;
+    background-color: $blanco;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+  }
+  
+  .left img {
+    width: 5vw;
+  }
+  
+  .right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .right h1 {
+    font-family: $textos;
+    color: $color-secundario;
+    font-size: 2.5vw;
+  }
+
+/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 960px) {
+     
+    .acoustic_drum {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .drum {
+        transform: rotate(90deg);
+        transition: 1s;
+        width: 80vh;
+    }
+
+    .keyboard {
+        display: none;
+    }
+
+    .demos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .demo_1,
+    .demo_2 {
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+
+@media (min-width: 960px) {
+    .drums_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 0%;
+    }  
+    
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10% 0 ;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        height: 90px;
+        top: 0;
+        width: 100%;
+        background-color: $blanco;
+    }
+    
+    .container__header header div .logo {
+        // width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container__header header nav {
+        display: flex;
+        position: static; /* Restaura la posición por defecto en pantallas grandes */
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        color: $color-fondo;
+        // flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+     nav ul li {
+        margin: 0 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .container__header header nav ul li a{
+        color: $color-fondo;
+        font-size: 20px;
+    }
+
+    .container__header header nav ul li a:hover {
+        color: $color-secundario;
+        transform: scale(1.2);
+    }
+
+    .nav-responsive {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none; /* Ocultar imágenes del menú de navegación */
+    }
+    }
+
+    
+@media (min-width: 632px) and (max-width: 959px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 0 ;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        height: 90px;
+        width: 100%;
+        background-color: $blanco;
+    }
+
+
+    .container__header header div .logo {
+        // width: 100px;
+        height: 85px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .container__header header nav {
+        display: flex;
+        position: static; /* Restaura la posición por defecto en pantallas grandes */
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        color: $color-fondo;
+        // flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    nav ul li {
+        margin: 0 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .container__header header nav ul li a{
+        color: $color-fondo;
+        font-size: 16px;
+    }
+    
+    .container__header header nav ul li a:hover {
+        color: $color-secundario;
+        transform: scale(1.2);
+    }
+
+    .nav-responsive {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none; /* Ocultar imágenes del menú de navegación */
+    }
+}

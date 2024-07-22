@@ -1,58 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instrumentos</title>
+    <title>Instruments</title>
+    <link rel="stylesheet" href="../src/css/instruments.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<!--<header class=header>
-        NAV
-    </header>-->
 
-    <section>
-        <h2>Bateria virtual online</h2>
-        <p>Aprende a tocar la batería acústica desde tu hogar con nuestra plataforma interactiva, usando solo el mouse o el teclado. Disfruta de sonidos auténticos sin necesidad de conocimientos avanzados. ¡Empieza a expresar tu creatividad musical y da vida a tus ritmos!</p>
-    </section>
+    <div class="container__header" >
+        <header>
+                <div>
+                    <a href="#home"><img src="../public/assets/img/logoBeatSchool.png"  class="logo"  alt="logo"></a>
+                </div>
+           
+           <nav id="nav">
+                <ul>
+                    <li><a href="#home" class="nav-link"><img src="../public/assets/img/icono-home.png" alt="home" class="menu-icon">Home</a></li>
+                    <li><a href="#aboutus" class="nav-link"><img src="../public/assets/img/icono-aboutus.png" alt="aboutus" class="menu-icon">Sobre nosotros</a></li>
+                    <li><a href="#instruments" class="nav-link"><img src="../public/assets/img/icono-music.png" alt="instruments" class="menu-icon">Instrumentos</a></li>
+                    <li><a href="pages/contact.html" class="nav-link"><img src="../public/assets/img/icono-contact.png" alt="contact" class="menu-icon">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>  
+    </div>
 
-    <section>IMAGEN BATERIA</section>
 
-    <section>
-        <h2>Los sonidos de la bateria acùstica son:</h2>
-        <div class="bass_list">
-            <ul>
-                <li>Mid Tom</li>
-                <li>High0 Tom</li>
-                <li>Tom Base</li>
-                <li>Base drum</li>
-                <li>Snare drum</li>
-            </ul>
-            <ul>
-                <li>Hit Hat</li>
-                <li>Ride</li>
-                <li>Crash 1</li>
-                <li>Crash 2</li>
-            </ul>
-            
-    </section>
+    <!-- FIN NAV -->
 
-    <section>
-        <h2>
-            Instrucciones para tocar la bateria desde el teclado
-        </h2>
-        <p>Cada componente de la bateria tiene una tecla especifica asignada:</p>
-        <div>Funcionamiento platillos</div>
-        <div>Funcionamiento bombos</div>
-    </section>
+    <div class="container">
 
-    <section>
-        <h2>Demos</h2>
-        <div>VIDEO 1</div>
-        <div>VIDEO 2</div>
-    </section>
+        <section class="intro">
+            <h2>Bateria acústica virtual</h2>
+            <p>Aprende a tocar la batería acústica desde tu hogar con nuestra plataforma interactiva totalmente
+                gratuita, solo necesitas tu ordenador o móvil.
+                <br> <br>Disfruta y ejecuta beats auténticos sin necesidad de conocimientos avanzados.
+                <br><br>¡Empieza a expresar tu creatividad musical y da vida a tus ritmos!
+            </p>
+        </section>
 
-    <!--<section>FOOTER</section>-->
+        <section class="acoustic_drum">
+            <div class="drum">
+                <audio src="../public/assets/sounds/hihat.wav" id="hihat-audio"></audio>
+                <div id="hihat1" class="hi-hat-1"></div>
+                <div id="hihat2"></div>
+            </div>
+            <!--    <img class="img_drum" src="../public/assets/img/acoustic-drums.png" alt="Acoustic drums">-->
 
+        </section>
+
+        <section class="sounds">
+
+            <h2>Las componentes de nuestra batería son:</h2>
+            <div class="drums_list">
+                <ul>
+                    <li>Mid Tom</li>
+                    <li>High Tom</li>
+                    <li>Tom Base</li>
+                    <li>Base drum</li>
+                    <li>Snare drum</li>
+                </ul>
+                <ul>
+                    <li>Hit Hat</li>
+                    <li>Ride</li>
+                    <li>Crash 1</li>
+                    <li>Crash 2</li>
+                </ul>
+        </section>
+
+        <section class="keyboard">
+            <h2>
+                Instrucciones para tocar la batería desde el teclado
+            </h2>
+            <p>Cada componente de la bateria tiene una tecla específica asignada:</p>
+
+            <div class="keyboard_cont">
+                <img class="img_keyboard" src="../public/assets/img/keyboard_Medium.png" alt="Acoustic drums">
+            </div>
+
+
+            <div class="master_keyboard">
+                <div class="instruction_keyboard">
+                    <details open>
+                        <summary><strong>Funcionamiento platillos</strong></summary>
+                        <p>Presiona:<br>- <strong>A</strong> para el Hit Hat<br>- <strong>A</strong> para el Crash 1
+                            <br> - <strong>A</strong> para el Crash 2<br> - <strong>A</strong> para el Ride
+                        </p>
+                    </details>
+                </div>
+
+                <div class="instruction_keyboard">
+                    <details open>
+                        <summary><strong>Funcionamiento bombos </strong></summary>
+                        <p>Presiona:<br> - <strong>A</strong> para el Mid Tom<br> - <strong>A</strong> para el High Tom
+                            <br> - <strong>A</strong> para el Tom Base<br> - <strong>A</strong> para el Bass Drum <br> -
+                            <strong>A</strong> para el Snare Drum
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo">
+            <h2>Demos</h2>
+
+            <div class="demos">
+                <div class="demo_1">
+                    <iframe class=video src="https://www.youtube.com/embed/nlgGUhWCbVE?si=gBXAEp4-s0AsTt3Z"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="demo_2">
+                    <iframe class=video src="https://www.youtube.com/embed/nT_VGigvcdM?si=55oqIWYRJ_MwfsIb"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__container left">
+                <a href="#"><img src="../public/assets/img/redes.png" alt="icono compartir"></a>
+                <a href="www.youtube.com"><img src="../public/assets/img/youtube.png" alt="Logo youtube acceso"></a>
+                <a href="www.linkedin.com"><img src="../public/assets/img/linkedin.png" alt="Logo Linkedin acceso"></a>
+                <a href="www.facebook.com"><img src="../public/assets/img/facebook.png" alt="Logo Facebook acceso"></a>
+            </div>
+            <div class="footer__containe right">
+                <h1>© 2024 por BeatSchool</h1>
+            </div>
+        </div>
+    </footer>
+    <script src="../src/JS/instruments.js"></script>
+    <script src="../src/JS/index.js"></script>
 </body>
+
 </html>
