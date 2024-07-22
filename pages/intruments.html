@@ -13,26 +13,27 @@
 </head>
 
 <body>
-    <div class="container__header">
+
+    <div class="container__header" >
         <header>
-
-            <a href="#home">
-                <img src="../public/assets/img/logoBeatSchool.png" class="logo" alt="logo">
-            </a>
-
-            <nav>
+                <div>
+                    <a href="#home"><img src="../public/assets/img/logoBeatSchool.png"  class="logo"  alt="logo"></a>
+                </div>
+           
+           <nav id="nav">
                 <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#aboutus">Sobre Nosotros </a></li>
-                    <li><a href="#instruments">Instrumentos</a></li>
-                    <li><a href="pages/contact.html">Contacto</a></li>
+                    <li><a href="#home" class="nav-link"><img src="../public/assets/img/icono-home.png" alt="home" class="menu-icon">Home</a></li>
+                    <li><a href="#aboutus" class="nav-link"><img src="../public/assets/img/icono-aboutus.png" alt="aboutus" class="menu-icon">Sobre nosotros</a></li>
+                    <li><a href="#instruments" class="nav-link"><img src="../public/assets/img/icono-music.png" alt="instruments" class="menu-icon">Instrumentos</a></li>
+                    <li><a href="pages/contact.html" class="nav-link"><img src="../public/assets/img/icono-contact.png" alt="contact" class="menu-icon">Contacto</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
-        </header>
+        </header>  
     </div>
+
 
     <!-- FIN NAV -->
 
@@ -40,14 +41,21 @@
 
         <section class="intro">
             <h2>Bateria acústica virtual</h2>
-            <p>Aprende a tocar la batería acústica desde tu hogar con nuestra plataforma interactiva totalmente gratuita, solo necesitas tu ordenador o móvil.
-            <br> <br>Disfruta y ejecuta beats auténticos sin necesidad de conocimientos avanzados.
-            <br><br>¡Empieza a expresar tu creatividad musical y da vida a tus ritmos!
+            <p>Aprende a tocar la batería acústica desde tu hogar con nuestra plataforma interactiva totalmente
+                gratuita, solo necesitas tu ordenador o móvil.
+                <br> <br>Disfruta y ejecuta beats auténticos sin necesidad de conocimientos avanzados.
+                <br><br>¡Empieza a expresar tu creatividad musical y da vida a tus ritmos!
             </p>
         </section>
 
         <section class="acoustic_drum">
-            <img class="img_drum" src="../public/assets/img/acoustic-drums.png" alt="Acoustic drums">
+            <div class="drum">
+                <audio src="../public/assets/sounds/hihat.wav" id="hihat-audio"></audio>
+                <div id="hihat1" class="hi-hat-1"></div>
+                <div id="hihat2"></div>
+            </div>
+            <!--    <img class="img_drum" src="../public/assets/img/acoustic-drums.png" alt="Acoustic drums">-->
+
         </section>
 
         <section class="sounds">
@@ -85,7 +93,8 @@
                     <details open>
                         <summary><strong>Funcionamiento platillos</strong></summary>
                         <p>Presiona:<br>- <strong>A</strong> para el Hit Hat<br>- <strong>A</strong> para el Crash 1
-                            <br> - <strong>A</strong> para el Crash 2<br> - <strong>A</strong> para el Ride</p>
+                            <br> - <strong>A</strong> para el Crash 2<br> - <strong>A</strong> para el Ride
+                        </p>
                     </details>
                 </div>
 
@@ -94,7 +103,8 @@
                         <summary><strong>Funcionamiento bombos </strong></summary>
                         <p>Presiona:<br> - <strong>A</strong> para el Mid Tom<br> - <strong>A</strong> para el High Tom
                             <br> - <strong>A</strong> para el Tom Base<br> - <strong>A</strong> para el Bass Drum <br> -
-                            <strong>A</strong> para el Snare Drum</p>
+                            <strong>A</strong> para el Snare Drum
+                        </p>
                     </details>
                 </div>
             </div>
@@ -134,4 +144,8 @@
             </div>
         </div>
     </footer>
+    <script src="../src/JS/instruments.js"></script>
+    <script src="../src/JS/index.js"></script>
 </body>
+
+</html>
