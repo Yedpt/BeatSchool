@@ -1,13 +1,12 @@
-
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   /* background-color: violet; */
   margin: 0;
   padding: 0;
 }
 
-html{
+html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
 }
@@ -17,104 +16,95 @@ section {
 }
 
 .container__header {
-
-background-color: #dfe2e5;
-color: #fff;
-position: relative;
-width: 100%;
-top: 0;
-left: 0;
-z-index: 99;
+  background-color: #dfe2e5;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 
 .container__header header {
-max-width: 1100px;
-margin: auto;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 20px;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
 }
 
 .logo {
-width: 150px; /* Tamaño deseado para la imagen */
-height: auto; /* Altura automática para mantener la proporción */
+  width: 150px; /* Tamaño deseado para la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
 }
 
 .container__header header ul {
-display: flex;
-list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 .container__header header nav ul li a {
-text-align: none;
-color: #fff;
-margin: 0 15px;
-padding: 3px;
-transition: 0.5s;
-font-size: 28px;
-text-decoration: none;
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  font-size: 28px;
+  text-decoration: none;
 }
-.container__header header nav ul li a:hover{
-color: #c7327f;
+.container__header header nav ul li a:hover {
+  color: #c7327f;
 }
 
-.nav-responsive{
-background-color: #1CB698;
-color:#fff;
-padding: 5px 10px;
-border-radius: 5px;
-cursor: pointer;
-display: none;
+.nav-responsive {
+  background-color: #1cb698;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
 }
 
 /* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
 
-
-
-
-
-
-
 footer {
-/* text-align: center; */
-padding: 40px 20px;
-box-shadow:inset;
+  /* text-align: center; */
+  padding: 40px 20px;
+  box-shadow: inset;
 }
 
 footer .left {
-text-align: left;
+  text-align: left;
 }
 
 footer .right {
-text-align: right;
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
 
-
-@media screen and (max-width:700px) {
-nav{
-  display: none;
+@media screen and (max-width: 700px) {
+  nav {
+    display: none;
+  }
+  .nav-responsive {
+    display: block;
+  }
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252a2e;
+    width: 180px;
+  }
+  nav.responsive ul {
+    display: block !important;
+  }
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
 }
-.nav-responsive{
-  display: block;
-}
-nav.responsive{
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 75px;
-  background-color: #252A2E;
-  width: 180px;
-}
-nav.responsive ul{
-  display: block !important;
-}
-nav.responsive ul li{
-  border-bottom: 1px solid #fff;
-  padding: 10px 0;
-}
-}
-@media screen and (max-width:980px) {
-
+@media screen and (max-width: 980px) {
 }
