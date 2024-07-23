@@ -247,6 +247,47 @@ details[open] summary::before {
 }
 
 /* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
+footer {
+  width: 100%;
+  padding: 10% 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.left img {
+  width: 5vw;
+}
+
+.right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.right h1 {
+  font-family: "Itim";
+  color: #d936ce;
+  font-size: 2.5vw;
+}
+
 @media (max-width: 960px) {
   .acoustic_drum {
     width: 100%;
@@ -389,6 +430,11 @@ details[open] summary::before {
   }
 }
 
-
+/*Variables*/
+@media (min-width: 960px) {
+  footer {
+    padding: 4% 0;
+  }
+}
 
 /*# sourceMappingURL=instruments.css.map */

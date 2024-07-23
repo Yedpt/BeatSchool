@@ -11,6 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD
 body {
   background-color: #480859;
 }
@@ -259,6 +260,8 @@ nav.responsive ul li {
   padding: 0%;
 }
 
+=======
+>>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
 footer {
   width: 100%;
   padding: 10% 0;
@@ -301,6 +304,7 @@ footer {
 }
 
 @media (min-width: 960px) {
+<<<<<<< HEAD
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -457,6 +461,8 @@ footer {
   .text--white:hover {
     color: #ffffff;
   }
+=======
+>>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
   footer {
     padding: 4% 0;
   }

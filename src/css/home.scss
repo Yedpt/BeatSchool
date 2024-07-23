@@ -6,6 +6,7 @@ $blanco: #ffffff;
 $textos :  "Itim";
 $titulos :"Jua";
 
+<<<<<<< HEAD
 *{
     box-sizing: border-box;
     font-family: $textos;
@@ -185,6 +186,72 @@ nav.responsive ul li{
         display: none; /* Ocultar imágenes del menú de navegación */
     }
 
+=======
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #480859;
+}
+
+html {
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+
+footer {
+    width: 100%;
+    padding: 10% 0;
+    background-color: $blanco;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+}
+
+.left img {
+    width: 5vw;
+}
+
+.right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.right h1 {
+    font-family: $textos;
+    color: $color-secundario;
+    font-size: 2.5vw;
+}
+
+@media (min-width: 960px) {
+  
+
+    footer {
+        padding: 4% 0;
+    }
+>>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
 }
 
 // /* Utility classes for better accessibility */

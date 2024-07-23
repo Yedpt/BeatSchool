@@ -26,8 +26,6 @@ $titulos :"Jua";
   body.no-scroll {
     overflow: hidden;
 }
-  
-  
 
   .container__header {
     background-color: $blanco;
@@ -122,7 +120,6 @@ h2 {
     text-align: center;
 }
 
-
 p {
     color: $blanco;
     font-family: $textos;
@@ -132,9 +129,6 @@ p {
     padding-right: 10%;
     text-align: center;
 }
-
-
-
 
 .instrument__container{
     display: flex;
@@ -167,7 +161,6 @@ position: absolute;
     background-image: url("/public/assets/img/hithatcolor.png");
     background-repeat: no-repeat;
 }
-
 
 .sounds {
     display: flex;
@@ -241,11 +234,11 @@ details[open] summary::before {
 @keyframes rotate-emoji {
     0% {
         -webkit-transform: rotate(0);
-        //          transform: rotate(0);
+        //transform: rotate(0);
     }
     100% {
         -webkit-transform: rotate(180deg);
-        //          transform: rotate(180deg);
+        //transform: rotate(180deg);
     }
 }
 
@@ -255,12 +248,14 @@ details[open] summary::before {
     flex-direction: row;
     padding-bottom: 5%;
 }
+
 .demo_1,
 .demo_2 {
     width: 50%;
     display: flex;
     justify-content: center;
 }
+
 .video {
     width: 80%;
     aspect-ratio: 16/9;
@@ -276,6 +271,46 @@ details[open] summary::before {
 
 /* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
   
+footer {
+    width: 100%;
+    padding: 10% 0;
+    background-color: $blanco;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+}
+
+.left img {
+    width: 5vw;
+}
+
+.right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.right h1 {
+    font-family: $textos;
+    color: $color-secundario;
+    font-size: 2.5vw;
+}
 
 @media (max-width: 960px) {
      
@@ -326,9 +361,6 @@ details[open] summary::before {
         background-color: $blanco;
     }
 
-    
-
-
     .container__header header div .logo {
         // width: 100px;
         height: 100px;
@@ -337,7 +369,6 @@ details[open] summary::before {
         align-items: center;
         width: 100%;
     }
-
 
     .container__header header nav {
         display: flex;
@@ -385,7 +416,6 @@ details[open] summary::before {
         justify-content: space-evenly;
         padding-left: 0%;
     }  
-
 }
 
 // /* Utility classes for better accessibility */
@@ -407,7 +437,6 @@ details[open] summary::before {
         background-color: $blanco;
     }
 
-
     .container__header header div .logo {
         // width: 100px;
         height: 85px;
@@ -416,7 +445,6 @@ details[open] summary::before {
         align-items: center;
         width: 100%;
     }
-
 
     .container__header header nav {
         display: flex;
@@ -429,7 +457,6 @@ details[open] summary::before {
         justify-content: flex-end;
         align-items: center;
     }
-
     
     nav ul {
         display: flex;
@@ -462,22 +489,14 @@ details[open] summary::before {
 
 }
 
-
-
-
-
 /*# sourceMappingURL=style.css.map */
-
-
-
-
-
-
-
-
-/*# sourceMappingURL=style.css.map */
-
 
 @media (min-width: 960px) {
  
+}/*Variables*/
+
+@media (min-width: 960px) {
+   footer {
+        padding: 4% 0;
+    }
 }

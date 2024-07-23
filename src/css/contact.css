@@ -1,16 +1,31 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 * {
   box-sizing: border-box;
   font-family: "Itim";
+=======
+/*Variables*/
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+>>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
   margin: 0;
   padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+body {
+  background-color: #480859;
+}
+
+>>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
 html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD
 body {
   background-color: #480859;
 }
@@ -205,4 +220,53 @@ nav.responsive ul li {
 }
 
 
+=======
+footer {
+  width: 100%;
+  padding: 10% 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.left img {
+  width: 5vw;
+}
+
+.right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.right h1 {
+  font-family: "Itim";
+  color: #d936ce;
+  font-size: 2.5vw;
+}
+
+@media (min-width: 960px) {
+  footer {
+    padding: 4% 0;
+  }
+}
+
+>>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
 /*# sourceMappingURL=contact.css.map */
