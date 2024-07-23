@@ -117,38 +117,289 @@ p {
   text-align: center;
 }
 
-.acoustic_drum {
+.instrument__container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
 }
 
-.drum {
-  width: 70%;
-  height: 1000px;
-  background-image: url("/public/assets/img/drums.jpg");
+.instrument__container--drum {
+  width: 60%;
+  background-image: url(/public/assets/img/Bateria/BATERIAFINAL.png);
+  background-size: 50%;
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  height: 60vw;
+  position: relative;
+  z-index: 0;
 }
 
-.hi-hat-1 {
+.instrument__container--hihat {
+  width: 14vw;
+  height: 11vw;
+  top: 23vw;
+  left: 5vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hi-hat-image {
   position: absolute;
-  margin-top: 380px;
-  margin-left: 100px;
-  width: 210px;
-  height: 200px;
-  background-image: url("/public/assets/img/hihat_1.png");
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/hihat.png");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
 }
 
-.hi-hat-2 {
+.hi-hat-color {
   position: absolute;
-  margin-top: 380px;
-  margin-left: 100px;
-  width: 210px;
-  height: 200px;
-  background-image: url("/public/assets/img/hihat_2.png");
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/hithatcolor.png");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--crash {
+  width: 15.5vw;
+  height: 15.5vw;
+  left: 7vw;
+  bottom: 7vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.crash-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/crash.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.crash-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/crashcolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--ride {
+  width: 15.7vw;
+  height: 15.7vw;
+  display: flex;
+  left: 40.5vw;
+  bottom: 19vw;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ride-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/ride.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.ride-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/ridecolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--snare {
+  width: 12.6vw;
+  height: 12.6vw;
+  left: 16.2vw;
+  bottom: 15.5vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.snare-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/snare.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.share-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/snarecolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--midtom {
+  width: 11vw;
+  height: 11vw;
+  left: 18.7vw;
+  bottom: 40.5vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mid-tom-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/midtom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.mid-tom-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/midtomcolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--hightom {
+  width: 12vw;
+  height: 12vw;
+  bottom: 52vw;
+  left: 31.6vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.high-tom-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/hightom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.high-tom-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/hightomcolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--tombase {
+  width: 10.8vw;
+  height: 10.8vw;
+  left: 41.6vw;
+  bottom: 51vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tom-base-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/tombase.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.tom-base-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/tombasecolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--bassdrum {
+  width: 5vw;
+  height: 5vw;
+  left: 28vw;
+  bottom: 58vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bass-drum-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/pedal.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.bass-drum-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/pedalcolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
 }
 
 .sounds {
