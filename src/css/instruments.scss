@@ -132,37 +132,35 @@ p {
 
 
 
-.acoustic_drum {
+.instrument__container{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
 }
 
-.drum{
-    width: 70%;
+.instrument__container--drum{
+    position: relative;
+    width: 90%;
     height: 1000px;
-    background-image: url("/public/assets/img/drums.jpg");
+    background-image: url("/public/assets/img/BATERIAFINAL.png");
     background-repeat: no-repeat;
     object-fit: cover;
+    background-color: aqua;
 }
 
-.hi-hat-1{
-    position:absolute;
-    margin-top: 380px;
-    margin-left: 100px;
-    width: 210px;
-    height: 200px;
-    background-image: url("/public/assets/img/hihat_1.png");
+.hit-hat-image{
+position: absolute;
+    width: 200px;
+    background-image: url("/public/assets/img/hihat.png");
     background-repeat: no-repeat;
+
 }
 
-.hi-hat-2{
-    position:absolute;
-    margin-top: 380px;
-    margin-left: 100px;
-    width: 210px;
-    height: 200px;
-    background-image: url("/public/assets/img/hihat_2.png");
+.hit--hat-color{
+    display: flex;
+
+    background-image: url("/public/assets/img/hithatcolor.png");
     background-repeat: no-repeat;
 }
 
