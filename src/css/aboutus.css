@@ -1,31 +1,24 @@
-<<<<<<< HEAD
 @charset "UTF-8";
 * {
   box-sizing: border-box;
   font-family: "Itim";
-=======
 /*Variables*/
 * {
   box-sizing: border-box;
   font-family: "Work Sans";
->>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
   margin: 0;
   padding: 0;
 }
 
-<<<<<<< HEAD
-=======
 body {
   background-color: #480859;
 }
 
->>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
 html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
 body {
   background-color: #480859;
 }
@@ -220,7 +213,6 @@ nav.responsive ul li {
 }
 
 
-=======
 footer {
   width: 100%;
   padding: 10% 0;
@@ -268,5 +260,4 @@ footer {
   }
 }
 
->>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
 /*# sourceMappingURL=aboutus.css.map */
