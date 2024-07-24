@@ -105,16 +105,6 @@ nav.responsive ul li{
 }
 
 
-// aqui empiezo el home css
-
-// empezamos con la parte SOBRE NOSOTROS 
-
-
-// empezamos con la parte introduce 
-
-/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
-  
-
 
 @media (min-width: 960px) {
 
@@ -130,9 +120,6 @@ nav.responsive ul li{
         width: 100%;
         background-color: $blanco;
     }
-
-    
-
 
     .container__header header div .logo {
         // width: 100px;
@@ -185,6 +172,10 @@ nav.responsive ul li{
         display: none; /* Ocultar imágenes del menú de navegación */
     }
 
+  footer {
+    padding: 4% 0;
+  }
+    
 }
 
 // /* Utility classes for better accessibility */
@@ -258,14 +249,3 @@ nav.responsive ul li{
     .menu-icon {
         display: none; /* Ocultar imágenes del menú de navegación */
     }
-
-}
-
-
-
-
-
-/*# sourceMappingURL=style.css.map */
-
-
-
