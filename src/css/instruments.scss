@@ -3,97 +3,32 @@
 $color-fondo: #480859;
 $color-secundario: #d936ce;
 $blanco: #ffffff;
-$textos: 'Itim';
-$titulos: 'Jua';
+$textos: "Itim";
+$titulos: "Jua";
 
-*{
+* {
     box-sizing: border-box;
     font-family: $textos;
     margin: 0;
     padding: 0;
-    
-  }
-  
-  html{
+}
+
+html {
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
 
-  body {
+body {
     background-color: $color-fondo;
-  }
+}
 
-  body.no-scroll {
+body.no-scroll {
     overflow: hidden;
 }
 
-  .container__header {
+.container__header {
     background-color: $blanco;
-   
 }
-
-// header {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 10px 20px;
-//     margin: auto;
-//     position: fixed;
-//     z-index: 1000;
-//     top: 0;
-//     width: 100%;
-//     height: 60px;
-//     background-color: $blanco;
-// }
-
-// .logo {
-//     height: 70px;
-// }
-
-// nav {
-//     display: none;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100vh;
-//     z-index: 10;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-// }
-// .nav-responsive {
-//     display: block;
-//     color: $color-secundario;
-//     padding: 5px 10px;
-//     border-radius: 5px;
-//     //   cursor: pointer; esto cuando es ordenador en la mediaquerie
-// }
-// nav.responsive {
-//     display: flex;
-//     right: 0;
-//     top: 60px;
-//     background-color: $color-fondo;
-//     width: 100%;
-// }
-// nav.responsive ul {
-//     display: block !important;
-//     list-style: none;
-// }
-// nav.responsive ul li {
-//     padding: 15px 0;
-// }
-
-// .container__header header nav ul li a {
-//     text-align: none;
-//     color: $blanco;
-//     // margin: 0 15px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     font-size: 18px;
-//     text-decoration: none;
-// }
 
 .menu-icon {
     width: 48px;
@@ -178,7 +113,7 @@ p {
     width: 14vw;
     height: 12.5vw;
     left: 3vw;
-    background-image: url('/public/assets/img/Bateria/hihat.png');
+    background-image: url("/public/assets/img/Bateria/hihat.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -190,7 +125,7 @@ p {
     width: 13.4vw;
     height: 12.5vw;
     left: 3vw;
-    background-image: url('/public/assets/img/Bateria/hithatcolor.png');
+    background-image: url("/public/assets/img/Bateria/hithatcolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -210,7 +145,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/pedal-image-one.png');
+    background-image: url("/public/assets/img/Bateria/pedal-image-one.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -221,7 +156,7 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/pedal-color-one.png');
+    background-image: url("/public/assets/img/Bateria/pedal-color-one.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -243,7 +178,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/crash.png');
+    background-image: url("/public/assets/img/Bateria/crash.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -254,7 +189,7 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/crashcolor.png');
+    background-image: url("/public/assets/img/Bateria/crashcolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -276,7 +211,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/ride.png');
+    background-image: url("/public/assets/img/Bateria/ride.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -287,7 +222,7 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/ridecolor.png');
+    background-image: url("/public/assets/img/Bateria/ridecolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -309,18 +244,18 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/snare.png');
+    background-image: url("/public/assets/img/Bateria/snare.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
 }
 
-.share-color {
+.snare-color {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/snarecolor.png');
+    background-image: url("/public/assets/img/Bateria/snarecolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -342,7 +277,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/midtom.png');
+    background-image: url("/public/assets/img/Bateria/midtom.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -353,7 +288,7 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/midtomcolor.png');
+    background-image: url("/public/assets/img/Bateria/midtomcolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -375,7 +310,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/hightom.png');
+    background-image: url("/public/assets/img/Bateria/hightom.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -386,7 +321,7 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/hightomcolor.png');
+    background-image: url("/public/assets/img/Bateria/hightomcolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -408,7 +343,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/tombase.png');
+    background-image: url("/public/assets/img/Bateria/tombase.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -419,47 +354,85 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/tombasecolor.png');
+    background-image: url("/public/assets/img/Bateria/tombasecolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
+
 }
 
 .instrument__container--bassdrum {
+    width: 10vw;
+    height: 15vw;
+    left: 24vw;
+    bottom: 58vw;
+    display: flex;
+    position: absolute;
+    top: 20vw;
+}
+
+.bass-drum-bomb {
+    width: 20vw;
+    height: 30vw;
     width: 30%;
     height: 50%;
     left: 17.3vw;
     bottom: 84vw;
     display: flex;
+    position: absolute;
     position: relative;
     justify-content: flex-start;
     align-items: center;
+    z-index: 1;
 }
 
+//.bass-bomb-image {
 .pedal-image-two {
     width: 20vw;
     height: 15vw;
     position: absolute;
-    background-image: url('/public/assets/img/Bateria/pedal-image-two.png');
+    width: 7vw;
+    height: 7vw;
+    background-image: url('/public/assets/img/Bateria/bass-bomb-image.png'), url('/public/assets/img/Bateria/pedal-image-two.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    //z-index: 3;
+    z-index: 2;
+}
+//}
+
+//.bass-bomb-color {
+.pedal-color-two {
+    width: 20vw;
+    height: 15vw;
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    background-image: url('/public/assets/img/Bateria/bass-bomb-color.png'), url('/public/assets/img/Bateria/pedal-color-two.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
 }
+//}
 
-.peda-color-image {
-    width: 20vw;
-    height: 15vw;
+.drumstick {
     position: absolute;
-    background-image: url('/public/assets/img/Bateria/pedal-color-two.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    left: 2vw;
+    bottom: 0;
     z-index: 1;
 }
 
 .left-drumstick {
+    width: 25%;
+    height: 30%;
     width: 24%;
     height: 24%;
     bottom: 95vw;
@@ -468,6 +441,8 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url(/public/assets/img/Bateria/drumstrick-right.png);
+    z-index: 1;
     display: flex;
     position: relative;
     justify-content: flex-start;
@@ -475,6 +450,8 @@ p {
 }
 
 .right-drumstick {
+    width: 25%;
+    height: 30%;
     width: 24%;
     height: 24%;
     bottom: 113vw;
@@ -483,6 +460,8 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url(/public/assets/img/Bateria/drumstrick-right.png);
+    z-index: 1;
     display: flex;
     position: relative;
     justify-content: flex-start;
@@ -547,7 +526,7 @@ details p {
 
 details summary::before {
     position: absolute;
-    content: '👇';
+    content: "👇";
     font-size: 1.75rem;
     top: 10px;
     right: 0;
@@ -591,22 +570,18 @@ details[open] summary::before {
 
 // aqui empiezo el home css
 
-// empezamos con la parte SOBRE NOSOTROS 
+// empezamos con la parte SOBRE NOSOTROS
 
-
-// empezamos con la parte introduce 
+// empezamos con la parte introduce
 
 /* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
-  
+
 footer {
     width: 100%;
     padding: 10% 0;
     background-color: $blanco;
     display: flex;
     justify-content: center;
-}
-
-.footer__container {
 }
 
 .footer__container {
@@ -749,7 +724,7 @@ footer {
         flex-direction: row;
         justify-content: space-evenly;
         padding-left: 0%;
-    }  
+    }
 }
 
 // /* Utility classes for better accessibility */
@@ -820,18 +795,15 @@ footer {
     .menu-icon {
         display: none; /* Ocultar imágenes del menú de navegación */
     }
-
 }
 
 /*# sourceMappingURL=style.css.map */
 
 @media (min-width: 960px) {
- 
-}/*Variables*/
+} /*Variables*/
 
 @media (min-width: 960px) {
-   footer {
+    footer {
         padding: 4% 0;
     }
 }
-

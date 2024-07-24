@@ -23,71 +23,6 @@ body.no-scroll {
   background-color: #ffffff;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  margin: auto;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #ffffff;
-}
-
-.logo {
-  height: 70px;
-}
-
-nav {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 10;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-responsive {
-  display: block;
-  color: #d936ce;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-nav.responsive {
-  display: flex;
-  right: 0;
-  top: 60px;
-  background-color: #480859;
-  width: 100%;
-}
-
-nav.responsive ul {
-  display: block !important;
-  list-style: none;
-}
-
-nav.responsive ul li {
-  padding: 15px 0;
-}
-
-.container__header header nav ul li a {
-  text-align: none;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 18px;
-  text-decoration: none;
-}
-
 .menu-icon {
   width: 48px;
   height: 48px;
@@ -123,12 +58,10 @@ p {
 
 .instrument__container {
   width: 90%;
-.instrument__container {
   display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
   flex-direction: column;
   border-radius: 15px;
   background-color: #ffffff;
@@ -312,7 +245,7 @@ p {
   z-index: 2;
 }
 
-.share-color {
+.snare-color {
   position: absolute;
   width: 98%;
   height: 98%;
@@ -417,55 +350,80 @@ p {
   height: 98%;
   background-image: url("/public/assets/img/Bateria/tombasecolor.png");
   background-size: contain;
-.instrument__container--drum {
-  position: relative;
-  width: 90%;
-  height: 1000px;
-  background-image: url("/public/assets/img/BATERIAFINAL.png");
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
 }
 
 .instrument__container--bassdrum {
+  width: 10vw;
+  height: 15vw;
+  left: 24vw;
+  bottom: 58vw;
+  display: flex;
+  position: absolute;
+  top: 20vw;
+}
+
+.bass-drum-bomb {
+  width: 20vw;
+  height: 30vw;
   width: 30%;
   height: 50%;
   left: 17.3vw;
   bottom: 84vw;
   display: flex;
+  position: absolute;
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  object-fit: cover;
-  background-color: aqua;
+  z-index: 1;
 }
 
 .pedal-image-two {
   width: 20vw;
   height: 15vw;
-.hit-hat-image {
   position: absolute;
-  background-image: url("/public/assets/img/Bateria/pedal-image-two.png");
+  width: 7vw;
+  height: 7vw;
+  background-image: url("/public/assets/img/Bateria/bass-bomb-image.png"), url("/public/assets/img/Bateria/pedal-image-two.png");
   background-size: contain;
-  width: 200px;
-  background-image: url("/public/assets/img/hihat.png");
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 3;
   z-index: 2;
+  background-color: #480859;
 }
 
 .peda-color-image {
   width: 20vw;
   height: 15vw;
   position: absolute;
-  background-image: url("/public/assets/img/Bateria/pedal-color-two.png");
+  width: 7vw;
+  height: 7vw;
+  background-image: url("/public/assets/img/Bateria/bass-bomb-color.png"), url("/public/assets/img/Bateria/pedal-color-two.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 2;
+  background-color: aqua;
+}
+
+.drumstick {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+  left: 2vw;
+  bottom: 0;
   z-index: 1;
 }
 
 .left-drumstick {
+  width: 25%;
+  height: 30%;
   width: 24%;
   height: 24%;
   bottom: 95vw;
@@ -474,6 +432,8 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/public/assets/img/Bateria/drumstrick-right.png);
+  z-index: 1;
   display: flex;
   position: relative;
   justify-content: flex-start;
@@ -481,17 +441,18 @@ p {
 }
 
 .right-drumstick {
+  width: 25%;
+  height: 30%;
   width: 24%;
   height: 24%;
   bottom: 113vw;
   left: 28vw;
   background-image: url(/public/assets/img/Bateria/drumstick-left.png);
   background-size: contain;
-.hit--hat-color {
-  display: flex;
-  background-image: url("/public/assets/img/hithatcolor.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/public/assets/img/Bateria/drumstrick-right.png);
+  z-index: 1;
   display: flex;
   position: relative;
   justify-content: flex-start;
@@ -663,6 +624,12 @@ footer {
   }
 }
 @media (min-width: 960px) {
+  .drums_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 0%;
+  }
   header {
     flex-direction: row;
     justify-content: space-between;
