@@ -67,28 +67,27 @@ p {
 }
 
 .instrument__container--hihat {
-  width: 20vw;
+  width: 15.5vw;
   height: 30vw;
   top: 21vw;
   display: flex;
   position: relative;
 }
 
-.instrument__container--hihat-cymbal {
-  width: 100%;
-  height: 50%;
+.container--hithat-cymbal {
+  width: 90%;
+  height: 40%;
+  left: 2.3vw;
   display: flex;
   position: absolute;
   justify-content: flex-start;
   align-items: center;
-  z-index: 1;
 }
 
 .hi-hat-image {
   position: absolute;
   width: 14vw;
   height: 12.5vw;
-  left: 3vw;
   background-image: url("/public/assets/img/Bateria/hihat.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -100,7 +99,6 @@ p {
   position: absolute;
   width: 13.4vw;
   height: 12.5vw;
-  left: 3vw;
   background-image: url("/public/assets/img/Bateria/hithatcolor.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -109,7 +107,7 @@ p {
 }
 
 .container--hithat--pedal-one {
-  width: 63%;
+  width: 78%;
   height: 35%;
   top: 20.6vw;
   left: 5.5vw;
@@ -130,8 +128,8 @@ p {
 
 .pedal-color-one {
   position: absolute;
-  width: 98%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
   background-image: url("/public/assets/img/Bateria/pedal-color-one.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -338,10 +336,10 @@ p {
 }
 
 .instrument__container--bassdrum {
-  width: 30%;
-  height: 50%;
-  left: 17.3vw;
-  bottom: 84vw;
+  width: 10%;
+  height: 26%;
+  left: 24.2vw;
+  bottom: 77vw;
   display: flex;
   position: relative;
   justify-content: flex-start;
@@ -349,7 +347,7 @@ p {
 }
 
 .pedal-image-two {
-  width: 20vw;
+  width: 6vw;
   height: 15vw;
   position: absolute;
   background-image: url("/public/assets/img/Bateria/pedal-image-two.png");
@@ -360,7 +358,7 @@ p {
 }
 
 .peda-color-image {
-  width: 20vw;
+  width: 6vw;
   height: 15vw;
   position: absolute;
   background-image: url("/public/assets/img/Bateria/pedal-color-two.png");
@@ -372,8 +370,8 @@ p {
 
 .left-drumstick {
   width: 24%;
-  height: 24%;
-  bottom: 95vw;
+  height: 19%;
+  bottom: 82vw;
   left: 30vw;
   background-image: url(/public/assets/img/Bateria/drumstick-left.png);
   background-size: contain;
@@ -387,8 +385,8 @@ p {
 
 .right-drumstick {
   width: 24%;
-  height: 24%;
-  bottom: 113vw;
+  height: 19%;
+  bottom: 89vw;
   left: 28vw;
   background-image: url(/public/assets/img/Bateria/drumstick-left.png);
   background-size: contain;
@@ -398,6 +396,28 @@ p {
   position: relative;
   justify-content: flex-start;
   align-items: center;
+}
+
+button {
+  width: 8%;
+  height: auto;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 1.5vw;
+  left: 66vw;
+  cursor: pointer;
+  padding: 5px;
+  background-color: rgba(203, 155, 247, 0.346);
+}
+
+.fs-img {
+  width: 100%;
+  height: 100%;
 }
 
 .sounds {
