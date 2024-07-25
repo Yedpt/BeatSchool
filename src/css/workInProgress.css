@@ -94,6 +94,16 @@ nav.responsive ul li {
   margin-right: 8px;
 }
 
+.sectionBody {
+  display: flex;
+  background-color: #ffffff;
+}
+
+.imgBody {
+  width: 100%;
+  margin-top: 15%;
+}
+
 @media (min-width: 960px) {
   header {
     flex-direction: row;
@@ -146,6 +156,15 @@ nav.responsive ul li {
   }
   .menu-icon {
     display: none; /* Ocultar imágenes del menú de navegación */
+  }
+  .sectionBody {
+    justify-content: center;
+  }
+  .imgBody {
+    content: url(/public/assets/img/en\ const\ desktop.png);
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
   }
   footer {
     padding: 4% 0;

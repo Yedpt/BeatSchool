@@ -103,7 +103,16 @@ nav.responsive ul li{
     height: 48px;
     margin-right: 8px;
 }
-// aqui empiezo el home css
+
+.sectionBody{
+    display: flex;
+    background-color: #ffffff;
+}
+
+.imgBody{
+    width: 100%;
+    margin-top: 15%;
+}
 
 @media (min-width: 960px) {
 
@@ -119,9 +128,6 @@ nav.responsive ul li{
         width: 100%;
         background-color: $blanco;
     }
-
-    
-
 
     .container__header header div .logo {
         // width: 100px;
@@ -172,6 +178,17 @@ nav.responsive ul li{
 
     .menu-icon {
         display: none; /* Ocultar imágenes del menú de navegación */
+    }
+
+    .sectionBody{
+        justify-content: center;
+        
+    }
+    .imgBody{
+        content: url(/public/assets/img/en\ const\ desktop.png);
+        margin-top: 0%;
+        display: flex;
+        justify-content: center;
     }
 
   footer {
