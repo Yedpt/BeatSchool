@@ -1,5 +1,5 @@
 # BeatSchool
-[logotipo](logoBeatSchool.png)
+![logotipo](logoBeatSchool.png)
 Hola, somos BeatSchool una escuela de música online que ofrece lecciones flexibles con instrumentos virtuales, haciendo la educación musical accesible y asequible. Dirigida a todas las edades y niveles, democratiza el aprendizaje musical. ¡Únete a BeatSchool y descubre una forma emocionante de aprender música!
 
 ## Tecnologías empleadas
