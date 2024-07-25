@@ -97,6 +97,7 @@ nav.responsive ul li {
 .container {
   background-color: #480859;
   width: 100%;
+  margin-top: 5%;
 }
 
 h2 {
@@ -188,6 +189,30 @@ p {
   z-index: 2;
 }
 
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-3px, 3px);
+  }
+  40% {
+    transform: translate(3px, -3px);
+  }
+  60% {
+    transform: translate(-3px, 3px);
+  }
+  80% {
+    transform: translate(3px, -3px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.vibrating {
+  animation: vibrate 0.2s ease-out;
+}
+
 .container--hithat--pedal-one {
   width: 78%;
   height: 35%;
@@ -213,6 +238,17 @@ p {
   width: 100%;
   height: 100%;
   background-image: url("/public/assets/img/Bateria/pedal-color-one.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.pedal-color-two {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/pedal-color-two.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -645,6 +681,9 @@ footer {
 }
 
 @media (max-width: 960px) {
+  .container {
+    margin-top: 20%;
+  }
   .acoustic_drum {
     width: 100%;
     height: 90vh;

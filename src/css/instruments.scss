@@ -2,36 +2,32 @@
 
 $color-fondo: #480859;
 $color-secundario: #d936ce;
-$blanco: #ffffff; 
-$textos :  "Itim";
-$titulos :"Jua";
+$blanco: #ffffff;
+$textos: "Itim";
+$titulos: "Jua";
 
-*{
+* {
     box-sizing: border-box;
     font-family: $textos;
     margin: 0;
     padding: 0;
-    
-  }
-  
-  html{
+}
+
+html {
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
-  }
+}
 
-  body {
+body {
     background-color: $color-fondo;
-  }
+}
 
-  body.no-scroll {
+body.no-scroll {
     overflow: hidden;
 }
-  
-  
 
-  .container__header {
+.container__header {
     background-color: $blanco;
-   
 }
 
 header {
@@ -52,7 +48,7 @@ header {
     height: 70px;
 }
 
-nav{
+nav {
     display: none;
     position: absolute;
     top: 0;
@@ -64,26 +60,25 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.nav-responsive{
+.nav-responsive {
     display: block;
     color: $color-secundario;
     padding: 5px 10px;
-     border-radius: 5px;
-//   cursor: pointer; esto cuando es ordenador en la mediaquerie
+    border-radius: 5px;
+    //   cursor: pointer; esto cuando es ordenador en la mediaquerie
 }
-nav.responsive{
+nav.responsive {
     display: flex;
     right: 0;
     top: 60px;
     background-color: $color-fondo;
     width: 100%;
 }
-nav.responsive ul{
+nav.responsive ul {
     display: block !important;
     list-style: none;
-    
 }
-nav.responsive ul li{
+nav.responsive ul li {
     padding: 15px 0;
 }
 
@@ -107,6 +102,7 @@ nav.responsive ul li{
 .container {
     background-color: $color-fondo;
     width: 100%;
+    margin-top: 5%;
 }
 
 h2 {
@@ -178,7 +174,7 @@ p {
     position: absolute;
     width: 14vw;
     height: 12.5vw;
-    background-image: url('/public/assets/img/Bateria/hihat.png');
+    background-image: url("/public/assets/img/Bateria/hihat.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -189,11 +185,36 @@ p {
     position: absolute;
     width: 13.4vw;
     height: 12.5vw;
-    background-image: url('/public/assets/img/Bateria/hithatcolor.png');
+    background-image: url("/public/assets/img/Bateria/hithatcolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-3px, 3px);
+    }
+    40% {
+        transform: translate(3px, -3px);
+    }
+    60% {
+        transform: translate(-3px, 3px);
+    }
+    80% {
+        transform: translate(3px, -3px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.vibrating {
+    animation: vibrate 0.2s ease-out;
 }
 
 .container--hithat--pedal-one {
@@ -209,7 +230,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/pedal-image-one.png');
+    background-image: url("/public/assets/img/Bateria/pedal-image-one.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -220,7 +241,18 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/pedal-color-one.png');
+    background-image: url("/public/assets/img/Bateria/pedal-color-one.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.pedal-color-two {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/assets/img/Bateria/pedal-color-two.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -242,7 +274,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/crash.png');
+    background-image: url("/public/assets/img/Bateria/crash.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -253,7 +285,7 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/crashcolor.png');
+    background-image: url("/public/assets/img/Bateria/crashcolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -275,7 +307,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/ride.png');
+    background-image: url("/public/assets/img/Bateria/ride.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -286,7 +318,7 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/ridecolor.png');
+    background-image: url("/public/assets/img/Bateria/ridecolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -308,7 +340,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/snare.png');
+    background-image: url("/public/assets/img/Bateria/snare.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -319,7 +351,7 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/snarecolor.png');
+    background-image: url("/public/assets/img/Bateria/snarecolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -341,7 +373,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/midtom.png');
+    background-image: url("/public/assets/img/Bateria/midtom.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -352,7 +384,7 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/midtomcolor.png');
+    background-image: url("/public/assets/img/Bateria/midtomcolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -374,7 +406,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/hightom.png');
+    background-image: url("/public/assets/img/Bateria/hightom.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -385,7 +417,7 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/hightomcolor.png');
+    background-image: url("/public/assets/img/Bateria/hightomcolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -407,7 +439,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/public/assets/img/Bateria/tombase.png');
+    background-image: url("/public/assets/img/Bateria/tombase.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -418,7 +450,7 @@ p {
     position: absolute;
     width: 98%;
     height: 98%;
-    background-image: url('/public/assets/img/Bateria/tombasecolor.png');
+    background-image: url("/public/assets/img/Bateria/tombasecolor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -440,7 +472,7 @@ p {
     width: 6vw;
     height: 15vw;
     position: absolute;
-    background-image: url('/public/assets/img/Bateria/pedal-image-two.png');
+    background-image: url("/public/assets/img/Bateria/pedal-image-two.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -451,7 +483,7 @@ p {
     width: 6vw;
     height: 15vw;
     position: absolute;
-    background-image: url('/public/assets/img/Bateria/pedal-color-two.png');
+    background-image: url("/public/assets/img/Bateria/pedal-color-two.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -568,7 +600,7 @@ details p {
 
 details summary::before {
     position: absolute;
-    content: '👇';
+    content: "👇";
     font-size: 1.75rem;
     top: 10px;
     right: 0;
@@ -650,8 +682,6 @@ footer {
 }
 
 @media (min-width: 960px) {
-  
-
     footer {
         padding: 4% 0;
     }
@@ -660,6 +690,11 @@ footer {
 /*# sourceMappingURL=style.css.map */
 
 @media (max-width: 960px) {
+    .container {
+        margin-top: 20%;
+    }
+
+
     .acoustic_drum {
         width: 100%;
         height: 90vh;
@@ -830,11 +865,10 @@ footer {
 
 //MEDIAQUERY NAV
 @media (min-width: 960px) {
-
     header {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 10% 0 ;
+        padding: 0 10% 0;
         margin: auto;
         position: fixed;
         z-index: 1000;
@@ -844,9 +878,6 @@ footer {
         background-color: $blanco;
     }
 
-    
-
-
     .container__header header div .logo {
         // width: 100px;
         height: 100px;
@@ -855,7 +886,6 @@ footer {
         align-items: center;
         width: 100%;
     }
-
 
     .container__header header nav {
         display: flex;
@@ -874,13 +904,13 @@ footer {
         justify-content: flex-end;
     }
 
-     nav ul li {
+    nav ul li {
         margin: 0 20px;
         text-decoration: none;
         list-style: none;
     }
 
-    .container__header header nav ul li a{
+    .container__header header nav ul li a {
         color: $color-fondo;
         font-size: 20px;
     }
@@ -897,7 +927,6 @@ footer {
     .menu-icon {
         display: none; /* Ocultar imágenes del menú de navegación */
     }
-
 }
 
 // /* Utility classes for better accessibility */
@@ -909,7 +938,7 @@ footer {
     header {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 0 0 ;
+        padding: 0 0 0;
         margin: auto;
         position: fixed;
         z-index: 1000;
@@ -919,7 +948,6 @@ footer {
         background-color: $blanco;
     }
 
-
     .container__header header div .logo {
         // width: 100px;
         height: 85px;
@@ -928,7 +956,6 @@ footer {
         align-items: center;
         width: 100%;
     }
-
 
     .container__header header nav {
         display: flex;
@@ -942,23 +969,22 @@ footer {
         align-items: center;
     }
 
-    
     nav ul {
         display: flex;
         justify-content: flex-end;
     }
-    
+
     nav ul li {
         margin: 0 20px;
         text-decoration: none;
         list-style: none;
     }
-    
-    .container__header header nav ul li a{
+
+    .container__header header nav ul li a {
         color: $color-fondo;
         font-size: 16px;
     }
-    
+
     .container__header header nav ul li a:hover {
         color: $color-secundario;
         transform: scale(1.2);
@@ -971,5 +997,4 @@ footer {
     .menu-icon {
         display: none; /* Ocultar imágenes del menú de navegación */
     }
-
 }
