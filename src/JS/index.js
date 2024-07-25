@@ -23,13 +23,13 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 // slider 
 
-const btnLeft = document.querySelector(".btn-left") /* creamos variables (constantes) y usamos el queryselector para jugar con los elementos del DOM */
-const btnRight = document.querySelector(".btn-right")
+/* const btnLeft = document.querySelector(".btn-left") */ /* creamos variables (constantes) y usamos el queryselector para jugar con los elementos del DOM */
+/* const btnRight = document.querySelector(".btn-right")
 const slider = document.querySelector("#slider")
-const sliderSection = document.querySelectorAll(".slider-section") /* aqui tenemos 4 elementos con la clase "slider-section entonces usamos queryselectorALl para selec" */
+const sliderSection = document.querySelectorAll(".slider-section") */ /* aqui tenemos 4 elementos con la clase "slider-section entonces usamos queryselectorALl para selec" */
 
-btnLeft.addEventListener("click" , e => moveToLeft()) /* añado eventos de mover a la izquierda y derecha  */
-btnRight.addEventListener("click" , e => moveToRight())
+/* btnLeft.addEventListener("click" , e => moveToLeft()) */ /* añado eventos de mover a la izquierda y derecha  */
+/* btnRight.addEventListener("click" , e => moveToRight())
 
 setInterval(() =>{
     moveToRight()
@@ -71,3 +71,4 @@ function moveToLeft () {
   
 }
 
+ */
