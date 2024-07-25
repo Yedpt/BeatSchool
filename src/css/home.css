@@ -1,165 +1,229 @@
 /*Variables*/
 * {
-    box-sizing: border-box;
-    font-family: 'Work Sans';
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #480859;
+  background-color: #480859;
 }
 
 html {
-    /* me permite deslizar cuando hago clic en los links del menu */
-    scroll-behavior: smooth;
+  /* me permite deslizar cuando hago clic en los links del menu */
+  scroll-behavior: smooth;
 }
 
 .container__instruments {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .drum--guitar,
 .piano--saxophone {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5%;
-    gap: 3%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5%;
+  gap: 3%;
 }
 
 .drum--guitar {
-    background-color: #d936ce;
+  background-color: #d936ce;
 }
 
 .photo {
-    width: 100%;
-    object-fit: cover;
-    aspect-ratio: 1;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
 }
 
 .link--page {
-    width: 50%;
-    padding: 0;
+  width: 50%;
+  padding: 0;
 }
 
 .text--white {
-    color: #ffffff;
-    font-family: 'Itim';
-    font-size: 9vw;
-    text-align: center;
-    width: 40%;
-    text-decoration: none;
-    padding: 0%;
+  color: #ffffff;
+  font-family: "Itim";
+  font-size: 9vw;
+  text-align: center;
+  width: 40%;
+  text-decoration: none;
+  padding: 0%;
 }
 
 .text--pink {
-    color: #d936ce;
-    font-family: 'Itim';
-    font-size: 9vw;
-    text-align: center;
-    margin: 0;
-    width: 40%;
-    text-decoration: none;
-    padding: 0%;
+  color: #d936ce;
+  font-family: "Itim";
+  font-size: 9vw;
+  text-align: center;
+  margin: 0;
+  width: 40%;
+  text-decoration: none;
+  padding: 0%;
 }
 
 footer {
-    width: 100%;
-    padding: 10% 0;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  padding: 10% 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 80%;
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
 }
 
 .left {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5%;
-    width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
 }
 
 .left img {
-    width: 5vw;
+  width: 5vw;
 }
 
 .right {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .right h1 {
-    font-family: 'Itim';
-    color: #d936ce;
-    font-size: 2.5vw;
+  font-family: "Itim";
+  color: #d936ce;
+  font-size: 2.5vw;
+}
+
+.share-container {
+  position: relative;
+  display: inline-block;
+  color: #480859;
+  font-family: "Jua";
+}
+
+#share-icon {
+  cursor: pointer;
+}
+
+.popup {
+  width: 20vw;
+  display: none;
+  position: absolute;
+  left: 10vw;
+  bottom: 6vw;
+  transform: translateX(-50%);
+  background-color: #d936ce;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.popup-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.share-button {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #480859;
+  border-radius: 10px;
+  font-family: "Itim";
+  color: white;
+}
+
+#copy-link {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #ffffff;
+  font-family: "Itim";
+  color: #480859;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#copy-confirmation {
+  margin-top: 10px;
+  color: green;
 }
 
 @media (min-width: 960px) {
-    .container__instruments {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-    }
-    .drum--guitar,
-    .piano--saxophone {
-        flex-direction: column;
-        padding: 0;
-        position: relative;
-    }
-    .link--page {
-        width: 100%;
-        position: relative;
-    }
-    .photo {
-        width: 100%;
-        object-fit: cover;
-        aspect-ratio: 16/6;
-    }
-    .text--white,
-    .text--pink {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        font-size: 10vw;
-        padding: 0;
-        background: none;
-        text-decoration: none;
-        font-family: 'Itim';
-        z-index: 1;
-        color: transparent;
-        transition: color 0.3s ease;
-    }
-    .text--pink:hover,
-    .text--white:hover {
-        color: #ffffff;
-    }
-    footer {
-        padding: 4% 0;
-    }
+  .container__instruments {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .drum--guitar,
+  .piano--saxophone {
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+  }
+  .link--page {
+    width: 100%;
+    position: relative;
+  }
+  .photo {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/6;
+  }
+  .text--white,
+  .text--pink {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 10vw;
+    padding: 0;
+    background: none;
+    text-decoration: none;
+    font-family: "Itim";
+    z-index: 1;
+    color: transparent;
+    transition: color 0.3s ease;
+  }
+  .text--pink:hover,
+  .text--white:hover {
+    color: #ffffff;
+  }
+  footer {
+    padding: 4% 0;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

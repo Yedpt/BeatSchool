@@ -74,7 +74,20 @@
 <footer class="footer">
   <div class="footer__container">
     <div class="footer__container left">
-      <a href="#"><img src="../public/assets/img/redes.png" alt="icono compartir"></a>
+    <div class="share-container">
+    <img src="../public/assets/img/redes.png" alt="icono compartir" id="share-icon">
+    <div id="share-popup" class="popup">
+        <div class="popup-content">
+            <h3>Compartir</h3>
+            <button class="share-button" data-platform="facebook">Facebook</button>
+            <button class="share-button" data-platform="twitter">X Twitter</button>
+            <button class="share-button" data-platform="whatsapp">WhatsApp</button>
+            <button id="copy-link">Copiar Enlace</button>
+            <span id="copy-confirmation" class="hidden">¡Enlace copiado!</span>
+        </div>
+    </div>
+</div>
+
       <a href="www.youtube.com"><img src="../public/assets/img/youtube.png" alt="Logo youtube acceso"></a>
       <a href="www.linkedin.com"><img src="../public/assets/img/linkedin.png" alt="Logo Linkedin acceso"></a>
       <a href="www.facebook.com"><img src="../public/assets/img/facebook.png" alt="Logo Facebook acceso"></a>
@@ -84,6 +97,7 @@
     </div>
   </div>
 </footer>
+<script src="/src/JS/index.js"></script>
 </body>
 
 </html>
