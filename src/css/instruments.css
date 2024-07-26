@@ -11,6 +11,24 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #480859;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.container__header {
+    background-color: #ffffff;
+}
+
+.menu-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+}
+
 /* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
 .container {
     background-color: #480859;
@@ -533,6 +551,7 @@ details[open] summary::before {
     aspect-ratio: 16/9;
 }
 
+/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
 footer {
     width: 100%;
     padding: 10% 0;
