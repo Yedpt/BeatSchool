@@ -118,6 +118,7 @@ footer {
   display: inline-block;
   color: #480859;
   font-family: "Jua";
+  font-size: 2vw;
 }
 
 #share-icon {
@@ -125,10 +126,10 @@ footer {
 }
 
 .popup {
-  width: 20vw;
+  width: 26vw;
   display: none;
   position: absolute;
-  left: 10vw;
+  left: 12.8vw;
   bottom: 6vw;
   transform: translateX(-50%);
   background-color: #d936ce;
@@ -155,6 +156,7 @@ footer {
   border-radius: 10px;
   font-family: "Itim";
   color: white;
+  font-size: 2vw;
 }
 
 #copy-link {
@@ -162,9 +164,11 @@ footer {
   margin: 5px;
   padding: 10px;
   border: none;
+  cursor: pointer;
   background-color: #ffffff;
   font-family: "Itim";
   color: #480859;
+  font-size: 2vw;
   border-radius: 10px;
 }
 
@@ -173,8 +177,10 @@ footer {
 }
 
 #copy-confirmation {
-  margin-top: 10px;
-  color: green;
+  margin-top: 5px;
+  color: #480859;
+  font-family: "Itim";
+  font-size: 2vw;
 }
 
 @media (min-width: 960px) {
