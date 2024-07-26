@@ -65,23 +65,28 @@ Si tienes alguna duda o necesitas más orientación, no dudes en preguntar. ¡Bu
 
 ## Desarrolladores
 
-#### Jose Alfonso Ruiz (Product Owner): Pepe, nuestro director de comunicación, es el carismático vocalista y manager de BeatSchool
+#### Jose Alfonso Ruiz (Product Owner)
+Pepe, nuestro director de comunicación, es el carismático vocalista y manager de BeatSchool
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/josealfonsoruiz/)
 
-#### Yeder Pimentel (Scrum Master): Yeder, nuestro desarrollador principal, es el baterista que mantiene el ritmo en BeatSchool
+#### Yeder Pimentel (Scrum Master)
+Yeder, nuestro desarrollador principal, es el baterista que mantiene el ritmo en BeatSchool
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yeder-pimentel/) 
 
-#### Wilder Alguilar (Equipo de Desarrollo): Ingeniero de software, es el técnico de sonido detrás de cada éxito
+#### Wilder Alguilar (Equipo de Desarrollo)
+Ingeniero de software, es el técnico de sonido detrás de cada éxito
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/wilderaguilar) 
 
-#### Mariela Adimari (Equipo de Desarrollo): Cofundadora y directora musical, es nuestra pianista virtuosa
+#### Mariela Adimari (Equipo de Desarrollo)
+Cofundadora y directora musical, es nuestra pianista virtuosa
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariela-adimari/) 
 
-#### Magaly Lazarte (Equipo de Desarrollo): Nuestra cofundadora y directora creativa, es la guitarrista principal de nuestra banda
+#### Magaly Lazarte (Equipo de Desarrollo)
+Nuestra cofundadora y directora creativa, es la guitarrista principal de nuestra banda
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/magaly-lazarte-91193515a/) 
 
