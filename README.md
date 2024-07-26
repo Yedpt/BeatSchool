@@ -29,7 +29,27 @@ Paso 3: Explora toda nuestra web,pero sobre todo deténte en nuestra batería y 
 ## Imágenes de la Web
 
 
-## Únete a BeatSchool y ayudanos a crecer
+## Colabora con BeatSchool y crece con nosoros
+
+Paso 1: Crea tu rama
+
+```bash
+git checkout -b nombre-de-tu-rama
+```
+
+Paso 2: Vincula los archivos Sass con sus respectivos CSS para ver los cambios. Escribe en la terminal lo siguiente: 
+
+```bash
+Sass watch home.scss home.css
+```
+
+Paso 3: Realiza cambios. Trabaja en las mejoras y correcciones que desees 💪
+
+Paso 4: Cuando hayas terminado, envía una solicitud de extracción desde tu rama a la rama principal (main)
+
+Paso 5: Revisa y comenta, estaremos encantados de revisar tus cammbios y proporcionarte comentarios constructivos
+
+Paso 6: Celebra. Una vez que tu solicitud de extracción sea aceptada, ¡celebra tu contribución al proyecto!
 
 
 ## Desarrolladores
