@@ -13,24 +13,18 @@ Preprocesador Sass
 
 Visual Studio Code
 
-## Instalación del repositorio
 
-Clona
-
-
-### Instalación 🔧
+### Instalación del repositorio
 
 Paso 1: clona el respositorio
 
 ```bash
-# Git clone https://github.com/Yedpt/BeatSchool.git
+Git clone https://github.com/Yedpt/BeatSchool.git
 ```
 
-Paso 2
+Paso 2: Ejecuta el index.html en el navegador
 
-```bash
-# paso 2
-```
+Paso 3: Explora toda nuestra web,pero sobre todo deténte en nuestra batería y aprende y diviértete tocando una batería virtual. Hazlo con el ratón, el teclado o tus dedos en la versión móvil 🚀
 
 ## Imágenes de la Web
 
