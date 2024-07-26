@@ -1,15 +1,11 @@
 @charset "UTF-8";
 * {
-@charset "UTF-8";
-* {
   box-sizing: border-box;
-  font-family: "Itim";
   font-family: "Itim";
   margin: 0;
   padding: 0;
 }
 
-html {
 html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
@@ -21,30 +17,9 @@ body {
 
 body.no-scroll {
   overflow: hidden;
-body {
-  background-color: #480859;
-}
-
-body.no-scroll {
-  overflow: hidden;
 }
 
 .container__header {
-  background-color: #ffffff;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  margin: auto;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #ffffff;
   background-color: #ffffff;
 }
 
@@ -77,20 +52,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70px;
-}
-
-nav {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 10;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .nav-responsive {
@@ -111,28 +72,6 @@ nav.responsive {
 nav.responsive ul {
   display: block !important;
   list-style: none;
-.nav-responsive {
-  display: block;
-  color: #d936ce;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-nav.responsive {
-  display: flex;
-  right: 0;
-  top: 60px;
-  background-color: #480859;
-  width: 100%;
-}
-
-nav.responsive ul {
-  display: block !important;
-  list-style: none;
-}
-
-nav.responsive ul li {
-  padding: 15px 0;
 }
 
 nav.responsive ul li {
