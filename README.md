@@ -20,13 +20,13 @@ Clona
 
 ### Instalación 🔧
 
-Una guía paso a paso sobre cómo configurar el entorno de desarrollo e instalar todas las dependencias.
+Paso 1: clona el respositorio
 
 ```bash
-# paso 1
+# Git clone https://github.com/Yedpt/BeatSchool.git
 ```
 
-Y así sucesivamente...
+Paso 2
 
 ```bash
 # paso 2
