@@ -203,47 +203,13 @@ footer {
   }
   .imgBody {
     content: url(/public/assets/img/en\ const\ desktop.png);
-    margin-top: 0%;
+    margin-top: 7%;
+    margin-left: 7%;
     display: flex;
     justify-content: center;
   }
   footer {
     padding: 4% 0;
-  }
-  footer {
-    width: 100%;
-    padding: 10% 0;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-  }
-  .footer__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 80%;
-    margin: auto;
-  }
-  .left {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5%;
-    width: 100%;
-  }
-  .left img {
-    width: 5vw;
-  }
-  .right {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-  }
-  .right h1 {
-    font-family: "Itim";
-    color: #d936ce;
-    font-size: 2.5vw;
   }
 }
 @media (min-width: 960px) and (max-width: 959px) {
