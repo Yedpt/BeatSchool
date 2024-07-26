@@ -176,6 +176,16 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 3;
+  text-align: center;
+  padding-top: 1vw;
+}
+
+.shorcut-text {
+  background-color: #EDDCFC;
+  padding: 0.2vw 0.4vw 0.2vw 0.4vw;
+  border-radius: 30%;
+  font-weight: bold;
+  opacity: 0.5;
 }
 
 .hi-hat-color {
@@ -275,6 +285,8 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
+  text-align: center;
+  padding-top: 70%;
 }
 
 .crash-color {
