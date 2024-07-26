@@ -114,6 +114,47 @@ nav.responsive ul li{
     margin-top: 15%;
 }
 
+footer {
+    width: 100%;
+    padding: 10% 0;
+    background-color: $blanco;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+  }
+  
+  .left img {
+    width: 5vw;
+  }
+  
+  .right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .right h1 {
+    font-family: $textos;
+    color: $color-secundario;
+    font-size: 2.5vw;
+  }
+
 @media (min-width: 960px) {
 
     header {
@@ -194,14 +235,50 @@ nav.responsive ul li{
     padding: 4% 0;
   }
     
+  footer {
+    width: 100%;
+    padding: 10% 0;
+    background-color: $blanco;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+  }
+  
+  .left img {
+    width: 5vw;
+  }
+  
+  .right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .right h1 {
+    font-family: $textos;
+    color: $color-secundario;
+    font-size: 2.5vw;
+  }
 }
 
-// /* Utility classes for better accessibility */
-// .hidden {
-//     display: none;
-// }
 
-@media (min-width: 632px) and (max-width: 959px) {
+@media (min-width: 960px) and (max-width: 959px) {
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -215,7 +292,6 @@ nav.responsive ul li{
         background-color: $blanco;
     }
 
-
     .container__header header div .logo {
         // width: 100px;
         height: 85px;
@@ -224,7 +300,6 @@ nav.responsive ul li{
         align-items: center;
         width: 100%;
     }
-
 
     .container__header header nav {
         display: flex;
@@ -237,7 +312,6 @@ nav.responsive ul li{
         justify-content: flex-end;
         align-items: center;
     }
-
     
     nav ul {
         display: flex;
@@ -266,5 +340,11 @@ nav.responsive ul li{
 
     .menu-icon {
         display: none; /* Ocultar imágenes del menú de navegación */
+    }
+}
+
+@media  (min-width: 960px){
+    footer {
+        padding: 4% 0;
     }
 }
