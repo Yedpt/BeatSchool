@@ -31,7 +31,7 @@ Git clone https://github.com/Yedpt/BeatSchool.git
 Paso 2: Ejecuta el index.html en el navegador
 
 
-Paso 3: Explora toda nuestra web,pero sobre todo deténte en nuestra batería y aprende y diviértete tocando una batería virtual. Hazlo con el ratón, el teclado o tus dedos en la versión móvil 🚀
+Paso 3: Explora toda nuestra web,pero sobre todo deténte en nuestra batería y aprende y diviértete tocando una batería virtual. Hazlo con el ratón, el teclado o tus dedos en la versión móvil
 
 
 ## 🌅 Imágenes de la Web
