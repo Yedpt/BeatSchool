@@ -179,8 +179,9 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 3;
-    text-align: center;
-    padding-top: 1vw;
+    text-align:right;
+    padding-top: 35%;
+    padding-right: 15%;
 }
 
 .shorcut-text{
@@ -188,7 +189,7 @@ p {
     padding: 0.2vw 0.4vw 0.2vw 0.4vw;
     border-radius: 30%;
     font-weight: bold;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .hi-hat-color {
@@ -324,6 +325,8 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
+    text-align: center;
+    padding-top: 75%;
 }
 
 .ride-color {
@@ -357,6 +360,8 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
+    text-align: center;
+    padding-top: 65%;
 }
 
 .share-color {
@@ -390,6 +395,8 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
+    text-align: center;
+    padding-top: 60%;
 }
 
 .mid-tom-color {
@@ -423,6 +430,8 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
+    text-align: center;
+    padding-top: 60%;
 }
 
 .high-tom-color {
@@ -456,6 +465,8 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
+    text-align: center;
+    padding-top: 60%;
 }
 
 .tom-base-color {
@@ -489,6 +500,8 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
+    text-align: center;
+    padding-top: 80%;
 }
 
 .peda-color-image {
@@ -735,6 +748,10 @@ footer {
         width: 100%;
         padding-top: 5%;
         padding-bottom: 5%;
+    }
+
+    .shorcut-text{
+    display: none;
     }
 }
 
