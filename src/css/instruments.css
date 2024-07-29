@@ -132,8 +132,31 @@ p {
   overflow: hidden;
   background-color: #ffffff;
   transition: all 0.3s ease;
+  position: relative;
 }
 
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .rotate-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: auto;
+    width: 100vw;
+    height: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    visibility: visible;
+    z-index: 1;
+    opacity: 1;
+  }
+  .rotate-message::before {
+    content: "Voltee su dispositivo";
+    font-size: 5vw;
+    color: white;
+  }
+}
 .instrument__container--drum {
   width: 60%;
   background-image: url(/public/assets/img/Bateria/BATERIAFINAL.png);
@@ -180,7 +203,7 @@ p {
 }
 
 .shorcut-text {
-  background-color: #EDDCFC;
+  background-color: #eddcfc;
   padding: 0.2vw 0.4vw 0.2vw 0.4vw;
   border-radius: 30%;
   font-weight: bold;
@@ -562,7 +585,7 @@ button {
 }
 
 .content {
-  display: none; /* Ocultar contenido por defecto */
+  display: none;
 }
 
 .sounds {
