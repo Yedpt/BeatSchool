@@ -1,41 +1,26 @@
-<<<<<<< HEAD
-// Variables
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  /* background-color: violet; */
+  margin: 0;
+  padding: 0;
+}
 
-$color-fondo: #480859;
-$color-secundario: #d936ce;
-$blanco: #ffffff; 
-$textos :  "Itim";
-$titulos :"Jua";
+html {
+  /* me permite deslizar cuando hago clic en los links del menu */
+  scroll-behavior: smooth;
+}
 
-*{
-    box-sizing: border-box;
-    font-family: $textos;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  html{
-    /* me permite deslizar cuando hago clic en los links del menu */
-    scroll-behavior: smooth;
-  }
-
-  body {
-    background-color: $color-fondo;
-  }
-
-  body.no-scroll {
+body.no-scroll {
     overflow: hidden;
-}
+  }
   
-  
-
   .container__header {
-    background-color: $blanco;
-   
-}
-
-header {
+    background-color: #ffffff;
+  }
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,14 +31,14 @@ header {
     top: 0;
     width: 100%;
     height: 60px;
-    background-color: $blanco;
-}
-
-.logo {
+    background-color: #ffffff;
+  }
+  
+  .logo {
     height: 70px;
-}
-
-nav{
+  }
+  
+  nav {
     display: none;
     position: absolute;
     top: 0;
@@ -64,284 +49,361 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.nav-responsive{
+  }
+  
+  .nav-responsive {
     display: block;
-    color: $color-secundario;
+    color: #d936ce;
     padding: 5px 10px;
-     border-radius: 5px;
-//   cursor: pointer; esto cuando es ordenador en la mediaquerie
-}
-nav.responsive{
+    border-radius: 5px;
+  }
+  
+  nav.responsive {
     display: flex;
     right: 0;
     top: 60px;
-    background-color: $color-fondo;
+    background-color: #480859;
     width: 100%;
-}
-nav.responsive ul{
+  }
+  
+  nav.responsive ul {
     display: block !important;
     list-style: none;
-    
-}
-nav.responsive ul li{
+  }
+  
+  nav.responsive ul li {
     padding: 15px 0;
-}
-
-.container__header header nav ul li a {
+  }
+  
+  .container__header header nav ul li a {
     text-align: none;
-    color: $blanco;
-    // margin: 0 15px;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 18px;
     text-decoration: none;
-}
-
-.menu-icon {
+  }
+  
+  .menu-icon {
     width: 48px;
     height: 48px;
     margin-right: 8px;
+  }
+
+.fondoimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 105vw;
+  background-image: url("../../public/assets/img/AboutUS/imgAboutUs.png");
+  background-size: cover;
+  position: relative;
+  margin-top: 20vw;
 }
 
-
-// aqui empiezo el home css
-
-// empezamos con la parte SOBRE NOSOTROS 
-
-
-// empezamos con la parte introduce 
-
-/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
-  
-
-
-@media (min-width: 960px) {
-
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 10% 0 ;
-        margin: auto;
-        position: fixed;
-        z-index: 1000;
-        height: 90px;
-        top: 0;
-        width: 100%;
-        background-color: $blanco;
-    }
-
-    
-
-
-    .container__header header div .logo {
-        // width: 100px;
-        height: 100px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-    }
-
-
-    .container__header header nav {
-        display: flex;
-        position: static; /* Restaura la posición por defecto en pantallas grandes */
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        color: $color-fondo;
-        // flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-     nav ul li {
-        margin: 0 20px;
-        text-decoration: none;
-        list-style: none;
-    }
-
-    .container__header header nav ul li a{
-        color: $color-fondo;
-        font-size: 20px;
-    }
-
-    .container__header header nav ul li a:hover {
-        color: $color-secundario;
-        transform: scale(1.2);
-    }
-
-    .nav-responsive {
-        display: none;
-    }
-
-    .menu-icon {
-        display: none; /* Ocultar imágenes del menú de navegación */
-    }
-
+.aboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50vw;
+  flex-direction: column;
+  font-size: 5.5vw;
+  color: #ffffff;
+  text-align: center;
 }
 
-// /* Utility classes for better accessibility */
-// .hidden {
-//     display: none;
-// }
-
-@media (min-width: 632px) and (max-width: 959px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 0 0 ;
-        margin: auto;
-        position: fixed;
-        z-index: 1000;
-        top: 0;
-        height: 90px;
-        width: 100%;
-        background-color: $blanco;
-    }
-
-
-    .container__header header div .logo {
-        // width: 100px;
-        height: 85px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-    }
-
-
-    .container__header header nav {
-        display: flex;
-        position: static; /* Restaura la posición por defecto en pantallas grandes */
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        color: $color-fondo;
-        // flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    nav ul li {
-        margin: 0 20px;
-        text-decoration: none;
-        list-style: none;
-    }
-    
-    .container__header header nav ul li a{
-        color: $color-fondo;
-        font-size: 16px;
-    }
-    
-    .container__header header nav ul li a:hover {
-        color: $color-secundario;
-        transform: scale(1.2);
-    }
-
-    .nav-responsive {
-        display: none;
-    }
-
-    .menu-icon {
-        display: none; /* Ocultar imágenes del menú de navegación */
-    }
-
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #480859;
+  padding-bottom: 20%;
+  position: relative;
 }
 
-
-
-
-
-/*# sourceMappingURL=style.css.map */
-
-
-
-=======
-/*Variables*/
-
-$color-fondo: #480859;
-$color-secundario: #d936ce;
-$blanco: #ffffff;
-$textos: 'Itim';
-$titulos: 'Jua';
-
-* {
-    box-sizing: border-box;
-    font-family: 'Work Sans';
-    margin: 0;
-    padding: 0;
+.h2section2 {
+  font-size: 13vw;
+  color: #d936ce;
+  font-weight: lighter;
+  display: flex;
 }
 
-body {
-    background-color: #480859;
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 5vw;
 }
 
-html {
-    /* me permite deslizar cuando hago clic en los links del menu */
-    scroll-behavior: smooth;
+.card__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
+.cardMargin {
+  margin-top: 10vw;
+}
+
+.imgCard {
+  margin-top: 3vw;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+figcaption {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Itim";
+  color: #ffffff;
+  font-size: 6vw;
+  text-align: center;
+  margin-top: 4vw;
+}
+
+h2 {
+  font-family: "Jua";
+  font-size: 10vw;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: "Jua";
+  font-size: 10vw;
+  color: #ffffff;
+  font-weight: lighter;
+  text-align: center;
+}
+
+p {
+  font-family: "Itim";
+}
 
 footer {
     width: 100%;
     padding: 10% 0;
-    background-color: $blanco;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
-}
-
-.footer__container {
+  }
+  
+  .footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 80%;
     margin: auto;
-}
-
-.left {
+  }
+  
+  .left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 5%;
     width: 100%;
-}
-
-.left img {
+  }
+  
+  .left img {
     width: 5vw;
-}
-
-.right {
+  }
+  
+  .right {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-}
-
-.right h1 {
-    font-family: $textos;
-    color: $color-secundario;
+  }
+  
+  .right h1 {
+    font-family: "Itim";
+    color: #d936ce;
     font-size: 2.5vw;
-}
-
-@media (min-width: 960px) {
+  }
   
 
-    footer {
+@media (min-width: 960px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10% 0;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        height: 90px;
+        top: 0;
+        width: 100%;
+        background-color: #ffffff;
+      }
+      .container__header header div .logo {
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+      }
+      .container__header header nav {
+        display: flex;
+        position: static; /* Restaura la posición por defecto en pantallas grandes */
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        color: #480859;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      nav ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+      nav ul li {
+        margin: 0 20px;
+        text-decoration: none;
+        list-style: none;
+      }
+      .container__header header nav ul li a {
+        color: #480859;
+        font-size: 20px;
+      }
+      .container__header header nav ul li a:hover {
+        color: #d936ce;
+        transform: scale(1.2);
+      }
+      .nav-responsive {
+        display: none;
+      }
+      .menu-icon {
+        display: none; /* Ocultar imágenes del menú de navegación */
+      }
+
+      footer {
         padding: 4% 0;
-    }
+      }
 }
->>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
+/* y esta seria la segunda media querie  */
+@media (min-width: 632px) and (max-width: 959px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 0;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        height: 90px;
+        width: 100%;
+        background-color: #ffffff;
+      }
+      .container__header header div .logo {
+        height: 85px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+      }
+      .container__header header nav {
+        display: flex;
+        position: static; /* Restaura la posición por defecto en pantallas grandes */
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        color: #480859;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      nav ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+      nav ul li {
+        margin: 0 20px;
+        text-decoration: none;
+        list-style: none;
+      }
+      .container__header header nav ul li a {
+        color: #480859;
+        font-size: 16px;
+      }
+      .container__header header nav ul li a:hover {
+        color: #d936ce;
+        transform: scale(1.2);
+      }
+      .nav-responsive {
+        display: none;
+      }
+      .menu-icon {
+        display: none; /* Ocultar imágenes del menú de navegación */
+      }
+}
+@media (min-width: 800px) {
+  .fondoimg {
+    background-size: cover;
+    height: 40vw;
+    margin-top: 5vw;
+  }
+  .aboutUs {
+    font-size: 2.5vw;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .section2 {
+    height: 75vw;
+    display: flex;
+    position: relative;
+    padding: 0%;
+  }
+  h2 {
+    font-size: 4.5vw;
+  }
+  .h2section2 {
+    font-size: 6vw;
+    margin-top: 3vw;
+    position: relative;
+  }
+  .card {
+    flex-direction: column;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+  }
+  .card__container {
+    width: 100%;
+    display: flex;
+    align-items: normal;
+    flex-direction: row;
+    gap: 3vw;
+    text-align: center;
+  }
+  .cardMargin {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+  }
+  .imgCard {
+    width: 16vw;
+    aspect-ratio: 1;
+    margin-top: 1.5vw;
+  }
+  .figcaption {
+    font-size: 1.4vw;
+    margin-top: 1.3vw;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+  footer {
+    padding: 4% 0;
+  }
+}
+
+/*# sourceMappingURL=aboutus.css.map */
