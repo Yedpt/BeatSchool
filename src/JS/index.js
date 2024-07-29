@@ -41,11 +41,11 @@ document.querySelectorAll('.share-button').forEach((button) => {
 })
 
 document.getElementById('copy-link').addEventListener('click', function () {
-    const url = window.location.href
+    const url = 'www.beatschool.com'
     navigator.clipboard.writeText(url).then(() => {
         const confirmation = document.getElementById('copy-confirmation')
         confirmation.classList.remove('hidden')
-        setTimeout(() => confirmation.classList.add('hidden'), 2000)
+        setTimeout(() => confirmation.classList.add('hidden'), 4000)
         console.log('Enlace copiado')
     })
 })
