@@ -35,7 +35,7 @@ Paso 3: Explora toda nuestra web,pero sobre todo deténte en nuestra batería y 
 
 
 ## 🌅 Imágenes de la Web
-
+![imagenWeb](https://github.com/user-attachments/assets/b1724c32-90dd-42ae-b5e2-cab5224d90f1) 
 
 
 ## 🌐 Colabora con BeatSchool y crece con nosoros
