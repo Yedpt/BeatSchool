@@ -45,106 +45,94 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
+    </div>
 
-        <div class="container">
-            <section class="intro">
-                <h2>Bateria acústica virtual</h2>
-                <p>Aprende a tocar la batería acústica desde tu hogar con nuestra plataforma interactiva totalmente
-                    gratuita, solo necesitas tu ordenador o móvil.
-                    <br> <br>Disfruta y ejecuta beats auténticos sin necesidad de conocimientos avanzados.
-                    <br><br>¡Empieza a expresar tu creatividad musical y da vida a tus ritmos!
-                </p>
-            </section>
+    <div class="container">
 
-            <!-- <section class="acoustic_drum">
-            <div class="drum">
-                <audio src="../public/assets/sounds/hihat.wav" id="hihat-audio"></audio>
-                <div id="hihat1" class="hi-hat-1"></div>
-                <div id="hihat2"></div>
-            </div> -->
+        <section class="intro">
+            <h2>Bateria acústica virtual</h2>
+            <p>Aprende a tocar la batería acústica desde tu hogar con nuestra plataforma interactiva totalmente
+                gratuita, solo necesitas tu ordenador o móvil.
+                <br> <br>Disfruta y ejecuta beats auténticos sin necesidad de conocimientos avanzados.
+                <br><br>¡Empieza a expresar tu creatividad musical y da vida a tus ritmos!
+            </p>
+        </section>
 
-            <section class="instrument__container">
-                <div class="instrument__container--drum"></div>
+        <section class="instrument__container">
+            <div class="instrument__container--drum">
                 <div class="instrument__container--hihat">
-                    <audio src="../public/assets/sounds/hihat.wav"></audio>
-                    <div class="hit-hat-image"></div>
-                    <div class="hit--hat-color"></div>
+                    <audio src="/public/assets/sounds/Hit_hat.wav" id="audio--hihat"></audio>
+                    <div class="container--hithat-cymbal">
+                        <div id="hi_hat_i" class="hi-hat-image"><span class="shorcut-text">R</span></div>
+                        <div id="hi_hat_c"><!--class="hi-hat-color"--></div>
+                    </div>
+                    <div class="container--hithat--pedal-one">
+                        <div id="pedal_h_i" class="pedal-one-image"></div>
+                        <div id="pedal_h_c"><!--class="pedal-color-one"--></div>
+                    </div>
                 </div>
-
-                <div class="instrumentcontainer--hihat">
-                    <audio src="#"></audio>
-                    <div class="hit-hat-image"></div>
-                    <div class="hit--hat-color"></div>
+                <div class="instrument__container--crash">
+                    <audio src="/public/assets/sounds/Crash.mp3" id="audio--crash"></audio>
+                    <div id="crash_i" class="crash-image"><span class="shorcut-text">Y</span></div>
+                    <div id="crash_c"><!--class="crash-color"--> </div>
                 </div>
-
-                <div class="instrumentcontainer--crash">
-                    <audio src="#"></audio>
-                    <div class="crash-image"></div>
-                    <div class="crash-color"></div>
+                <div class="instrument__container--ride">
+                    <audio src="/public/assets/sounds/Ride.mp3" id="audio--ride"></audio>
+                    <div id="ride_i" class="ride-image"></div>
+                    <div id="ride_c" class="ride-color"></div>
                 </div>
-
-                <div class="instrumentcontainer--ride">
-                    <audio src="#"></audio>
-                    <div class="ride-image"></div>
-                    <div class="ride-color"></div>
+                <div class="instrument__container--snare">
+                    <audio src="/public/assets/sounds/Snare-tape.wav" id="audio--snare"></audio>
+                    <div id="snare_i" class="snare-image"></div>
+                    <div id="snare_c"> <!--class="snare-color"--> </div>
                 </div>
-                <div class="instrumentcontainer--snare">
-                    <audio src="#"></audio>
-                    <div class="snare-image"></div>
-                    <div class="share-color"></div>
+                <div class="instrument__container--midtom">
+                    <audio src="/public/assets/sounds/Mid_tomb.mp3" id="audio--midtom"></audio>
+                    <div id="midtom_i" class="mid-tom-image"></div>
+                    <div id="midtom_c"> <!--class="mid-tom-color"--> </div>
                 </div>
-                <div class="instrumentcontainer--midtom">
-                    <audio src="#"></audio>
-                    <div class="midtom-image"></div>
-                    <div class="mid-tom-color"></div>
+                <div class="instrument__container--hightom">
+                    <audio src="/public/assets/sounds/High_tomb.wav" id="audio--hightom"></audio>
+                    <div id="hightom_i" class="high-tom-image"></div>
+                    <div id="hightom_c"> <!--class="high-tom-color"--> </div>
                 </div>
-                <div class="instrumentcontainer--hightom">
-                    <audio src="#"></audio>
-                    <div class="high-tom-image"></div>
-                    <div class="high-tom-color"></div>
+                <div class="instrument__container--tombase">
+                    <audio src="/public/assets/sounds/Tom_base.wav" id="audio--tombase"></audio>
+                    <div id="tombase_i" class="tom-base-image"></div>
+                    <div id="tombase_c"> <!--class="tom-base-color"--> </div>
                 </div>
-                <div class="instrumentcontainer--tombase">
-                    <audio src=".#"></audio>
-                    <div class="tom-base-image"></div>
-                    <div class="tom-base-color"></div>
+                <div class="instrument__container--bassdrum">
+                    <audio src="/public/assets/sounds/bass_drum.mp3" id="audio--bass"></audio>
+                    <div id="pedal_i" class="pedal-image-two"></div>
+                    <div id="pedal_c"> <!--class="pedal-color-two"--></div>
+                    </div>
                 </div>
-                <div class="instrumentcontainer--bassdrum">
-                    <audio src="../public/assets/sounds/openhh.mp3"></audio>
-                    <div class="bass-drum-image"></div>
-                    <div class="bass-drum-color"></div>
-                </div>
-                <div class="drumstick" style="position: absolute; width: 100%; height: 100%">
-                    <span class="left-drumstick"> </span>
-                    <span class="right-drumstick"> </span>
-                </div>
-                <div class="instrumentcontainer--pedal">
-                    <div class="pedal-image"></div>
-                    <div class="pedal-color"></div>
-                </div>
-            </section>
-
-            <!--    <img class="img_drum" src="../public/assets/img/acoustic-drums.png" alt="Acoustic drums">-->
+                <div class="left-drumstick"> </div>
+                <div class="right-drumstick"> </div>
+                <button id="btn-fs" type="btn-fs">
+                    <img class="fs-img" id="max-icon" src="/public/assets/img/maximizar.png" alt="iocono maximizar">
+                </button>
+            </div>
 
             <!--</section>-->
 
             <section class="sounds">
 
-                <h2>Las componentes de nuestra batería son:</h2>
-                <div class="drums_list">
-                    <ul>
-                        <li>Mid Tom</li>
-                        <li>High Tom</li>
-                        <li>Tom Base</li>
-                        <li>Base drum</li>
-                        <li>Snare drum</li>
-                    </ul>
-                    <ul>
-                        <li>Hit Hat</li>
-                        <li>Ride</li>
-                        <li>Crash 1</li>
-                        <li>Crash 2</li>
-                    </ul>
-            </section>
+            <h2>Las componentes de nuestra batería son:</h2>
+            <div class="drums_list">
+                <ul>
+                    <li>Mid Tom</li>
+                    <li>High Tom</li>
+                    <li>Tom Base</li>
+                    <li>Base drum</li>
+                </ul>
+                <ul>
+                    <li>Snare</li>
+                    <li>Hi Hat</li>
+                    <li>Crash</li>
+                    <li>Ride</li>
+                </ul>
+        </section>
 
             <section class="keyboard">
                 <h2>
@@ -157,29 +145,28 @@
                 </div>
 
 
-                <div class="master_keyboard">
-                    <div class="instruction_keyboard">
-                        <details open>
-                            <summary><strong>Funcionamiento platillos</strong></summary>
-                            <p>Presiona:<br>- <strong>A</strong> para el Hit Hat<br>- <strong>A</strong> para el Crash 1
-                                <br> - <strong>A</strong> para el Crash 2<br> - <strong>A</strong> para el Ride
-                            </p>
-                        </details>
-                    </div>
-
-                    <div class="instruction_keyboard">
-                        <details open>
-                            <summary><strong>Funcionamiento bombos </strong></summary>
-                            <p>Presiona:<br> - <strong>A</strong> para el Mid Tom<br> - <strong>A</strong> para el High
-                                Tom
-                                <br> - <strong>A</strong> para el Tom Base<br> - <strong>A</strong> para el Bass Drum
-                                <br> -
-                                <strong>A</strong> para el Snare Drum
-                            </p>
-                        </details>
-                    </div>
+            <div class="master_keyboard">
+                <div class="instruction_keyboard">
+                    <details open>
+                        <summary><strong>Funcionamiento platillos</strong></summary>
+                        <p>Presiona:<br>- <strong>S</strong> para el Snare<br>- <strong>R</strong> para el Hit Hat
+                            <br> - <strong>Y</strong> para el Crash<br> - <strong>U</strong> para el Ride
+                        </p>
+                    </details>
                 </div>
-            </section>
+
+                <div class="instruction_keyboard">
+                    <details open>
+                        <summary><strong>Funcionamiento bombos </strong></summary>
+                        <p>Presiona:<br> - <strong>G</strong> para el Mid Tom<br> - <strong>H</strong> para el High
+                            Tom
+                            <br> - <strong>J</strong> para el Tom Base<br> - <strong>X</strong> para el Bass Drum
+                            <br>
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
 
             <section class="demo">
                 <h2>Demos</h2>

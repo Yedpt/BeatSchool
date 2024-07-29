@@ -94,10 +94,10 @@ nav.responsive ul li {
   margin-right: 8px;
 }
 
-/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
 .container {
   background-color: #480859;
   width: 100%;
+  margin-top: 5%;
 }
 
 h2 {
@@ -122,33 +122,445 @@ p {
 }
 
 .instrument__container {
+  width: 90%;
   display: flex;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
   background-color: #ffffff;
 }
 
-.instrument__container--drum {
+.instrument__container {
   position: relative;
-  width: 90%;
-  height: 1000px;
-  background-image: url("/public/assets/img/BATERIAFINAL.png");
-  background-repeat: no-repeat;
-  object-fit: cover;
-  background-color: aqua;
+  /* Otros estilos que ya tienes */
 }
 
-.hit-hat-image {
-  position: absolute;
-  width: 200px;
-  background-image: url("/public/assets/img/hihat.png");
+.instrument__container--drum {
+  width: 60%;
+  background-image: url(/public/assets/img/Bateria/BATERIAFINAL.png);
+  background-size: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vw;
+  position: relative;
+  z-index: 0;
 }
 
-.hit--hat-color {
+.instrument__container--hihat {
+  width: 15.5vw;
+  height: 30vw;
+  top: 21vw;
   display: flex;
-  background-image: url("/public/assets/img/hithatcolor.png");
+  position: relative;
+}
+
+.container--hithat-cymbal {
+  width: 90%;
+  height: 40%;
+  left: 2.3vw;
+  display: flex;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hi-hat-image {
+  position: absolute;
+  width: 14vw;
+  height: 12.5vw;
+  background-image: url("/public/assets/img/Bateria/hihat.png");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3;
+  text-align: right;
+  padding-top: 35%;
+  padding-right: 15%;
+}
+
+.shorcut-text {
+  background-color: #EDDCFC;
+  padding: 0.2vw 0.4vw 0.2vw 0.4vw;
+  border-radius: 30%;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+.hi-hat-color {
+  position: absolute;
+  width: 13.4vw;
+  height: 12.5vw;
+  background-image: url("/public/assets/img/Bateria/hithatcolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-3px, 3px);
+  }
+  40% {
+    transform: translate(3px, -3px);
+  }
+  60% {
+    transform: translate(-3px, 3px);
+  }
+  80% {
+    transform: translate(3px, -3px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.vibrating {
+  animation: vibrate 0.2s ease-out;
+}
+
+.container--hithat--pedal-one {
+  width: 78%;
+  height: 35%;
+  top: 20.6vw;
+  left: 5.5vw;
+  display: flex;
+  position: relative;
+}
+
+.pedal-one-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/pedal-image-one.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 4;
+}
+
+.pedal-color-one {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/pedal-color-one.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.pedal-color-two {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/pedal-color-two.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--crash {
+  width: 15.5vw;
+  height: 15.5vw;
+  left: 4vw;
+  bottom: 25.554vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.crash-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/crash.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  text-align: center;
+  padding-top: 70%;
+}
+
+.crash-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/crashcolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--ride {
+  width: 15.7vw;
+  height: 15.7vw;
+  display: flex;
+  left: 37.5vw;
+  bottom: 38vw;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ride-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/ride.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  text-align: center;
+  padding-top: 75%;
+}
+
+.ride-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/ridecolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--snare {
+  width: 12.6vw;
+  height: 12.6vw;
+  left: 13.4svw;
+  bottom: 34.7vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.snare-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/snare.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  text-align: center;
+  padding-top: 65%;
+}
+
+.share-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/snarecolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--midtom {
+  width: 11vw;
+  height: 11vw;
+  left: 16.1vw;
+  bottom: 59.4vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mid-tom-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/midtom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  text-align: center;
+  padding-top: 60%;
+}
+
+.mid-tom-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/midtomcolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--hightom {
+  width: 12vw;
+  height: 12vw;
+  bottom: 71vw;
+  left: 28.5vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.high-tom-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/hightom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  text-align: center;
+  padding-top: 60%;
+}
+
+.high-tom-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/hightomcolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--tombase {
+  width: 10.8vw;
+  height: 10.8vw;
+  left: 38vw;
+  bottom: 70.1vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tom-base-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/img/Bateria/tombase.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  text-align: center;
+  padding-top: 63%;
+}
+
+.tom-base-color {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background-image: url("/public/assets/img/Bateria/tombasecolor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.instrument__container--bassdrum {
+  width: 10%;
+  height: 26%;
+  left: 24.2vw;
+  bottom: 77vw;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pedal-image-two {
+  width: 6vw;
+  height: 15vw;
+  position: absolute;
+  background-image: url("/public/assets/img/Bateria/pedal-image-two.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  text-align: center;
+  padding-top: 80%;
+}
+
+.peda-color-image {
+  width: 6vw;
+  height: 15vw;
+  position: absolute;
+  background-image: url("/public/assets/img/Bateria/pedal-color-two.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.left-drumstick {
+  width: 24%;
+  height: 19%;
+  bottom: 82vw;
+  left: 30vw;
+  background-image: url(/public/assets/img/Bateria/drumstick-left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right-drumstick {
+  width: 24%;
+  height: 19%;
+  bottom: 89vw;
+  left: 28vw;
+  background-image: url(/public/assets/img/Bateria/drumstick-left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+button {
+  width: 8%;
+  height: auto;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 1.5vw;
+  left: 66vw;
+  cursor: pointer;
+  padding: 5px;
+  background-color: rgba(203, 155, 247, 0.346);
+}
+
+.fs-img {
+  width: 100%;
+  height: 100%;
 }
 
 .sounds {
@@ -288,7 +700,16 @@ footer {
   font-size: 2.5vw;
 }
 
+@media (min-width: 960px) {
+  footer {
+    padding: 4% 0;
+  }
+}
+
 @media (max-width: 960px) {
+  .container {
+    margin-top: 20%;
+  }
   .acoustic_drum {
     width: 100%;
     height: 90vh;
@@ -314,8 +735,17 @@ footer {
     padding-top: 5%;
     padding-bottom: 5%;
   }
+  .shorcut-text {
+    display: none;
+  }
 }
 @media (min-width: 960px) {
+  .drums_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 0%;
+  }
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -367,12 +797,6 @@ footer {
   }
   .menu-icon {
     display: none; /* Ocultar imágenes del menú de navegación */
-  }
-  .drums_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-left: 0%;
   }
 }
 @media (min-width: 632px) and (max-width: 959px) {
@@ -429,11 +853,112 @@ footer {
     display: none; /* Ocultar imágenes del menú de navegación */
   }
 }
-
-/*Variables*/
 @media (min-width: 960px) {
-  footer {
-    padding: 4% 0;
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10% 0;
+    margin: auto;
+    position: fixed;
+    z-index: 1000;
+    height: 90px;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .container__header header div .logo {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .container__header header nav {
+    display: flex;
+    position: static; /* Restaura la posición por defecto en pantallas grandes */
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: #480859;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul li {
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+  }
+  .container__header header nav ul li a {
+    color: #480859;
+    font-size: 20px;
+  }
+  .container__header header nav ul li a:hover {
+    color: #d936ce;
+    transform: scale(1.2);
+  }
+  .nav-responsive {
+    display: none;
+  }
+  .menu-icon {
+    display: none; /* Ocultar imágenes del menú de navegación */
+  }
+}
+@media (min-width: 632px) and (max-width: 959px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0;
+    margin: auto;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .container__header header div .logo {
+    height: 85px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .container__header header nav {
+    display: flex;
+    position: static; /* Restaura la posición por defecto en pantallas grandes */
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: #480859;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul li {
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+  }
+  .container__header header nav ul li a {
+    color: #480859;
+    font-size: 16px;
+  }
+  .container__header header nav ul li a:hover {
+    color: #d936ce;
+    transform: scale(1.2);
+  }
+  .nav-responsive {
+    display: none;
+  }
+  .menu-icon {
+    display: none; /* Ocultar imágenes del menú de navegación */
   }
 }
 
