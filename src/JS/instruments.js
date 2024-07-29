@@ -239,6 +239,7 @@ document.addEventListener("keypress", function (event) {
         case "KeyR":
             hihatsound();
             hihatimage();
+            pedalimage();
             break;
         case "KeyY":
             crashsound();
