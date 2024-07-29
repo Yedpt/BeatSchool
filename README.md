@@ -39,6 +39,10 @@ Paso 3: Explora toda nuestra web,pero sobre todo deténte en nuestra batería y 
 ### Imágenes Version desktop
 ![imagenWeb](https://github.com/user-attachments/assets/b1724c32-90dd-42ae-b5e2-cab5224d90f1) 
 
+https://github.com/user-attachments/assets/110372bb-f447-4795-b996-beed7c803cc7
+
+
+
 ### Imagenes Version movil
 ![imagenHomeMovil](https://github.com/user-attachments/assets/9be023ed-b6f8-460e-b020-f1e854983302)
 
