@@ -1,107 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instruments</title>
-    <link rel="stylesheet" href="../src/css/instruments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"
+        integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"
+        integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+        crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <title>Instruments</title>
+    <link rel="stylesheet" href="../src/css/instruments.css">
 </head>
 
 <body>
-
-    <!-- <div class="container__header" >
+    <section class="container__header">
         <header>
-                <div>
-                    <a href="#home"><img src="../public/assets/img/logoBeatSchool.png"  class="logo"  alt="logo"></a>
-                </div>
+            <div>
+                <a href="#home"><img src="../public/assets/img/logoBeatSchool.png" class="logo" alt="logo"></a>
+            </div>
+
             <nav id="nav">
                 <ul>
-                    <li><a href="#home" class="nav-link"><img src="../public/assets/img/icono-home.png" alt="home" class="menu-icon">Home</a></li>
-                    <li><a href="#aboutus" class="nav-link"><img src="../public/assets/img/icono-aboutus.png" alt="aboutus" class="menu-icon">Sobre nosotros</a></li>
-                    <li><a href="#instruments" class="nav-link"><img src="../public/assets/img/icono-music.png" alt="instruments" class="menu-icon">Instrumentos</a></li>
-                    <li><a href="pages/contact.html" class="nav-link"><img src="../public/assets/img/icono-contact.png" alt="contact" class="menu-icon">Contacto</a></li>
+                    <li><a href="#home" class="nav-link"><img src="../public/assets/img/icono-home.png" alt="home"
+                                class="menu-icon">Home</a></li>
+                    <li><a href="/pages/aboutUs.html" class="nav-link"><img src="../public/assets/img/icono-aboutus.png"
+                                alt="aboutus" class="menu-icon">Sobre nosotros</a></li>
+                    <li><a href="#instruments" class="nav-link"><img src="../public/assets/img/icono-music.png"
+                                alt="instruments" class="menu-icon">Instrumentos</a></li>
+                    <li><a href="pages/contact.html" class="nav-link"><img src="../public/assets/img/icono-contact.png"
+                                alt="contact" class="menu-icon">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu() ">
                 <i class="fa-solid fa-bars"></i>
             </div>
-        </header>  
-    </div> -->
+        </header>
+    </section>
 
-
-    <!-- FIN NAV -->
-
-    <div class="container">
+    <section class="container">
 
         <section class="intro">
-            <h2>Bateria acústica virtual</h2>
+            <h2>Bateria virtual online</h2>
             <p>Aprende a tocar la batería acústica desde tu hogar con nuestra plataforma interactiva totalmente
                 gratuita, solo necesitas tu ordenador o móvil.
                 <br> <br>Disfruta y ejecuta beats auténticos sin necesidad de conocimientos avanzados.
                 <br><br>¡Empieza a expresar tu creatividad musical y da vida a tus ritmos!
             </p>
-        <!-- </section>
+        </section>
 
-        <section class="acoustic_drum">
-            <div class="drum">
-                <audio src="../public/assets/sounds/hihat.wav" id="hihat-audio"></audio>
-                <div id="hihat1" class="hi-hat-1"></div>
-                <div id="hihat2"></div>
-            </div> -->
-            <!--    <img class="img_drum" src="../public/assets/img/acoustic-drums.png" alt="Acoustic drums">-->
+        <!-- <section class="instrument__container"> -->
+       
         <section id="max--container" class="instrument__container">
+            <div class="rotate-message"></div>
             <div class="instrument__container--drum">
-            <div class="instrument__container--hihat">
-                <audio src="/public/assets/sounds/Hit_hat.wav"></audio>
-                <div class="container--hithat-cymbal">
-                    <div class="hi-hat-image"></div>
-                     <div class="hi-hat-color"></div>
+                <div class="instrument__container--hihat">
+                    <audio src="/public/assets/sounds/Hit_hat.wav" id="audio--hihat"></audio>
+                    <div class="container--hithat-cymbal">
+                        <div id="hi_hat_i" class="hi-hat-image"><span class="shorcut-text">R</span></div>
+                        <div id="hi_hat_c" class="hi-hat-color"></div>
+                    </div>
+                    <div class="container--hithat--pedal-one">
+                        <div id="pedal_h_i" class="pedal-one-image"></div>
+                        <div id="pedal_h_c" class="pedal-color-one"></div>
+                    </div>
                 </div>
-                <div class="container--hithat--pedal-one">
-                    <div class="pedal-one-image"></div>
-                    <div class="pedal-color-one"></div>
+                <div class="instrument__container--crash">
+                    <audio src="/public/assets/sounds/Crash.mp3" id="audio--crash"></audio>
+                    <div id="crash_i" class="crash-image"><span class="shorcut-text">Y</span></div>
+                    <div id="crash_c" class="crash-color"></div>
                 </div>
-            </div>
-            <div class="instrument__container--crash">
-                <audio src="/public/assets/sounds/Crash.mp3"></audio>
-                <div class="crash-image"></div>
-                <div class="crash-color"></div>
-            </div>
-            <div class="instrument__container--ride">
-                <audio src="/public/assets/sounds/Ride.mp3"></audio>
-                <div class="ride-image"></div>
-                <div class="ride-color"></div>
-            </div>
-            <div class="instrument__container--snare">
-                <audio src="/public/assets/sounds/Snare-tape.wav"></audio>
-                <div class="snare-image"></div>
-                <div class="share-color"></div>
-            </div>
-            <div class="instrument__container--midtom">
-                <audio src="/public/assets/sounds/Mid_tomb.mp3"></audio>
-                <div class="mid-tom-image"></div>
-                <div class="mid-tom-color"></div>
-            </div>
-            <div class="instrument__container--hightom">
-                <audio src="/public/assets/sounds/High_tomb.wav"></audio>
-                <div class="high-tom-image"></div>
-                <div class="high-tom-color"></div>
-            </div>
-            <div class="instrument__container--tombase">
-                <audio src="/public/assets/sounds/Tom_base.wav"></audio>
-                <div class="tom-base-image"></div>
-                <div class="tom-base-color"></div>
-            </div>
-            <div class="instrument__container--bassdrum">
-                <audio src="/public/assets/sounds/bass-drum.wav"></audio>
-                <div class="pedal-image-two"></div>
-                <div class="pedal-color-two"> </div>
-            </div>
+                <div class="instrument__container--ride">
+                    <audio src="/public/assets/sounds/Ride.mp3" id="audio--ride"></audio>
+                    <div id="ride_i" class="ride-image"><span class="shorcut-text">U</span></div>
+                    <div id="ride_c" class="ride-color"></div>
+                </div>
+                <div class="instrument__container--snare">
+                    <audio src="/public/assets/sounds/Snare-tape.wav" id="audio--snare"></audio>
+                    <div id="snare_i" class="snare-image"><span class="shorcut-text">S</span></div>
+                    <div id="snare_c" class="snare-color"></div>
+                </div>
+                <div class="instrument__container--midtom">
+                    <audio src="/public/assets/sounds/Mid_tomb.mp3" id="audio--midtom"></audio>
+                    <div id="midtom_i" class="mid-tom-image"><span class="shorcut-text">G</span></div>
+                    <div id="midtom_c" class="mid-tom-color"></div>
+                </div>
+                <div class="instrument__container--hightom">
+                    <audio src="/public/assets/sounds/High_tomb.wav" id="audio--hightom"></audio>
+                    <div id="hightom_i" class="high-tom-image"><span class="shorcut-text">H</span></div>
+                    <div id="hightom_c" class="high-tom-color"> </div>
+                </div>
+                <div class="instrument__container--tombase">
+                    <audio src="/public/assets/sounds/Tom_base.wav" id="audio--tombase"></audio>
+                    <div id="tombase_i" class="tom-base-image"><span class="shorcut-text">J</span></div>
+                    <div id="tombase_c" class="tom-base-color"></div>
+                </div>
+                <div class="instrument__container--bassdrum">
+                    <audio src="/public/assets/sounds/bass_drum.mp3" id="audio--bass"></audio>
+                    <div id="pedal_i" class="pedal-image-two"><span class="shorcut-text">X</span></div>
+                    <div id="pedal_c" class="pedal-color-two"></div>
+                </div>
+            
             <div class="left-drumstick"> </div>
             <div class="right-drumstick"> </div>
             <button id="btn-fs">
@@ -120,13 +129,12 @@
                     <li>High Tom</li>
                     <li>Tom Base</li>
                     <li>Base drum</li>
-                    <li>Snare drum</li>
                 </ul>
                 <ul>
-                    <li>Hit Hat</li>
+                    <li>Snare</li>
+                    <li>Hi Hat</li>
+                    <li>Crash</li>
                     <li>Ride</li>
-                    <li>Crash 1</li>
-                    <li>Crash 2</li>
                 </ul>
         </section>
 
@@ -145,8 +153,8 @@
                 <div class="instruction_keyboard">
                     <details open>
                         <summary><strong>Funcionamiento platillos</strong></summary>
-                        <p>Presiona:<br>- <strong>A</strong> para el Hit Hat<br>- <strong>A</strong> para el Crash 1
-                            <br> - <strong>A</strong> para el Crash 2<br> - <strong>A</strong> para el Ride
+                        <p>Presiona:<br>- <strong>S</strong> para el Snare<br>- <strong>R</strong> para el Hit Hat
+                            <br> - <strong>Y</strong> para el Crash<br> - <strong>U</strong> para el Ride
                         </p>
                     </details>
                 </div>
@@ -154,9 +162,10 @@
                 <div class="instruction_keyboard">
                     <details open>
                         <summary><strong>Funcionamiento bombos </strong></summary>
-                        <p>Presiona:<br> - <strong>A</strong> para el Mid Tom<br> - <strong>A</strong> para el High Tom
-                            <br> - <strong>A</strong> para el Tom Base<br> - <strong>A</strong> para el Bass Drum <br> -
-                            <strong>A</strong> para el Snare Drum
+                        <p>Presiona:<br> - <strong>G</strong> para el Mid Tom<br> - <strong>H</strong> para el High
+                            Tom
+                            <br> - <strong>J</strong> para el Tom Base<br> - <strong>X</strong> para el Bass Drum
+                            <br>
                         </p>
                     </details>
                 </div>
@@ -182,7 +191,7 @@
                 </div>
             </div>
         </section>
-    </div>
+        </div>
 
     <footer class="footer">
         <div class="footer__container">

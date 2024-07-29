@@ -21,6 +21,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
         menuVisible = false;
     });
 });
+
 // slider 
 
 // const btnLeft = document.querySelector(".btn-left") /* creamos variables (constantes) y usamos el queryselector para jugar con los elementos del DOM */
