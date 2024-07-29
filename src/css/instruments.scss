@@ -1,10 +1,11 @@
-// Variables
+//Variables
 
 $color-fondo: #480859;
 $color-secundario: #d936ce;
-$blanco: #ffffff;
-$textos: "Itim";
-$titulos: "Jua";
+$blanco: #ffffff; 
+$textos :  "Itim";
+$titulos :"Jua";
+
 
 * {
     box-sizing: border-box;
@@ -127,19 +128,16 @@ p {
 }
 
 .instrument__container {
-    width: 90%;
+    width: 100%;
+    height: 55vw;
     display: flex;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 15px;
+    overflow: hidden;
     background-color: #ffffff;
-}
-
-.instrument__container {
-    position: relative;
-    /* Otros estilos que ya tienes */
+    transition: all 0.3s ease;
 }
 
 .instrument__container--drum {
@@ -153,17 +151,19 @@ p {
     position: relative;
     z-index: 0;
 }
+
 .instrument__container--hihat {
     width: 15.5vw;
     height: 30vw;
+    left: 4vw;
     top: 21vw;
     display: flex;
     position: relative;
 }
 .container--hithat-cymbal {
-    width: 90%;
+    width: 91%;
     height: 40%;
-    left: 2.3vw;
+    left: 1.5vw;
     display: flex;
     position: absolute;
     justify-content: flex-start;
@@ -232,7 +232,7 @@ p {
     width: 78%;
     height: 35%;
     top: 20.6vw;
-    left: 5.5vw;
+    left: 4.5vw;
     display: flex;
     position: relative;
 }
@@ -273,8 +273,8 @@ p {
 .instrument__container--crash {
     width: 15.5vw;
     height: 15.5vw;
-    left: 4vw;
-    bottom: 25.554vw;
+    left: 6vw;
+    bottom: 24vw;
     display: flex;
     position: relative;
     justify-content: flex-start;
@@ -309,7 +309,7 @@ p {
     width: 15.7vw;
     height: 15.7vw;
     display: flex;
-    left: 37.5vw;
+    left: 40vw;
     bottom: 38vw;
     position: relative;
     justify-content: flex-start;
@@ -343,7 +343,7 @@ p {
 .instrument__container--snare {
     width: 12.6vw;
     height: 12.6vw;
-    left: 13.4svw;
+    left: 15.9svw;
     bottom: 34.7vw;
     display: flex;
     position: relative;
@@ -378,7 +378,7 @@ p {
 .instrument__container--midtom {
     width: 11vw;
     height: 11vw;
-    left: 16.1vw;
+    left: 19.1vw;
     bottom: 59.4vw;
     display: flex;
     position: relative;
@@ -411,10 +411,10 @@ p {
 }
 
 .instrument__container--hightom {
-    width: 12vw;
+    width: 11.2vw;
     height: 12vw;
     bottom: 71vw;
-    left: 28.5vw;
+    left: 31.5vw;
     display: flex;
     position: relative;
     justify-content: flex-start;
@@ -448,7 +448,7 @@ p {
 .instrument__container--tombase {
     width: 10.8vw;
     height: 10.8vw;
-    left: 38vw;
+    left: 41.2vw;
     bottom: 70.1vw;
     display: flex;
     position: relative;
@@ -483,7 +483,7 @@ p {
 .instrument__container--bassdrum {
     width: 10%;
     height: 26%;
-    left: 24.2vw;
+    left: 27.2vw;
     bottom: 77vw;
     display: flex;
     position: relative;
@@ -518,8 +518,8 @@ p {
 .left-drumstick {
     width: 24%;
     height: 19%;
-    bottom: 82vw;
-    left: 30vw;
+    bottom: 80.6vw;
+    left: 33vw;
     background-image: url(/public/assets/img/Bateria/drumstick-left.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -533,9 +533,9 @@ p {
 .right-drumstick {
     width: 24%;
     height: 19%;
-    bottom: 89vw;
-    left: 28vw;
-    background-image: url(/public/assets/img/Bateria/drumstick-left.png);
+    bottom: 92vw;
+    left: 17vw;
+    background-image: url(/public/assets/img/Bateria/drumstrick-right.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -555,8 +555,8 @@ button {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 1.5vw;
-    left: 66vw;
+    bottom: 5.5vw;
+    left: 72vw;
     cursor: pointer;
     padding: 5px;
     background-color: rgba(203, 155, 247, 0.346);
@@ -565,6 +565,10 @@ button {
 .fs-img {
     width: 100%;
     height: 100%;
+}
+
+.content {
+    display: none; /* Ocultar contenido por defecto */
 }
 
 .sounds {

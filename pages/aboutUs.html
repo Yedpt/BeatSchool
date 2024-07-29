@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>conctac</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <title>AboutUs</title>
     <link rel="stylesheet" href="../src/css/aboutus.css">
 </head>
 <body>
     <div class="container__header" >
         <header>
+                <div>
+                    <a href="#home"><img src="../public/assets/img/logoBeatSchool.png"  class="logo"  alt="logo"></a>
+                </div>
            
-               <a href="#home">
-                  <img src="../public/assets/img/logoBeatSchool.png" class="logo" alt="logo">
-                </a>
-           
-           <nav>
+           <nav id="nav">
                 <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#aboutus">Sobre Nosotros </a></li>
-                    <li><a href="#instruments">Instrumentos</a></li>
-                    <li><a href="pages/contact.html">Contacto</a></li>
+                    <li><a href="#home" class="nav-link"><img src="../public/assets/img/icono-home.png" alt="home" class="menu-icon">Home</a></li>
+                    <li><a href="/pages/aboutUs.html" class="nav-link"><img src="../public/assets/img/icono-aboutus.png" alt="aboutus" class="menu-icon">Sobre nosotros</a></li>
+                    <li><a href="#instruments" class="nav-link"><img src="../public/assets/img/icono-music.png" alt="instruments" class="menu-icon">Instrumentos</a></li>
+                    <li><a href="pages/contact.html" class="nav-link"><img src="../public/assets/img/icono-contact.png" alt="contact" class="menu-icon">Contacto</a></li>
                 </ul>
-           </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu() ">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>  
     </div>
 
-    <!-- a partir de aqui comienza el codigo de cada uno (el footer siempre al final) -->
+    <!-- a partir de aqui comienza el codigo de cada uno (el footer siempre al final) comentario para hacer push
+      -->
     
 
      <footer>
@@ -43,4 +53,5 @@
          </div>
      </footer>
 </body>
+
 </html>
