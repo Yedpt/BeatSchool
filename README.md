@@ -36,10 +36,10 @@ Paso 3: Explora toda nuestra web,pero sobre todo deténte en nuestra batería y 
 
 ## 🌅 Imágenes de la Web
 
-### Imágenes Version desktop
+### Imágenes Version desktop `:desktop_computer:`
 ![imagenWeb](https://github.com/user-attachments/assets/b1724c32-90dd-42ae-b5e2-cab5224d90f1)
 
-### Imagenes Version movil
+### Imagenes Version movil `:mobile_phone:`
 ![imagenHomeMovil](https://github.com/user-attachments/assets/9be023ed-b6f8-460e-b020-f1e854983302)
 
 
