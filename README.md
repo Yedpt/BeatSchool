@@ -1,6 +1,5 @@
 # 🎶 BeatSchool 🎶
 ![logobeatscohoolDegrade](https://github.com/user-attachments/assets/50340464-f643-4baf-b7d2-a9080ef5fbf3)
-
 Hola, somos BeatSchool una escuela de música online que ofrece lecciones flexibles con instrumentos virtuales, haciendo la educación musical accesible y asequible. Dirigida a todas las edades y niveles, democratiza el aprendizaje musical. ¡Únete a BeatSchool y descubre una forma emocionante de aprender música!
 
 
