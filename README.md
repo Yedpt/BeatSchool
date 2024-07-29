@@ -79,6 +79,15 @@ Si tienes alguna duda o necesitas más orientación, no dudes en preguntar. ¡Bu
 
 ## ⚡ Desarrolladores
 
+| **Característica 1** | #### Jose Alfonso Ruiz (Product Owner)
+Nuestro director de comunicación, es el carismático vocalista y manager de BeatSchool
+ |
+| **![Logo](https://github.com/user-attachments/assets/16c8e234-a8e1-41a2-a0ad-2dbdf959b2c3)
+** | Descripción de la característica 2 |
+| **Característica 3** | Descripción de la característica 3 |
+| **Característica 4** | Descripción de la característica 4 |
+| **Característica 5** | Descripción de la característica 5 |
+
 #### Jose Alfonso Ruiz (Product Owner)
 Nuestro director de comunicación, es el carismático vocalista y manager de BeatSchool
 
