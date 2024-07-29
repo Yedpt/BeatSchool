@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //         hihat1.classList.add('hi-hat-1')
 //     }, 150)
 // }
+
 const button = document.getElementById('btn-fs')
 const section = document.getElementById('max--container')
 
