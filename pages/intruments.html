@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <div class="container__header">
+    <section class="container__header">
         <header>
             <div>
                 <a href="#home"><img src="../public/assets/img/logoBeatSchool.png" class="logo" alt="logo"></a>
@@ -45,12 +45,12 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
-    </div>
+    </section>
 
-    <div class="container">
+    <section class="container">
 
         <section class="intro">
-            <h2>Bateria acústica virtual</h2>
+            <h2>Bateria virtual online</h2>
             <p>Aprende a tocar la batería acústica desde tu hogar con nuestra plataforma interactiva totalmente
                 gratuita, solo necesitas tu ordenador o móvil.
                 <br> <br>Disfruta y ejecuta beats auténticos sin necesidad de conocimientos avanzados.
@@ -78,40 +78,40 @@
                 </div>
                 <div class="instrument__container--ride">
                     <audio src="/public/assets/sounds/Ride.mp3" id="audio--ride"></audio>
-                    <div id="ride_i" class="ride-image"></div>
+                    <div id="ride_i" class="ride-image"><span class="shorcut-text">U</span></div>
                     <div id="ride_c" class="ride-color"></div>
                 </div>
                 <div class="instrument__container--snare">
                     <audio src="/public/assets/sounds/Snare-tape.wav" id="audio--snare"></audio>
-                    <div id="snare_i" class="snare-image"></div>
+                    <div id="snare_i" class="snare-image"><span class="shorcut-text">S</span></div>
                     <div id="snare_c"> <!--class="snare-color"--> </div>
                 </div>
                 <div class="instrument__container--midtom">
                     <audio src="/public/assets/sounds/Mid_tomb.mp3" id="audio--midtom"></audio>
-                    <div id="midtom_i" class="mid-tom-image"></div>
+                    <div id="midtom_i" class="mid-tom-image"><span class="shorcut-text">G</span></div>
                     <div id="midtom_c"> <!--class="mid-tom-color"--> </div>
                 </div>
                 <div class="instrument__container--hightom">
                     <audio src="/public/assets/sounds/High_tomb.wav" id="audio--hightom"></audio>
-                    <div id="hightom_i" class="high-tom-image"></div>
+                    <div id="hightom_i" class="high-tom-image"><span class="shorcut-text">H</span></div>
                     <div id="hightom_c"> <!--class="high-tom-color"--> </div>
                 </div>
                 <div class="instrument__container--tombase">
                     <audio src="/public/assets/sounds/Tom_base.wav" id="audio--tombase"></audio>
-                    <div id="tombase_i" class="tom-base-image"></div>
+                    <div id="tombase_i" class="tom-base-image"><span class="shorcut-text">J</span></div>
                     <div id="tombase_c"> <!--class="tom-base-color"--> </div>
                 </div>
                 <div class="instrument__container--bassdrum">
                     <audio src="/public/assets/sounds/bass_drum.mp3" id="audio--bass"></audio>
-                    <div id="pedal_i" class="pedal-image-two"></div>
+                    <div id="pedal_i" class="pedal-image-two"><span class="shorcut-text">X</span></div>
                     <div id="pedal_c"> <!--class="pedal-color-two"--></div>
-                    </div>
                 </div>
-                <div class="left-drumstick"> </div>
-                <div class="right-drumstick"> </div>
-                <button id="btn-fs" type="btn-fs">
-                    <img class="fs-img" id="max-icon" src="/public/assets/img/maximizar.png" alt="iocono maximizar">
-                </button>
+            </div>
+            <div class="left-drumstick"> </div>
+            <div class="right-drumstick"> </div>
+            <button id="btn-fs" type="btn-fs">
+                <img class="fs-img" id="max-icon" src="/public/assets/img/maximizar.png" alt="iocono maximizar">
+            </button>
             </div>
 
         </section>
@@ -187,23 +187,25 @@
                 </div>
             </div>
         </section>
-    </div>
-
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__container left">
-                <a href="#"><img src="../public/assets/img/redes.png" alt="icono compartir"></a>
-                <a href="www.youtube.com"><img src="../public/assets/img/youtube.png" alt="Logo youtube acceso"></a>
-                <a href="www.linkedin.com"><img src="../public/assets/img/linkedin.png" alt="Logo Linkedin acceso"></a>
-                <a href="www.facebook.com"><img src="../public/assets/img/facebook.png" alt="Logo Facebook acceso"></a>
-            </div>
-            <div class="footer__containe right">
-                <h1>© 2024 por BeatSchool</h1>
-            </div>
         </div>
-    </footer>
-    <script src="../src/JS/instruments.js"></script>
-    <script src="../src/JS/index.js"></script>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__container left">
+                    <a href="#"><img src="../public/assets/img/redes.png" alt="icono compartir"></a>
+                    <a href="www.youtube.com"><img src="../public/assets/img/youtube.png" alt="Logo youtube acceso"></a>
+                    <a href="www.linkedin.com"><img src="../public/assets/img/linkedin.png"
+                            alt="Logo Linkedin acceso"></a>
+                    <a href="www.facebook.com"><img src="../public/assets/img/facebook.png"
+                            alt="Logo Facebook acceso"></a>
+                </div>
+                <div class="footer__containe right">
+                    <h1>© 2024 por BeatSchool</h1>
+                </div>
+            </div>
+        </footer>
+        <script src="../src/JS/instruments.js"></script>
+        <script src="../src/JS/index.js"></script>
 </body>
 
 </html>
