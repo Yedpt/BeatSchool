@@ -1,120 +1,263 @@
-
-*{
+@charset "UTF-8";
+* {
   box-sizing: border-box;
-  font-family: 'Work Sans';
-  /* background-color: violet; */
+  font-family: "Itim";
+/*Variables*/
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
   margin: 0;
   padding: 0;
 }
 
-html{
+body {
+  background-color: #480859;
+}
+
+html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
 }
 
-section {
-  margin: 10px 0;
+body {
+  background-color: #480859;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 .container__header {
-
-background-color: #dfe2e5;
-color: #fff;
-position: relative;
-width: 100%;
-top: 0;
-left: 0;
-z-index: 99;
+  background-color: #ffffff;
 }
 
-.container__header header {
-max-width: 1100px;
-margin: auto;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 20px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: auto;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
 }
 
 .logo {
-width: 150px; /* Tamaño deseado para la imagen */
-height: auto; /* Altura automática para mantener la proporción */
+  height: 70px;
 }
 
-.container__header header ul {
-display: flex;
-list-style: none;
+nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-responsive {
+  display: block;
+  color: #d936ce;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav.responsive {
+  display: flex;
+  right: 0;
+  top: 60px;
+  background-color: #480859;
+  width: 100%;
+}
+
+nav.responsive ul {
+  display: block !important;
+  list-style: none;
+}
+
+nav.responsive ul li {
+  padding: 15px 0;
 }
 
 .container__header header nav ul li a {
-text-align: none;
-color: #fff;
-margin: 0 15px;
-padding: 3px;
-transition: 0.5s;
-font-size: 28px;
-text-decoration: none;
-}
-.container__header header nav ul li a:hover{
-color: #c7327f;
+  text-align: none;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
 }
 
-.nav-responsive{
-background-color: #1CB698;
-color:#fff;
-padding: 5px 10px;
-border-radius: 5px;
-cursor: pointer;
-display: none;
+.menu-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
 }
 
 /* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
-
-
-
-
-
+@media (min-width: 960px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10% 0;
+    margin: auto;
+    position: fixed;
+    z-index: 1000;
+    height: 90px;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .container__header header div .logo {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .container__header header nav {
+    display: flex;
+    position: static; /* Restaura la posición por defecto en pantallas grandes */
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: #480859;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul li {
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+  }
+  .container__header header nav ul li a {
+    color: #480859;
+    font-size: 20px;
+  }
+  .container__header header nav ul li a:hover {
+    color: #d936ce;
+    transform: scale(1.2);
+  }
+  .nav-responsive {
+    display: none;
+  }
+  .menu-icon {
+    display: none; /* Ocultar imágenes del menú de navegación */
+  }
+}
+@media (min-width: 632px) and (max-width: 959px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0;
+    margin: auto;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .container__header header div .logo {
+    height: 85px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .container__header header nav {
+    display: flex;
+    position: static; /* Restaura la posición por defecto en pantallas grandes */
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: #480859;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul li {
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+  }
+  .container__header header nav ul li a {
+    color: #480859;
+    font-size: 16px;
+  }
+  .container__header header nav ul li a:hover {
+    color: #d936ce;
+    transform: scale(1.2);
+  }
+  .nav-responsive {
+    display: none;
+  }
+  .menu-icon {
+    display: none; /* Ocultar imágenes del menú de navegación */
+  }
+}
 
 
 footer {
-/* text-align: center; */
-padding: 40px 20px;
-box-shadow:inset;
+  width: 100%;
+  padding: 10% 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 
-footer .left {
-text-align: left;
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
 }
 
-footer .right {
-text-align: right;
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
 
+.left img {
+  width: 5vw;
+}
 
-@media screen and (max-width:700px) {
-nav{
-  display: none;
+.right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
-.nav-responsive{
-  display: block;
-}
-nav.responsive{
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 75px;
-  background-color: #252A2E;
-  width: 180px;
-}
-nav.responsive ul{
-  display: block !important;
-}
-nav.responsive ul li{
-  border-bottom: 1px solid #fff;
-  padding: 10px 0;
-}
-}
-@media screen and (max-width:980px) {
 
+.right h1 {
+  font-family: "Itim";
+  color: #d936ce;
+  font-size: 2.5vw;
 }
+
+@media (min-width: 960px) {
+  footer {
+    padding: 4% 0;
+  }
+}
+
+/*# sourceMappingURL=aboutus.css.map */
