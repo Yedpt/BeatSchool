@@ -1,0 +1,461 @@
+$color-fondo: #480859;
+$color-secundario: #d936ce;
+$blanco: #ffffff;
+$textos :  "Itim";
+$titulos :"Jua";
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    /* background-color: violet; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+  }
+
+  body.no-scroll {
+    overflow: hidden;
+}
+  
+  
+
+  .container__header {
+    background-color: $blanco;
+   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: auto;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: $blanco;
+}
+
+.logo {
+    height: 70px;
+}
+
+nav{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-responsive{
+    display: block;
+    color: $color-secundario;
+    padding: 5px 10px;
+     border-radius: 5px;
+//   cursor: pointer; esto cuando es ordenador en la mediaquerie
+}
+nav.responsive{
+    display: flex;
+    right: 0;
+    top: 60px;
+    background-color: $color-fondo;
+    width: 100%;
+}
+nav.responsive ul{
+    display: block !important;
+    list-style: none;
+    
+}
+nav.responsive ul li{
+    padding: 15px 0;
+}
+
+.container__header header nav ul li a {
+    text-align: none;
+    color: $blanco;
+    // margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+}
+
+  .fondoimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 105vw;
+    background-image: url("../../public/assets/img/AboutUS/imgAboutUs.png");
+    background-size: cover;
+    position: relative;
+    margin-top: 20vw;
+  }
+  
+  .aboutUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50vw;
+    flex-direction: column;
+    font-size: 5.5vw;
+    color: $blanco;
+    text-align: center;
+  }
+   
+  .section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #480859;
+    padding-bottom: 20% ;
+    position: relative;
+  }
+
+  .h2section2{
+    font-size: 13vw;
+    color: #d936ce;
+    font-weight: lighter;
+    display: flex;
+  }
+
+  .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 5vw;
+  }
+
+  .card__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cardMargin{
+    margin-top: 10vw;
+  }
+
+  .imgCard{
+    margin-top: 3vw;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  figcaption{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $textos;
+    color: $blanco;
+    font-size: 6vw;
+    text-align: center;
+    margin-top: 4vw;
+  }
+
+  h2{
+    font-family: $titulos;
+    font-size: 10vw;
+    font-weight: lighter;
+  }
+
+  h3{
+    font-family: $titulos;
+    font-size: 10vw;
+    color: $blanco;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  p{
+    font-family: $textos;
+  }
+
+  footer {
+    width: 100%;
+    padding: 10% 0;
+    background-color: $blanco;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+  }
+  
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+  }
+  
+  .left img {
+    width: 5vw;
+  }
+  
+  .right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .right h1 {
+    font-family: $textos;
+    color: $color-secundario;
+    font-size: 2.5vw;
+  }
+
+  @media (min-width: 960px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10% 0 ;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        height: 90px;
+        top: 0;
+        width: 100%;
+        background-color: $blanco;
+    }
+
+    
+
+
+    .container__header header div .logo {
+        // width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .container__header header nav {
+        display: flex;
+        position: static; /* Restaura la posición por defecto en pantallas grandes */
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        color: $color-fondo;
+        // flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+     nav ul li {
+        margin: 0 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .container__header header nav ul li a{
+        color: $color-fondo;
+        font-size: 20px;
+    }
+
+    .container__header header nav ul li a:hover {
+        color: $color-secundario;
+        transform: scale(1.2);
+    }
+
+    .nav-responsive {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none; /* Ocultar imágenes del menú de navegación */
+    }
+
+}
+
+// /* Utility classes for better accessibility */
+// .hidden {
+//     display: none;
+// }
+
+
+/* y esta seria la segunda media querie  */
+
+
+@media (min-width: 632px) and (max-width: 959px) {
+  header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 0 0 ;
+      margin: auto;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      height: 90px;
+      width: 100%;
+      background-color: $blanco;
+  }
+
+
+  .container__header header div .logo {
+      // width: 100px;
+      height: 85px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+  }
+
+
+  .container__header header nav {
+      display: flex;
+      position: static; /* Restaura la posición por defecto en pantallas grandes */
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      color: $color-fondo;
+      // flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+  }
+
+  
+  nav ul {
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  nav ul li {
+      margin: 0 20px;
+      text-decoration: none;
+      list-style: none;
+  }
+  
+  .container__header header nav ul li a{
+      color: $color-fondo;
+      font-size: 16px;
+  }
+  
+  .container__header header nav ul li a:hover {
+      color: $color-secundario;
+      transform: scale(1.2);
+  }
+
+  .nav-responsive {
+      display: none;
+  }
+
+  .menu-icon {
+      display: none; /* Ocultar imágenes del menú de navegación */
+  }
+
+}
+
+  @media (min-width: 800px){
+    
+    .fondoimg{
+      background-size: cover;
+      height: 40vw;
+      margin-top: 5vw;
+    }
+    .aboutUs{
+      font-size: 2.5vw;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    .section2{
+      height:75vw ;
+      display: flex;
+      position: relative;
+      padding: 0%;
+    }
+    h2{
+      font-size: 4.5vw;
+    }
+    .h2section2{
+      font-size: 6vw;
+      margin-top: 3vw;
+      position: relative;
+    }  
+    .card{
+      flex-direction: column;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      margin-top: 0%;
+    }
+    .card__container{
+      width: 100%;
+      display: flex;
+      align-items: normal;
+      flex-direction: row;
+      gap: 3vw;
+      text-align: center;
+    }
+    .cardMargin{
+      margin-top: 4vw;
+      margin-bottom: 4vw;
+    }
+    .imgCard{
+      width: 16vw;
+      aspect-ratio: 1;
+      margin-top: 1.5vw;
+    }
+    .figcaption{
+      font-size: 1.4vw;
+      margin-top: 1.3vw;
+    }
+    h3{
+      font-size: 3vw;
+    }
+
+    footer{
+      padding: 4% 0;
+    }
+  }
+
+
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+
