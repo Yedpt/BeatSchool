@@ -1,26 +1,15 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-  font-family: "Itim";
-/*Variables*/
-* {
-  box-sizing: border-box;
   font-family: "Work Sans";
+  /* background-color: violet; */
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-color: #480859;
 }
 
 html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: #480859;
 }
 
 body.no-scroll {
@@ -102,7 +91,146 @@ nav.responsive ul li {
   margin-right: 8px;
 }
 
-/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
+.fondoimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 105vw;
+  background-image: url("../../public/assets/img/AboutUS/imgAboutUs.png");
+  background-size: cover;
+  position: relative;
+  margin-top: 20vw;
+}
+
+.aboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50vw;
+  flex-direction: column;
+  font-size: 5.5vw;
+  color: #ffffff;
+  text-align: center;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #480859;
+  padding-bottom: 20%;
+  position: relative;
+}
+
+.h2section2 {
+  font-size: 13vw;
+  color: #d936ce;
+  font-weight: lighter;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 5vw;
+}
+
+.card__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cardMargin {
+  margin-top: 10vw;
+}
+
+.imgCard {
+  margin-top: 3vw;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+figcaption {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Itim";
+  color: #ffffff;
+  font-size: 6vw;
+  text-align: center;
+  margin-top: 4vw;
+}
+
+h2 {
+  font-family: "Jua";
+  font-size: 10vw;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: "Jua";
+  font-size: 10vw;
+  color: #ffffff;
+  font-weight: lighter;
+  text-align: center;
+}
+
+p {
+  font-family: "Itim";
+}
+
+footer {
+  width: 100%;
+  padding: 10% 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.left img {
+  width: 5vw;
+}
+
+.right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.right h1 {
+  font-family: "Itim";
+  color: #d936ce;
+  font-size: 2.5vw;
+}
+
 @media (min-width: 960px) {
   header {
     flex-direction: row;
@@ -156,7 +284,11 @@ nav.responsive ul li {
   .menu-icon {
     display: none; /* Ocultar imágenes del menú de navegación */
   }
+  footer {
+    padding: 4% 0;
+  }
 }
+/* y esta seria la segunda media querie  */
 @media (min-width: 632px) and (max-width: 959px) {
   header {
     flex-direction: row;
@@ -211,53 +343,66 @@ nav.responsive ul li {
     display: none; /* Ocultar imágenes del menú de navegación */
   }
 }
-
-
-footer {
-  width: 100%;
-  padding: 10% 0;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  width: 80%;
-  margin: auto;
-}
-
-.left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 5%;
-  width: 100%;
-}
-
-.left img {
-  width: 5vw;
-}
-
-.right {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-.right h1 {
-  font-family: "Itim";
-  color: #d936ce;
-  font-size: 2.5vw;
-}
-
-@media (min-width: 960px) {
+@media (min-width: 800px) {
+  .fondoimg {
+    background-size: cover;
+    height: 40vw;
+    margin-top: 5vw;
+  }
+  .aboutUs {
+    font-size: 2.5vw;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .section2 {
+    height: 75vw;
+    display: flex;
+    position: relative;
+    padding: 0%;
+  }
+  h2 {
+    font-size: 4.5vw;
+  }
+  .h2section2 {
+    font-size: 6vw;
+    margin-top: 3vw;
+    position: relative;
+  }
+  .card {
+    flex-direction: column;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+  }
+  .card__container {
+    width: 100%;
+    display: flex;
+    align-items: normal;
+    flex-direction: row;
+    gap: 3vw;
+    text-align: center;
+  }
+  .cardMargin {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+  }
+  .imgCard {
+    width: 16vw;
+    aspect-ratio: 1;
+    margin-top: 1.5vw;
+  }
+  .figcaption {
+    font-size: 1.4vw;
+    margin-top: 1.3vw;
+  }
+  h3 {
+    font-size: 3vw;
+  }
   footer {
     padding: 4% 0;
   }
 }
+
 
 /*# sourceMappingURL=aboutus.css.map */
