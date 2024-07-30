@@ -61,7 +61,7 @@ Posteriormente instala sass en la terminal escribiendo:
 npm install -g sass
 ```
 
-Ahora que tenemos instalado Sass vamos a hacer que nuestro archivo vamos a establecer un archivo de entrada(scss) y otro de salida(css). Para ello escribe lo siguiente en la termminal. Para ello creamos un archivo .scss con el mismo nombre que nuestro .css. Así estableceremos scss como archivo de entrada y css como archivo de salida. Para ver los cambios en tiempo real, escribe lo siguiente en la pantalla.
+Ahora que tenemos instalado Sass vamos a hacer que nuestro archivo vamos a establecer un archivo de entrada(scss) y otro de salida(css). Para ello escribe lo siguiente en la termminal. Para ello creamos un archivo .scss con el mismo nombre que nuestro .css. Así estableceremos scss como archivo de entrada y css como archivo de salida. Para ver los cambios en tiempo real, escribe lo siguiente en la pantalla
 ```bash
 Sass --watch home.scss home.css
 ```
