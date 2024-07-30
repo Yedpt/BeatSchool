@@ -4,7 +4,7 @@ document.getElementById('share-icon').addEventListener('click', function () {
 })
 
 document.addEventListener('click', function (event) {
-    var popup = document.getElementById('share-popup')
+    let popup = document.getElementById('share-popup')
     if (!popup.contains(event.target) && event.target.id !== 'share-icon') {
         console.log('Cerrando popup')
         popup.style.display = 'none'
