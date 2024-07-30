@@ -53,11 +53,19 @@ git checkout -b nombre-de-tu-rama
 
 
 #### Paso 2: Vincula los archivos Sass con sus respectivos CSS para ver los cambios 
-Escribe en la terminal lo siguiente: 
+
+Para ello primero tendrás que instalar nodejs. Puedes realizar la instalación desde la propia página de node.
+
+Posteriormente instala sass en la terminal escribiendo:
 ```bash
-Sass watch home.scss home.css
+npm install -g sass
 ```
 
+Ahora que tenemos instalado Sass vamos a hacer que nuestro archivo vamos a establecer un archivo de entrada(scss) y otro de salida(css). Para ello escribe lo siguiente en la termminal. Para ello creamos un archivo .scss con el mismo nombre que nuestro .css. Así estableceremos scss como archivo de entrada y css como archivo de salida. Para ver los cambios en tiempo real, escribe lo siguiente en la pantalla.
+```bash
+Sass --watch home.scss home.css
+```
+Una vez hecho esto se nos creará un archivo .css.map
 
 #### Paso 3: Realiza cambios 
 Trabaja en las mejoras y correcciones que desees 
