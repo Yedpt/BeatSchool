@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Function to play the audio
     function playSound(audioElement) {
         audioElement.currentTime = 0; // Rewind to the start
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         hi_hat_c.classList.add('vibrating');
         playSound(audioElements[".instrument__container--hihat"]);
 
-        setTimeout(function() {
+        setTimeout(function () {
             hi_hat_c.classList.remove('vibrating');
             hi_hat_c.classList.remove('hi-hat-color');
             hi_hat_i.classList.add('hi-hat-image');
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let pedal_h_c = document.getElementById('pedal_h_c');
         pedal_h_i.classList.remove('pedal-one-image');
         pedal_h_c.classList.add('pedal-color-one');
-        setTimeout(function() {
+        setTimeout(function () {
             pedal_h_c.classList.remove('pedal-color-one');
             pedal_h_i.classList.add('pedal-one-image');
         }, 150);
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function stickImage() {
         let stick_l = document.getElementById('stick_l');
         stick_l.classList.add('left-drumstick');
-        setTimeout(function() {
+        setTimeout(function () {
             stick_l.classList.remove('left-drumstick');
         }, 150);
     }
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
         crash_c.classList.add('vibrating');
         playSound(audioElements[".instrument__container--crash"]);
 
-        setTimeout(function() {
+        setTimeout(function () {
             crash_c.classList.remove('vibrating');
             crash_c.classList.remove('crash-color');
             crash_i.classList.add('crash-image');
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ride_c.classList.add('vibrating');
         playSound(audioElements[".instrument__container--ride"]);
 
-        setTimeout(function() {
+        setTimeout(function () {
             ride_c.classList.remove('vibrating');
             ride_c.classList.remove('ride-color');
             ride_i.classList.add('ride-image');
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
         snare_c.classList.add('share-color');
         playSound(audioElements[".instrument__container--snare"]);
 
-        setTimeout(function() {
+        setTimeout(function () {
             snare_c.classList.remove('share-color');
             snare_i.classList.add('snare-image');
         }, 150);
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
         midtom_c.classList.add('mid-tom-color');
         playSound(audioElements[".instrument__container--midtom"]);
 
-        setTimeout(function() {
+        setTimeout(function () {
             midtom_c.classList.remove('mid-tom-color');
             midtom_i.classList.add('mid-tom-image');
         }, 150);
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
         hightom_c.classList.add('high-tom-color');
         playSound(audioElements[".instrument__container--hightom"]);
 
-        setTimeout(function() {
+        setTimeout(function () {
             hightom_c.classList.remove('high-tom-color');
             hightom_i.classList.add('high-tom-image');
         }, 150);
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function() {
         tombase_c.classList.add('tom-base-color');
         playSound(audioElements[".instrument__container--tombase"]);
 
-        setTimeout(function() {
+        setTimeout(function () {
             tombase_c.classList.remove('tom-base-color');
             tombase_i.classList.add('tom-base-image');
         }, 150);
@@ -175,15 +175,15 @@ document.addEventListener("DOMContentLoaded", function() {
         pedal_c.classList.add('pedal-color-two');
         playSound(audioElements[".instrument__container--bassdrum"]);
 
-        setTimeout(function() {
+        setTimeout(function () {
             pedal_c.classList.remove('pedal-color-two');
             pedal_i.classList.add('pedal-image-two');
         }, 150);
     }
 
     // Keypress event listener
-    document.addEventListener("keypress", function(event) {
-        switch(event.code) {
+    document.addEventListener("keypress", function (event) {
+        switch (event.code) {
             case "KeyR":
                 hihatimage();
                 pedalimage();
@@ -229,3 +229,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+const positionTicks = (instrument, stick, space = 0) => {
+    const coords = instrument.getBoundingClientRect()
+    // obtengo la coordenada del centro del instrumento
+    const center = coords.width / 2
+
+    // obtengo la distancia respecto al  contenedor padre
+    const posicionTop = instrument.offsetTop;
+    const posicionLeft = instrument.offsetLeft;
+
+    // posiciono el stick
+    stick.style.top = center + posicionTop + "px"
+    stick.style.left = center - space + posicionLeft + "px"
+    stick.style.zIndex = 9
+}
+
+const animateStick = (stick) => {
+    stick.classList.add("left-drumstick")
+    setTimeout(() => {
+        stick.classList.remove("left-drumstick")
+    }, 150);
+}
