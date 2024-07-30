@@ -152,7 +152,7 @@ p {
     opacity: 1;
   }
   .rotate-message::before {
-    content: "Voltee su dispositivo";
+    content: "Voltea tu dispositivo y  toca la batería";
     font-size: 5vw;
     color: white;
   }
@@ -212,7 +212,7 @@ p {
 
 .hi-hat-color {
   position: absolute;
-  width: 13.4vw;
+  width: 14vw;
   height: 12.5vw;
   background-image: url("/public/assets/img/Bateria/hithatcolor.png");
   background-size: contain;
@@ -676,6 +676,14 @@ details[open] summary::before {
   width: 50%;
   display: flex;
   justify-content: center;
+}
+
+.tutorial-guide a {
+  margin-left: 10%;
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2vw;
 }
 
 .video {

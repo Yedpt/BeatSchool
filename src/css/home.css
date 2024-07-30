@@ -1,0 +1,17 @@
+/* Error: expected "{".
+ *     ,
+ * 254 | >>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
+ *     |                                                 ^
+ *     '
+ *   home.scss 254:49  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a     \2577 \a 254 \2502  >>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5\a     \2502                                                  ^\a     \2575 \a   home.scss 254:49  root stylesheet';
+}
