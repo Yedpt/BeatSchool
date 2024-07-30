@@ -66,46 +66,4 @@ function moveToLeft () {
         operacion = operacion - widthVid
         slider.style.transform = `translate(-${operacion}%)`
         slider.style.transition = "all ease .6s"
-    
-  
-}
-})
-
-document.querySelectorAll('.share-button').forEach((button) => {
-    button.addEventListener('click', function () {
-        const platform = this.getAttribute('data-platform')
-        const url = window.location.href
-        let shareUrl = ''
-
-        switch (platform) {
-            case 'facebook':
-                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                    url
-                )}`
-                break
-            case 'twitter':
-                shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
-                    url
-                )}`
-                break
-            case 'whatsapp':
-                shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(
-                    url
-                )}`
-                break
-        }
-
-        console.log(`Abriendo ventana de compartir: ${shareUrl}`)
-        window.open(shareUrl, 'popup', 'width=600,height=400')
-    })
-})
-
-document.getElementById('copy-link').addEventListener('click', function () {
-    const url = 'www.beatschool.com'
-    navigator.clipboard.writeText(url).then(() => {
-        const confirmation = document.getElementById('copy-confirmation')
-        confirmation.classList.remove('hidden')
-        setTimeout(() => confirmation.classList.add('hidden'), 4000)
-        console.log('Enlace copiado')
-    })
 }
