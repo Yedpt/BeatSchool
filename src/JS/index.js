@@ -17,20 +17,22 @@ document.querySelectorAll('.share-button').forEach((button) => {
         const url = window.location.href
         let shareUrl = ''
 
+        const shareUrlBase = 'https://www.BeatSchool.com'
+
         switch (platform) {
             case 'facebook':
                 shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                    url
+                    shareUrlBase
                 )}`
                 break
             case 'twitter':
                 shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
-                    url
+                    shareUrlBase
                 )}`
                 break
             case 'whatsapp':
                 shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(
-                    url
+                    shareUrlBase
                 )}`
                 break
         }
