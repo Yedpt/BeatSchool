@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <title>Contact</title>
-    <link rel="stylesheet" href="../src/css/aboutus.css">
+    <link rel="stylesheet" href="../src/css/contact.css">
 </head>
 <body>
     <div class="container__header" >
@@ -36,7 +35,39 @@
         </header>  
     </div>
     <!-- a partir de aqui comienza el codigo de cada uno (el footer siempre al final) -->
+
+    <section id="contacto" class="wrapper4">
+        <section id="cont" class="contactanos">
+            <h1>Contáctanos</h1>
+            <p>Correo Electrónico: info@beatschool.com  <br>
+              Teléfono: +34 123 456 780</p>
+        </section>
+               
+        <div class="contact-form-container">
+            <h2>Formulario de Contacto</h2>
+            <form id="formulario" action="pagina.php" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <script src="../src/JS/contacto.js"></script>
+   
     <script src="../src/JS/index.js"></script>
 </body>
-
 </html>

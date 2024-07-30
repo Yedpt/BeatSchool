@@ -1,31 +1,16 @@
-<<<<<<< HEAD
 @charset "UTF-8";
 * {
   box-sizing: border-box;
   font-family: "Itim";
-=======
-/*Variables*/
-* {
-  box-sizing: border-box;
-  font-family: "Work Sans";
->>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
   margin: 0;
   padding: 0;
 }
 
-<<<<<<< HEAD
-=======
-body {
-  background-color: #480859;
-}
-
->>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
 html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
 body {
   background-color: #480859;
 }
@@ -109,7 +94,82 @@ nav.responsive ul li {
   margin-right: 8px;
 }
 
-/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
+.contactanos {
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+}
+
+h1 {
+  font-family: "Jua", sans-serif;
+}
+
+h2 {
+  color: white;
+  font-family: "Jua", sans-serif;
+}
+
+p {
+  font-family: "Itim", sans-serif;
+}
+
+.wrapper4 {
+  background-color: #480859;
+  width: 100vw;
+  padding: 40px 20px;
+}
+
+.contact-form-container {
+  background-color: #480859;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+  font-family: "Itim", sans-serif;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #D936CE;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: rgba(252, 253, 254, 0.2705882353);
+  margin-bottom: 10px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #480859;
+  outline: none;
+}
+
+button {
+  background-color: #D936CE;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  font-family: "Itim", sans-serif;
+}
+
+button:hover {
+  background-color: #480859;
+}
+
 @media (min-width: 960px) {
   header {
     flex-direction: row;
@@ -218,55 +278,73 @@ nav.responsive ul li {
     display: none; /* Ocultar imágenes del menú de navegación */
   }
 }
-
-
-=======
-footer {
-  width: 100%;
-  padding: 10% 0;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  width: 80%;
-  margin: auto;
-}
-
-.left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 5%;
-  width: 100%;
-}
-
-.left img {
-  width: 5vw;
-}
-
-.right {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-.right h1 {
-  font-family: "Itim";
-  color: #d936ce;
-  font-size: 2.5vw;
-}
-
-@media (min-width: 960px) {
-  footer {
-    padding: 4% 0;
+@media screen and (max-width: 700px) {
+  .container__header {
+    background-color: #ffffff;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: auto;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+  }
+  .logo {
+    height: 70px;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-responsive {
+    display: block;
+    color: #d936ce;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  nav.responsive {
+    display: flex;
+    right: 0;
+    top: 60px;
+    background-color: #480859;
+    width: 100%;
+  }
+  nav.responsive ul {
+    display: block !important;
+    list-style: none;
+  }
+  nav.responsive ul li {
+    padding: 15px 0;
+  }
+  .container__header header nav ul li a {
+    text-align: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .menu-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
   }
 }
 
->>>>>>> 35608dff99f48b19097cbae61fa008c1ff953dd5
+
 /*# sourceMappingURL=contact.css.map */
