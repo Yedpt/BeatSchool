@@ -1,37 +1,33 @@
-// Variables
+//Variables
 
 $color-fondo: #480859;
 $color-secundario: #d936ce;
-$blanco: #ffffff; 
-$textos :  "Itim";
-$titulos :"Jua";
+$blanco: #ffffff;
+$textos: 'Itim';
+$titulos: 'Jua';
 
-*{
+* {
     box-sizing: border-box;
     font-family: $textos;
     margin: 0;
     padding: 0;
-    
-  }
-  
-  html{
+}
+
+html {
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
-  }
+}
 
-  body {
+body {
     background-color: $color-fondo;
-  }
+}
 
-  body.no-scroll {
+body.no-scroll {
     overflow: hidden;
 }
-  
-  
 
-  .container__header {
+.container__header {
     background-color: $blanco;
-   
 }
 
 header {
@@ -52,7 +48,7 @@ header {
     height: 70px;
 }
 
-nav{
+nav {
     display: none;
     position: absolute;
     top: 0;
@@ -64,26 +60,25 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.nav-responsive{
+.nav-responsive {
     display: block;
     color: $color-secundario;
     padding: 5px 10px;
-     border-radius: 5px;
-//   cursor: pointer; esto cuando es ordenador en la mediaquerie
+    border-radius: 5px;
+    //   cursor: pointer; esto cuando es ordenador en la mediaquerie
 }
-nav.responsive{
+nav.responsive {
     display: flex;
     right: 0;
     top: 60px;
     background-color: $color-fondo;
     width: 100%;
 }
-nav.responsive ul{
+nav.responsive ul {
     display: block !important;
     list-style: none;
-    
 }
-nav.responsive ul li{
+nav.responsive ul li {
     padding: 15px 0;
 }
 
@@ -104,24 +99,848 @@ nav.responsive ul li{
     margin-right: 8px;
 }
 
+.container {
+    background-color: $color-fondo;
+    width: 100%;
+    margin-top: 5%;
+}
 
-// aqui empiezo el home css
+h2 {
+    font-family: $titulos;
+    color: $color-secundario;
+    font-size: 240%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    text-align: center;
+}
 
-// empezamos con la parte SOBRE NOSOTROS 
+p {
+    color: $blanco;
+    font-family: $textos;
+    font-size: 150%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    text-align: center;
+}
 
+.instrument__container {
+    width: 100%;
+    height: 55vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    position: relative;
+}
 
-// empezamos con la parte introduce 
-
-/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
+footer {
+    width: 100%;
+    padding: 10% 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
   
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+  }
+  
+  .left img {
+    width: 5vw;
+  }
+  
+  .right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .right h1 {
+    font-family: "Itim";
+    color: #d936ce;
+    font-size: 2.5vw;
+  }
+  
+  .share-container {
+    position: relative;
+    display: inline-block;
+    color: $color-fondo;
+    font-family: $titulos;
+    font-size: 2vw;
+  }
+  
+  #share-icon {
+    cursor: pointer;
+  }
+  
+  .popup {
+    width: 26vw;
+    display: none;
+    position: absolute;
+    left: 12.8vw;
+    bottom: 6vw;
+    transform: translateX(-50%);
+    background-color: $color-secundario;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .popup-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .share-button {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: $color-fondo;
+    border-radius: 10px;
+    font-family: $textos;
+    color: white;
+    font-size: 2vw;
+  }
+  
+  #copy-link {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: $blanco;
+    font-family: $textos;
+    color: $color-fondo;
+    font-size: 2vw;
+    border-radius: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #copy-confirmation {
+    margin-top: 5px;
+    color: $color-fondo;
+    font-family: $textos;
+    font-size: 2vw;
+  }
 
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .rotate-message {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: auto;
+        width: 100vw;
+        height: 55vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.65);
+        visibility: visible;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .rotate-message::before {
+        content: 'Voltee su dispositivo';
+        font-size: 5vw;
+        color: white;
+    }
+}
+
+.instrument__container--drum {
+    width: 60%;
+    background-image: url(/public/assets/img/Bateria/BATERIAFINAL.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vw;
+    position: relative;
+    z-index: 0;
+}
+
+.instrument__container--hihat {
+    width: 15.5vw;
+    height: 30vw;
+    left: 4vw;
+    top: 21vw;
+    display: flex;
+    position: relative;
+}
+.container--hithat-cymbal {
+    width: 91%;
+    height: 40%;
+    left: 1.5vw;
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hi-hat-image {
+    position: absolute;
+    width: 14vw;
+    height: 12.5vw;
+    background-image: url('/public/assets/img/Bateria/hihat.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+    text-align: right;
+    padding-top: 35%;
+    padding-right: 15%;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+}
+
+.shorcut-text {
+    background-color: #eddcfc;
+    padding: 0.2vw 0.4vw 0.2vw 0.4vw;
+    border-radius: 30%;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.hi-hat-color {
+    position: absolute;
+    width: 13.4vw;
+    height: 12.5vw;
+    background-image: url('/public/assets/img/Bateria/hithatcolor.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+    
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-3px, 3px);
+    }
+    40% {
+        transform: translate(3px, -3px);
+    }
+    60% {
+        transform: translate(-3px, 3px);
+    }
+    80% {
+        transform: translate(3px, -3px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.vibrating {
+    animation: vibrate 0.2s ease-out;
+}
+
+.container--hithat--pedal-one {
+    width: 78%;
+    height: 35%;
+    top: 20.6vw;
+    left: 4.5vw;
+    display: flex;
+    position: relative;
+}
+
+.pedal-one-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/assets/img/Bateria/pedal-image-one.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 4;
+}
+
+.pedal-color-one {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/assets/img/Bateria/pedal-color-one.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.pedal-color-two {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/assets/img/Bateria/pedal-color-two.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.instrument__container--crash {
+    width: 15.5vw;
+    height: 15.5vw;
+    left: 6vw;
+    bottom: 24vw;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.crash-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/assets/img/Bateria/crash.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    text-align: center;
+    padding-top: 70%;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.crash-color {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-image: url('/public/assets/img/Bateria/crashcolor.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.instrument__container--ride {
+    width: 15.7vw;
+    height: 15.7vw;
+    display: flex;
+    left: 40vw;
+    bottom: 38vw;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ride-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/assets/img/Bateria/ride.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    text-align: center;
+    padding-top: 75%;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.ride-color {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-image: url('/public/assets/img/Bateria/ridecolor.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.instrument__container--snare {
+    width: 12.6vw;
+    height: 12.6vw;
+    left: 15.9svw;
+    bottom: 34.7vw;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.snare-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/assets/img/Bateria/snare.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    text-align: center;
+    padding-top: 65%;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.share-color {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-image: url('/public/assets/img/Bateria/snarecolor.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.instrument__container--midtom {
+    width: 11vw;
+    height: 11vw;
+    left: 19.1vw;
+    bottom: 59.4vw;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mid-tom-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/assets/img/Bateria/midtom.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    text-align: center;
+    padding-top: 60%;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.mid-tom-color {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-image: url('/public/assets/img/Bateria/midtomcolor.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.instrument__container--hightom {
+    width: 11.2vw;
+    height: 12vw;
+    bottom: 71vw;
+    left: 31.5vw;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.high-tom-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/assets/img/Bateria/hightom.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    text-align: center;
+    padding-top: 60%;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.high-tom-color {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-image: url('/public/assets/img/Bateria/hightomcolor.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.instrument__container--tombase {
+    width: 10.8vw;
+    height: 10.8vw;
+    left: 41.2vw;
+    bottom: 70.1vw;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tom-base-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/assets/img/Bateria/tombase.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    text-align: center;
+    padding-top: 63%;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.tom-base-color {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-image: url('/public/assets/img/Bateria/tombasecolor.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+
+}
+
+.instrument__container--bassdrum {
+    width: 10%;
+    height: 26%;
+    left: 27.2vw;
+    bottom: 77vw;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pedal-image-two {
+    width: 6vw;
+    height: 15vw;
+    position: absolute;
+    background-image: url('/public/assets/img/Bateria/pedal-image-two.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    text-align: center;
+    padding-top: 80%;
+}
+
+.peda-color-image {
+    width: 6vw;
+    height: 15vw;
+    position: absolute;
+    background-image: url('/public/assets/img/Bateria/pedal-color-two.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.left-drumstick {
+    width: 24%;
+    height: 19%;
+    bottom: 80.6vw;
+    left: 33vw;
+    background-image: url(/public/assets/img/Bateria/drumstick-left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right-drumstick {
+    width: 24%;
+    height: 19%;
+    bottom: 92vw;
+    left: 17vw;
+    background-image: url(/public/assets/img/Bateria/drumstrick-right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+button {
+    width: 8%;
+    height: auto;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5.5vw;
+    left: 72vw;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgba(203, 155, 247, 0.346);
+}
+
+.fs-img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: none;
+}
+
+.sounds {
+    display: flex;
+    flex-direction: column;
+}
+
+.drums_list {
+    color: $blanco;
+    font-size: 150%;
+    padding-left: 35%;
+}
+
+.master_keyboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10%;
+}
+
+.instruction_keyboard {
+    width: 35%;
+}
+
+.keyboard_cont {
+    display: flex;
+    justify-content: center;
+}
+
+.img_keyboard {
+    width: 70%;
+    height: 20%;
+}
+
+details {
+    background-color: $color-secundario;
+    //width: 100%;
+    margin-bottom: 2rem;
+    color: $blanco;
+    position: relative;
+}
+
+details summary {
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 5%;
+}
+details p {
+    padding: 1rem;
+    background: $blanco;
+    color: $color-fondo;
+}
+
+details summary::before {
+    position: absolute;
+    content: '👇';
+    font-size: 1.75rem;
+    top: 10px;
+    right: 0;
+}
+
+details[open] summary::before {
+    -webkit-animation: rotate 0.6s ease-in-out both;
+    animation: rotate-emoji 0.6s ease-in-out both;
+}
+
+@keyframes rotate-emoji {
+    0% {
+        -webkit-transform: rotate(0);
+        //          transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        //          transform: rotate(180deg);
+    }
+}
+
+//DEMOS:
+.demos {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+.demo_1,
+.demo_2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.tutorial-guide a {
+    margin-left: 10%;
+    display: flex;
+    text-decoration: none;
+    color: $blanco;
+    font-size: 2vw;
+}
+
+.video {
+    width: 80%;
+    aspect-ratio: 16/9;
+}
+
+//footer
+footer {
+    width: 100%;
+    padding: 10% 0;
+    background-color: $blanco;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+}
+
+.left img {
+    width: 5vw;
+}
+
+.right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.right h1 {
+    font-family: $textos;
+    color: $color-secundario;
+    font-size: 2.5vw;
+}
 
 @media (min-width: 960px) {
+    footer {
+        padding: 4% 0;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 960px) {
+    .container {
+        margin-top: 20%;
+    }
+
+    .acoustic_drum {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .drum {
+        transform: rotate(90deg);
+        transition: 1s;
+        width: 80vh;
+    }
+
+    .keyboard {
+        display: none;
+    }
+
+    .demos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .demo_1,
+    .demo_2 {
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .shorcut-text {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    .drums_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 0%;
+    }
 
     header {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 10% 0 ;
+        padding: 0 10% 0;
         margin: auto;
         position: fixed;
         z-index: 1000;
@@ -131,9 +950,6 @@ nav.responsive ul li{
         background-color: $blanco;
     }
 
-    
-
-
     .container__header header div .logo {
         // width: 100px;
         height: 100px;
@@ -142,7 +958,6 @@ nav.responsive ul li{
         align-items: center;
         width: 100%;
     }
-
 
     .container__header header nav {
         display: flex;
@@ -161,13 +976,13 @@ nav.responsive ul li{
         justify-content: flex-end;
     }
 
-     nav ul li {
+    nav ul li {
         margin: 0 20px;
         text-decoration: none;
         list-style: none;
     }
 
-    .container__header header nav ul li a{
+    .container__header header nav ul li a {
         color: $color-fondo;
         font-size: 20px;
     }
@@ -184,19 +999,13 @@ nav.responsive ul li{
     .menu-icon {
         display: none; /* Ocultar imágenes del menú de navegación */
     }
-
 }
-
-// /* Utility classes for better accessibility */
-// .hidden {
-//     display: none;
-// }
 
 @media (min-width: 632px) and (max-width: 959px) {
     header {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 0 0 ;
+        padding: 0 0 0;
         margin: auto;
         position: fixed;
         z-index: 1000;
@@ -206,7 +1015,6 @@ nav.responsive ul li{
         background-color: $blanco;
     }
 
-
     .container__header header div .logo {
         // width: 100px;
         height: 85px;
@@ -215,7 +1023,6 @@ nav.responsive ul li{
         align-items: center;
         width: 100%;
     }
-
 
     .container__header header nav {
         display: flex;
@@ -229,23 +1036,22 @@ nav.responsive ul li{
         align-items: center;
     }
 
-    
     nav ul {
         display: flex;
         justify-content: flex-end;
     }
-    
+
     nav ul li {
         margin: 0 20px;
         text-decoration: none;
         list-style: none;
     }
-    
-    .container__header header nav ul li a{
+
+    .container__header header nav ul li a {
         color: $color-fondo;
         font-size: 16px;
     }
-    
+
     .container__header header nav ul li a:hover {
         color: $color-secundario;
         transform: scale(1.2);
@@ -258,14 +1064,145 @@ nav.responsive ul li{
     .menu-icon {
         display: none; /* Ocultar imágenes del menú de navegación */
     }
+}
 
+//MEDIAQUERY NAV
+@media (min-width: 960px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10% 0;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        height: 90px;
+        top: 0;
+        width: 100%;
+        background-color: $blanco;
+    }
+
+    .container__header header div .logo {
+        // width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container__header header nav {
+        display: flex;
+        position: static; /* Restaura la posición por defecto en pantallas grandes */
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        color: $color-fondo;
+        // flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .container__header header nav ul li a {
+        color: $color-fondo;
+        font-size: 20px;
+    }
+
+    .container__header header nav ul li a:hover {
+        color: $color-secundario;
+        transform: scale(1.2);
+    }
+
+    .nav-responsive {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none; /* Ocultar imágenes del menú de navegación */
+    }
+}
+
+// /* Utility classes for better accessibility */
+// .hidden {
+//     display: none;
+// }
+
+@media (min-width: 632px) and (max-width: 959px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 0;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        height: 90px;
+        width: 100%;
+        background-color: $blanco;
+    }
+
+    .container__header header div .logo {
+        // width: 100px;
+        height: 85px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container__header header nav {
+        display: flex;
+        position: static; /* Restaura la posición por defecto en pantallas grandes */
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        color: $color-fondo;
+        // flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .container__header header nav ul li a {
+        color: $color-fondo;
+        font-size: 16px;
+    }
+
+    .container__header header nav ul li a:hover {
+        color: $color-secundario;
+        transform: scale(1.2);
+    }
+
+    .nav-responsive {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none; /* Ocultar imágenes del menú de navegación */
+    }
 }
 
 
-
-
-
-/*# sourceMappingURL=style.css.map */
-
+// aqui empieza el codigo de pepe 
 
 

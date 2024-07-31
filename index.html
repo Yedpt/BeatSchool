@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,17 +17,17 @@
     <link rel="stylesheet" href="src/css/home.css">
 </head>
 <body>
-    <div class="container__header" >
+    <div class="container__header">
         <header>
                 <div>
-                    <a href="#home"><img src="public/assets/img/logoBeatSchool.png"  class="logo"  alt="logo"></a>
+                    <a href="index.html"><img src="public/assets/img/logoBeatSchool.png"  class="logo"  alt="logo"></a>
                 </div>
            
            <nav id="nav">
                 <ul>
                     <li><a href="#home" class="nav-link"><img src="public/assets/img/icono-home.png" alt="home" class="menu-icon">Home</a></li>
                     <li><a href="/pages/aboutUs.html" class="nav-link"><img src="public/assets/img/icono-aboutus.png" alt="aboutus" class="menu-icon">Sobre nosotros</a></li>
-                    <li><a href="#instruments" class="nav-link"><img src="public/assets/img/icono-music.png" alt="instruments" class="menu-icon">Instrumentos</a></li>
+                    <li><a href="/pages/intruments.html" class="nav-link"><img src="public/assets/img/icono-music.png" alt="instruments" class="menu-icon">Instrumentos</a></li>
                     <li><a href="pages/contact.html" class="nav-link"><img src="public/assets/img/icono-contact.png" alt="contact" class="menu-icon">Contacto</a></li>
                 </ul>
             </nav>
@@ -36,6 +37,105 @@
         </header>  
     </div>
 
+
+    
+    <section class="container__home" id="home">
+        <!-- aqui empezamos la parte del home slider  -->
+        
+        <div class="container-carousel">
+            <div class="carruseles" id="slider">
+                <section class="slider-section">
+                    <video src="public/assets/video/bateria.mp4" muted autoplay loop></video>
+                </section>
+                
+                <section class="slider-section">
+                    <video src="public/assets/video/guitarra.mp4" muted autoplay loop></video>
+                </section>
+                
+                <section class="slider-section">
+                    <video src="public/assets/video/piano.mp4" muted autoplay loop></video>
+                </section>
+                
+                <section class="slider-section">
+                    <video src="public/assets/video/saxofon.mp4" muted autoplay loop></video>
+                </section>
+            </div>
+                <div class="btn-left"><</div>
+                <div class="btn-right">></div>
+        </div> 
+
+
+    </section>
+
+<!-- esta seria la parte del sobre nosotros  -->
+
+     <section class="container__aboutus" id="aboutus">
+        <div class="container__section">
+            <h2>Sobre nosotros</h2>
+                <p>BeatSchool es una escuela de música online que ofrece lecciones flexibles con instrumentos virtuales, haciendo la educación musical accesible y asequible. Dirigida a todas las edades y niveles, democratiza el aprendizaje musical. ¡Únete a BeatSchool y descubre una forma emocionante de aprender música!</p>
+        </div>
+    </section>
+     
+     <!-- la barra de texto  -->
+     <section class="container__introduce">
+        <div class="container__section__introduce">
+            <h2>Experimenta con estos instrumentos</h2>
+             <h3>Practica ahora!</h3> 
+        </div>    
+     </section>
+
+
+<!-- la parte de los instrumentos  -->
+<section class="container__instruments" id="instruments">
+  <div class="container__instruments drum--guitar">
+    <a href="/pages/intruments.html" class="drum--guitar link--page"><img class="drum--guitar photo"
+        src="/public/assets/img/bateria.png" alt="Foto batería" /></a>
+    <a href="/pages/intruments.html" class="drum--guitar text--white">Batería
+    </a>
+  </div>
+  <div class="container__instruments piano--saxophone">
+    <a href="/pages/WorkInProgress.html" class="piano--saxophone text--pink">Piano</a>
+    <a href="/pages/WorkInProgress.html" class="piano--saxophone link--page"><img class="piano--saxophone photo"
+        src="/public/assets/img/piano.png" alt="Foto piano" /></a>
+  </div>
+  <div class="container__instruments drum--guitar">
+    <a href="/pages/WorkInProgress.html" class="drum--guitar link--page"><img class="drum--guitar photo"
+        src="/public/assets/img/guitarra.png" alt="Foto guitarra" /> </a>
+    <a href="/pages/WorkInProgress.html" class="drum--guitar text--white">Guitarra</a>
+  </div>
+  <div class="container__instruments piano--saxophone">
+    <a href="/pages/WorkInProgress.html" class="piano--saxophone text--pink">Saxofón</a>
+    <a href="/pages/WorkInProgress.html" class="piano--saxophone link--page"><img class="piano--saxophone photo"
+        src="/public/assets/img/saxofon.png" alt="Foto saxofón" /></a>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__container">
+      <div class="footer__container left">
+      <div class="share-container">
+      <img src="public/assets/img/redes.png" alt="icono compartir" id="share-icon">
+      <div id="share-popup" class="popup">
+          <div class="popup-content">
+              <h3>Compartir</h3>
+              <button class="share-button" data-platform="facebook">Facebook</button>
+              <button class="share-button" data-platform="twitter">X Twitter</button>
+              <button class="share-button" data-platform="whatsapp">WhatsApp</button>
+              <button id="copy-link">Copiar Enlace</button>
+              <span id="copy-confirmation" class="hidden">¡Enlace copiado!</span>
+          </div>
+      </div>
+  </div>
+  
+        <a href="www.youtube.com"><img src="../public/assets/img/youtube.png" alt="Logo youtube acceso"></a>
+        <a href="www.linkedin.com"><img src="../public/assets/img/linkedin.png" alt="Logo Linkedin acceso"></a>
+        <a href="www.facebook.com"><img src="../public/assets/img/facebook.png" alt="Logo Facebook acceso"></a>
+      </div>
+      <div class="footer__containe right">
+        <h1>© 2024 por BeatSchool</h1>
+      </div>
+    </div>
+  </footer>
 
 <script src="src/JS/index.js"></script>
 </body>

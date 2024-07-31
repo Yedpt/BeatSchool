@@ -12,21 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <title>Contact</title>
-    <link rel="stylesheet" href="../src/css/aboutus.css">
+    <link rel="stylesheet" href="../src/css/contact.css">
 </head>
 <body>
     <div class="container__header" >
         <header>
                 <div>
-                    <a href="#home"><img src="../public/assets/img/logoBeatSchool.png"  class="logo"  alt="logo"></a>
+                    <a href="../index.html"><img src="../public/assets/img/logoBeatSchool.png"  class="logo"  alt="logo"></a>
                 </div>
            
            <nav id="nav">
                 <ul>
-                    <li><a href="#home" class="nav-link"><img src="../public/assets/img/icono-home.png" alt="home" class="menu-icon">Home</a></li>
+                    <li><a href="../index.html" class="nav-link"><img src="../public/assets/img/icono-home.png" alt="home" class="menu-icon">Home</a></li>
                     <li><a href="/pages/aboutUs.html" class="nav-link"><img src="../public/assets/img/icono-aboutus.png" alt="aboutus" class="menu-icon">Sobre nosotros</a></li>
-                    <li><a href="#instruments" class="nav-link"><img src="../public/assets/img/icono-music.png" alt="instruments" class="menu-icon">Instrumentos</a></li>
-                    <li><a href="pages/contact.html" class="nav-link"><img src="../public/assets/img/icono-contact.png" alt="contact" class="menu-icon">Contacto</a></li>
+                    <li><a href="/pages/intruments.html" class="nav-link"><img src="../public/assets/img/icono-music.png" alt="instruments" class="menu-icon">Instrumentos</a></li>
+                    <li><a href="/pages/contact.html" class="nav-link"><img src="../public/assets/img/icono-contact.png" alt="contact" class="menu-icon">Contacto</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu() ">
@@ -35,6 +35,67 @@
         </header>  
     </div>
     <!-- a partir de aqui comienza el codigo de cada uno (el footer siempre al final) -->
+
+    <section id="contacto" class="wrapper4">
+        <section id="cont" class="contactanos">
+            <h1>Contáctanos</h1>
+            <p>Correo Electrónico: info@beatschool.com  <br>
+              Teléfono: +34 123 456 780</p>
+        </section>
+               
+        <div class="contact-form-container">
+            <h2>Formulario de Contacto</h2>
+            <form id="formulario" action="pagina.php" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__container left">
+          <div class="share-container">
+          <img src="/public/assets/img/redes.png" alt="icono compartir" id="share-icon">
+          <div id="share-popup" class="popup">
+              <div class="popup-content">
+                  <h3>Compartir</h3>
+                  <button class="share-button" data-platform="facebook">Facebook</button>
+                  <button class="share-button" data-platform="twitter">X Twitter</button>
+                  <button class="share-button" data-platform="whatsapp">WhatsApp</button>
+                  <button id="copy-link">Copiar Enlace</button>
+                  <span id="copy-confirmation" class="hidden">¡Enlace copiado!</span>
+              </div>
+          </div>
+      </div>
+      
+            <a href="www.youtube.com"><img src="../public/assets/img/youtube.png" alt="Logo youtube acceso"></a>
+            <a href="www.linkedin.com"><img src="../public/assets/img/linkedin.png" alt="Logo Linkedin acceso"></a>
+            <a href="www.facebook.com"><img src="../public/assets/img/facebook.png" alt="Logo Facebook acceso"></a>
+          </div>
+          <div class="footer__containe right">
+            <h1>© 2024 por BeatSchool</h1>
+          </div>
+        </div>
+      </footer>
+
+    <script src="../src/JS/contacto.js"></script>
+   <script src="../src/JS/contact.js"></script>
     <script src="../src/JS/index.js"></script>
 </body>
 </html>

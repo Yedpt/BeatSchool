@@ -1,271 +1,643 @@
-// Variables
+@charset "UTF-8";
+
+/*Variables*/
 
 $color-fondo: #480859;
 $color-secundario: #d936ce;
-$blanco: #ffffff; 
-$textos :  "Itim";
-$titulos :"Jua";
+$blanco: #ffffff;
+$textos: 'Itim';
+$titulos: 'Jua';
 
-*{
-    box-sizing: border-box;
-    font-family: $textos;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  html{
-    /* me permite deslizar cuando hago clic en los links del menu */
-    scroll-behavior: smooth;
-  }
-
-  body {
-    background-color: $color-fondo;
-  }
-
-  body.no-scroll {
-    overflow: hidden;
+* {
+  box-sizing: border-box;
+  font-family: "Itim";
+  margin: 0;
+  padding: 0;
 }
-  
-  
 
-  .container__header {
-    background-color: $blanco;
-   
+html {
+  /* me permite deslizar cuando hago clic en los links del menu */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #480859;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.container__header {
+  background-color: #ffffff;
 }
 
 header {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: auto;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.logo {
+  height: 70px;
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-responsive {
+  display: block;
+  color: #d936ce;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav.responsive {
+  display: flex;
+  right: 0;
+  top: 60px;
+  background-color: #480859;
+  width: 100%;
+}
+
+nav.responsive ul {
+  display: block !important;
+  list-style: none;
+}
+
+nav.responsive ul li {
+  padding: 15px 0;
+}
+
+.container__header header nav ul li a {
+  text-align: none;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.menu-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+}
+
+.container__home {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.container-carousel {
+  width: 100%; /* ancho al contenedor principa*/
+  height: 300px; /* altura */
+  overflow: hidden;
+  position: relative;
+  margin-top: 60px;
+}
+
+.slider-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carruseles {
+  width: 400%;
+  height: 100%;
+  display: flex;
+  /* transform: translateX(-25%); */
+}
+
+.slider-section {
+  width: 25%;
+  height: 100%;
+}
+
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5058823529);
+  transform: translate(0, -50%);
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: rgba(51, 51, 51, 0.831372549);
+  color: #fff;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+.container__aboutus {
+  color: #ffffff;
+  padding: 20px 20px;
+}
+
+.container__aboutus .container__section h2 {
+  padding: 20px 20px;
+  text-align: center;
+  font-family: "Jua";
+  font-size: 28px;
+}
+
+.container__aboutus .container__section p {
+  text-align: center;
+  font-family: "Itim";
+  color: #ffffff;
+  margin: auto;
+  padding: 3px;
+  transition: 0.5s;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.container__introduce .container__section__introduce {
+  background-color: #ffffff;
+}
+
+.container__introduce .container__section__introduce h2 {
+  padding: 20px 20px;
+  text-align: center;
+  font-family: "Jua";
+  color: #d936ce;
+  font-size: 28px;
+}
+
+.container__introduce .container__section__introduce h3 {
+  padding: 20px 20px;
+  text-align: center;
+  font-family: "Jua";
+  color: #480859;
+  font-size: 22px;
+}
+
+/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
+.container__instruments {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.drum--guitar,
+.piano--saxophone {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5%;
+  gap: 3%;
+}
+
+.drum--guitar {
+  background-color: #d936ce;
+}
+
+.photo {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.link--page {
+  width: 50%;
+  padding: 0;
+}
+
+.text--white {
+  color: #ffffff;
+  font-family: "Itim";
+  font-size: 9vw;
+  text-align: center;
+  width: 40%;
+  text-decoration: none;
+  padding: 0%;
+}
+
+.text--pink {
+  color: #d936ce;
+  font-family: "Itim";
+  font-size: 9vw;
+  text-align: center;
+  margin: 0;
+  width: 40%;
+  text-decoration: none;
+  padding: 0%;
+}
+
+footer {
+  width: 100%;
+  padding: 10% 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.left img {
+  width: 5vw;
+}
+
+.right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.right h1 {
+  font-family: "Itim";
+  color: #d936ce;
+  font-size: 2.5vw;
+}
+
+.share-container {
+  position: relative;
+  display: inline-block;
+  color: $color-fondo;
+  font-family: $titulos;
+  font-size: 2vw;
+}
+
+#share-icon {
+  cursor: pointer;
+}
+
+.popup {
+  width: 26vw;
+  display: none;
+  position: absolute;
+  left: 12.8vw;
+  bottom: 6vw;
+  transform: translateX(-50%);
+  background-color: $color-secundario;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.popup-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.share-button {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: $color-fondo;
+  border-radius: 10px;
+  font-family: $textos;
+  color: white;
+  font-size: 2vw;
+}
+
+#copy-link {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: $blanco;
+  font-family: $textos;
+  color: $color-fondo;
+  font-size: 2vw;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#copy-confirmation {
+  margin-top: 5px;
+  color: $color-fondo;
+  font-family: $textos;
+  font-size: 2vw;
+}
+
+@media (min-width: 960px) {
+  header {
+    flex-direction: row;
     justify-content: space-between;
+    padding: 0 10% 0;
+    margin: auto;
+    position: fixed;
+    z-index: 1000;
+    height: 90px;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .container__header header div .logo {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    padding: 10px 20px;
+    width: 100%;
+  }
+  .container__header header nav {
+    display: flex;
+    position: static; /* Restaura la posición por defecto en pantallas grandes */
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: #480859;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul li {
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+  }
+  .container__header header nav ul li a {
+    color: #480859;
+    font-size: 20px;
+  }
+  .container__header header nav ul li a:hover {
+    color: #d936ce;
+    transform: scale(1.2);
+  }
+  .nav-responsive {
+    display: none;
+  }
+  .menu-icon {
+    display: none; /* Ocultar imágenes del menú de navegación */
+  }
+  .container__section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .container-carousel {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: 90px;
+  }
+  .btn-left, .btn-right {
+    font-size: 3rem;
+    padding: 15px;
+  }
+  .slider-section video {
+    height: auto; /* Asegura que los videos mantengan su relación de aspecto */
+    display: block;
+  }
+  .container__aboutus {
+    width: 100%;
+    height: 50%;
+    padding: 0 10% 0;
+  }
+  .container__aboutus .container__section h2 {
+    padding: 30px 0 0;
+    text-align: center;
+    font-family: "Jua";
+    font-size: 40px;
+  }
+  .container__aboutus .container__section p {
+    text-align: center;
+    font-family: "Itim";
+    color: #ffffff;
+    margin: auto;
+    padding: 35px;
+    transition: 0.5s;
+    font-size: 28px;
+    text-decoration: none;
+    line-height: normal;
+  }
+  .container__introduce .container__section__introduce h2 {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    font-family: "Jua";
+    color: #d936ce;
+    font-size: 38px;
+  }
+  .container__introduce h2, .container__introduce h3 {
+    text-align: center;
+  }
+  .container__introduce .container__section__introduce h3 {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    font-family: "Jua";
+    color: #480859;
+    font-size: 28px;
+  }
+  .container__instruments {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .drum--guitar,
+  .piano--saxophone {
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+  }
+  .link--page {
+    width: 100%;
+    position: relative;
+  }
+  .photo {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/6;
+  }
+  .text--white,
+  .text--pink {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 10vw;
+    padding: 0;
+    background: none;
+    text-decoration: none;
+    font-family: "Itim";
+    z-index: 1;
+    color: transparent;
+    transition: color 0.3s ease;
+  }
+  .text--pink:hover,
+  .text--white:hover {
+    color: #ffffff;
+  }
+  footer {
+    padding: 4% 0;
+  }
+}
+@media (min-width: 632px) and (max-width: 959px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0;
     margin: auto;
     position: fixed;
     z-index: 1000;
     top: 0;
+    height: 90px;
     width: 100%;
-    height: 60px;
-    background-color: $blanco;
-}
-
-.logo {
-    height: 70px;
-}
-
-nav{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 10;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.nav-responsive{
-    display: block;
-    color: $color-secundario;
-    padding: 5px 10px;
-     border-radius: 5px;
-//   cursor: pointer; esto cuando es ordenador en la mediaquerie
-}
-nav.responsive{
+    background-color: #ffffff;
+  }
+  .container__header header div .logo {
+    height: 85px;
     display: flex;
-    right: 0;
-    top: 60px;
-    background-color: $color-fondo;
-    width: 100%;
-}
-nav.responsive ul{
-    display: block !important;
-    list-style: none;
-    
-}
-nav.responsive ul li{
-    padding: 15px 0;
-}
-
-.container__header header nav ul li a {
-    text-align: none;
-    color: $blanco;
-    // margin: 0 15px;
-    display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    font-size: 18px;
+    width: 100%;
+  }
+  .container__header header nav {
+    display: flex;
+    position: static; /* Restaura la posición por defecto en pantallas grandes */
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: #480859;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul li {
+    margin: 0 20px;
     text-decoration: none;
-}
-
-.menu-icon {
-    width: 48px;
-    height: 48px;
-    margin-right: 8px;
-}
-
-
-// aqui empiezo el home css
-
-// empezamos con la parte SOBRE NOSOTROS 
-
-
-// empezamos con la parte introduce 
-
-/* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
-  
-
-
-@media (min-width: 960px) {
-
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 10% 0 ;
-        margin: auto;
-        position: fixed;
-        z-index: 1000;
-        height: 90px;
-        top: 0;
-        width: 100%;
-        background-color: $blanco;
-    }
-
-    
-
-
-    .container__header header div .logo {
-        // width: 100px;
-        height: 100px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-    }
-
-
-    .container__header header nav {
-        display: flex;
-        position: static; /* Restaura la posición por defecto en pantallas grandes */
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        color: $color-fondo;
-        // flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-     nav ul li {
-        margin: 0 20px;
-        text-decoration: none;
-        list-style: none;
-    }
-
-    .container__header header nav ul li a{
-        color: $color-fondo;
-        font-size: 20px;
-    }
-
-    .container__header header nav ul li a:hover {
-        color: $color-secundario;
-        transform: scale(1.2);
-    }
-
-    .nav-responsive {
-        display: none;
-    }
-
-    .menu-icon {
-        display: none; /* Ocultar imágenes del menú de navegación */
-    }
-
-}
-
-// /* Utility classes for better accessibility */
-// .hidden {
-//     display: none;
-// }
-
-@media (min-width: 632px) and (max-width: 959px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 0 0 ;
-        margin: auto;
-        position: fixed;
-        z-index: 1000;
-        top: 0;
-        height: 90px;
-        width: 100%;
-        background-color: $blanco;
-    }
-
-
-    .container__header header div .logo {
-        // width: 100px;
-        height: 85px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-    }
-
-
-    .container__header header nav {
-        display: flex;
-        position: static; /* Restaura la posición por defecto en pantallas grandes */
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        color: $color-fondo;
-        // flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    nav ul li {
-        margin: 0 20px;
-        text-decoration: none;
-        list-style: none;
-    }
-    
-    .container__header header nav ul li a{
-        color: $color-fondo;
-        font-size: 16px;
-    }
-    
-    .container__header header nav ul li a:hover {
-        color: $color-secundario;
-        transform: scale(1.2);
-    }
-
-    .nav-responsive {
-        display: none;
-    }
-
-    .menu-icon {
-        display: none; /* Ocultar imágenes del menú de navegación */
-    }
-
+    list-style: none;
+  }
+  .container__header header nav ul li a {
+    color: #480859;
+    font-size: 16px;
+  }
+  .container__header header nav ul li a:hover {
+    color: #d936ce;
+    transform: scale(1.2);
+  }
+  .nav-responsive {
+    display: none;
+  }
+  .menu-icon {
+    display: none; /* Ocultar imágenes del menú de navegación */
+  }
+  .container__section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .container-carousel {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: 90px;
+  }
+  .btn-left, .btn-right {
+    font-size: 3rem;
+    padding: 15px;
+  }
+  .container__introduce h2, .container__introduce h3 {
+    text-align: center;
+  }
+  .slider-section video {
+    height: auto; /* Asegura que los videos mantengan su relación de aspecto */
+  }
+  .container__aboutus {
+    width: 100%;
+    height: 50%;
+    padding: 0 10% 0;
+  }
+  .container__aboutus .container__section h2 {
+    padding: 30px 0 0;
+    text-align: center;
+    font-family: "Jua";
+    font-size: 40px;
+  }
+  .container__aboutus .container__section p {
+    text-align: center;
+    font-family: "Itim";
+    color: #ffffff;
+    margin: auto;
+    padding: 35px;
+    transition: 0.5s;
+    font-size: 28px;
+    text-decoration: none;
+    line-height: normal;
+  }
 }
 
 
-
-
-
-/*# sourceMappingURL=style.css.map */
-
-
-
+/*# sourceMappingURL=home.css.map */

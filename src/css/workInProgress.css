@@ -94,6 +94,127 @@ nav.responsive ul li {
   margin-right: 8px;
 }
 
+.sectionBody {
+  display: flex;
+  background-color: #ffffff;
+}
+
+.imgBody {
+  width: 100%;
+  margin-top: 15%;
+}
+
+footer {
+  width: 100%;
+  padding: 10% 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.left img {
+  width: 5vw;
+}
+
+.right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.right h1 {
+  font-family: "Itim";
+  color: #d936ce;
+  font-size: 2.5vw;
+}
+
+.share-container {
+  position: relative;
+  display: inline-block;
+  color: #480859;
+  font-family: "Jua";
+  font-size: 2vw;
+}
+
+#share-icon {
+  cursor: pointer;
+}
+
+.popup {
+  width: 26vw;
+  display: none;
+  position: absolute;
+  left: 12.8vw;
+  bottom: 6vw;
+  transform: translateX(-50%);
+  background-color: #d936ce;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.popup-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.share-button {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #480859;
+  border-radius: 10px;
+  font-family: "Itim";
+  color: white;
+  font-size: 2vw;
+}
+
+#copy-link {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-family: "Itim";
+  color: #480859;
+  font-size: 2vw;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#copy-confirmation {
+  margin-top: 5px;
+  color: #480859;
+  font-family: "Itim";
+  font-size: 2vw;
+}
+
 /* desde aqui empiecen su csss de sus respectivos archivos (todo lo del footer tiene que ir al final antes de las media queries) */
 @media (min-width: 960px) {
   header {
@@ -147,6 +268,19 @@ nav.responsive ul li {
   }
   .menu-icon {
     display: none; /* Ocultar imágenes del menú de navegación */
+  }
+  .sectionBody {
+    justify-content: center;
+  }
+  .imgBody {
+    content: url(/public/assets/img/workInProgress.png);
+    margin-top: 7%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: center;
+  }
+  footer {
+    padding: 4% 0;
   }
 }
 @media (min-width: 632px) and (max-width: 959px) {

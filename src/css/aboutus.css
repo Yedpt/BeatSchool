@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Variables*/
 * {
   box-sizing: border-box;
   font-family: "Work Sans";
@@ -204,6 +205,7 @@ footer {
   align-items: center;
   flex-direction: row;
   width: 80%;
+  margin: auto;
 }
 
 .left {
@@ -228,6 +230,76 @@ footer {
   font-family: "Itim";
   color: #d936ce;
   font-size: 2.5vw;
+}
+
+.share-container {
+  position: relative;
+  display: inline-block;
+  color: #480859;
+  font-family: "Jua";
+  font-size: 2vw;
+}
+
+#share-icon {
+  cursor: pointer;
+}
+
+.popup {
+  width: 26vw;
+  display: none;
+  position: absolute;
+  left: 12.8vw;
+  bottom: 6vw;
+  transform: translateX(-50%);
+  background-color: #d936ce;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.popup-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.share-button {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #480859;
+  border-radius: 10px;
+  font-family: "Itim";
+  color: white;
+  font-size: 2vw;
+}
+
+#copy-link {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-family: "Itim";
+  color: #480859;
+  font-size: 2vw;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#copy-confirmation {
+  margin-top: 5px;
+  color: #480859;
+  font-family: "Itim";
+  font-size: 2vw;
 }
 
 @media (min-width: 960px) {
@@ -282,6 +354,9 @@ footer {
   }
   .menu-icon {
     display: none; /* Ocultar imágenes del menú de navegación */
+  }
+  footer {
+    padding: 4% 0;
   }
 }
 /* y esta seria la segunda media querie  */
