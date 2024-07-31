@@ -97,17 +97,11 @@ nav.responsive ul li {
 .sectionBody {
   display: flex;
   background-color: #ffffff;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
-  height: 100vh; /* Asegura que la sección ocupe toda la altura de la pantalla */
-  overflow: hidden; /* Evita que el contenido se desborde */
 }
 
 .imgBody {
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-  object-fit: contain; /* Mantiene la relación de aspecto de la imagen */
+  width: 100%;
+  margin-top: 15%;
 }
 
 footer {
@@ -277,13 +271,12 @@ footer {
   }
   .sectionBody {
     justify-content: center;
-    width: 100%;
   }
   .imgBody {
+    content: url(/public/assets/img/workInProgress.png);
     margin-top: 7%;
     margin-left: 7%;
     display: flex;
-    width: 100%;
     justify-content: center;
   }
   footer {
