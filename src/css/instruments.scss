@@ -140,6 +140,117 @@ p {
     position: relative;
 }
 
+footer {
+    width: 100%;
+    padding: 10% 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+  }
+  
+  .left img {
+    width: 5vw;
+  }
+  
+  .right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .right h1 {
+    font-family: "Itim";
+    color: #d936ce;
+    font-size: 2.5vw;
+  }
+  
+  .share-container {
+    position: relative;
+    display: inline-block;
+    color: $color-fondo;
+    font-family: $titulos;
+    font-size: 2vw;
+  }
+  
+  #share-icon {
+    cursor: pointer;
+  }
+  
+  .popup {
+    width: 26vw;
+    display: none;
+    position: absolute;
+    left: 12.8vw;
+    bottom: 6vw;
+    transform: translateX(-50%);
+    background-color: $color-secundario;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .popup-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .share-button {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: $color-fondo;
+    border-radius: 10px;
+    font-family: $textos;
+    color: white;
+    font-size: 2vw;
+  }
+  
+  #copy-link {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: $blanco;
+    font-family: $textos;
+    color: $color-fondo;
+    font-size: 2vw;
+    border-radius: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #copy-confirmation {
+    margin-top: 5px;
+    color: $color-fondo;
+    font-family: $textos;
+    font-size: 2vw;
+  }
+
 @media screen and (max-width: 768px) and (orientation: portrait) {
     .rotate-message {
         position: absolute;
@@ -687,6 +798,15 @@ details[open] summary::before {
     display: flex;
     justify-content: center;
 }
+
+.tutorial-guide a {
+    margin-left: 10%;
+    display: flex;
+    text-decoration: none;
+    color: $blanco;
+    font-size: 2vw;
+}
+
 .video {
     width: 80%;
     aspect-ratio: 16/9;
@@ -1054,3 +1174,8 @@ footer {
         display: none; /* Ocultar imágenes del menú de navegación */
     }
 }
+
+
+// aqui empieza el codigo de pepe 
+
+
