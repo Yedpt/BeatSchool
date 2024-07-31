@@ -108,31 +108,31 @@ nav.responsive ul li{
 
 .contactanos {
   text-align: center;
-  color: white;
+  color: $blanco;
   margin-top: 60px;
 }
 
 h1 {
-  font-family: 'Jua', sans-serif;
+  font-family:$titulos;
 }
 
 h2 {
-  color: white;
-  font-family: 'Jua', sans-serif;
+  color: $blanco;
+  font-family: $titulos;
 }
 
 p {
-  font-family: 'Itim', sans-serif;
+  font-family: $textos;
 }
 
 .wrapper4 {
-  background-color: #480859;
+  background-color: $color-fondo;
   width: 100vw;
   padding: 40px 20px;
 }
 
 .contact-form-container {
-  background-color: #480859;
+  background-color: $color-fondo;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -145,47 +145,48 @@ label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: white;
-  font-family: 'Itim', sans-serif;
+  color: $blanco;
+  font-family: $textos;
 }
 
 input,
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #D936CE;
+  color: $blanco;
+  border: 1px solid $color-secundario;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #fcfdfe45;
   margin-bottom: 10px;
 }
 
 input:focus,
 textarea:focus {
-  border-color: #480859;
+  border-color: $color-fondo;
   outline: none;
 }
 
 button {
-  background-color: #D936CE;
-  color: white;
+  background-color: $color-secundario;
+  color: $blanco;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   width: 100%;
-  font-family: 'Itim', sans-serif;
+  font-family: $textos;
 }
 
 button:hover {
-  background-color: #480859;
+  background-color: $color-fondo;
 }
 
 footer {
   width: 100%;
   padding: 10% 0;
-  background-color: #ffffff;
+  background-color: $blanco;
   display: flex;
   justify-content: center;
 }
@@ -218,8 +219,8 @@ footer {
 }
 
 .right h1 {
-  font-family: "Itim";
-  color: #d936ce;
+  font-family: $textos;
+  color: $color-secundario;
   font-size: 2.5vw;
 }
 
@@ -265,7 +266,7 @@ footer {
     background-color: $color-fondo;
     border-radius: 10px;
     font-family: $textos;
-    color: white;
+    color: $blanco;
     font-size: 2vw;
   }
   
