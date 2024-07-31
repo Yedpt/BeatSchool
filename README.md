@@ -6,6 +6,7 @@ Hola, somos BeatSchool una escuela de música online que ofrece lecciones flexib
 ## 💻 Tecnologías empleadas
 
 - Figma: Diseñamos la interfaz como una partitura musical, asegurando una navegación armoniosa
+https://www.figma.com/proto/NrhcBKEIEuJwOSQZ2PqBSq/Dise%C3%B1o-BeatSchool?node-id=0-1&t=soL3NPZmgLlARfas-1
   
 - HTML: Estructuramos el contenido web como si fuera la partitura que define cada nota
   
