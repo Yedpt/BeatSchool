@@ -71,7 +71,7 @@ Envía una solicitud de extracción desde tu rama a la rama principal (main)
 
 
 #### Paso 5: Revisa y comenta 
-Estaremos encantados de revisar tus cammbios y proporcionarte comentarios constructivos
+Estaremos encantados de revisar tus cambios y proporcionarte comentarios constructivos
 
 
 #### Paso 6: ¡Celebra!
