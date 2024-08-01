@@ -20,8 +20,8 @@ Hola, somos BeatSchool una escuela de música online que ofrece lecciones flexib
 
 ## 👩‍💻 Requisitos para el funcionamiento
 
-Visual Studio Code
-
+- Visual Studio Code
+- Live server
 
 ## ⏏ Instalación del repositorio
 
