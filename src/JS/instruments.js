@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Function to play the audio
     function playSound(audioElement) {
-        audioElement.currentTime = 0 // Rewind to the start
+        audioElement.currentTime = 0 // vuelve al principio
         audioElement.play()
     }
 
-    // Mapping of elements to their corresponding audio files
+    // Mapeo de elementos a sus correspondientes archivos de audio.
     const soundMappings = {
         '.instrument__container--hihat': '/public/assets/sounds/Hit_hat.wav',
         '.instrument__container--crash': '/public/assets/sounds/Crash.mp3',
@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const audioElements = {}
 
-    // Create audio elements for each sound
+    // Crea elementos de audio para cada sonido.
     for (const [selector, sound] of Object.entries(soundMappings)) {
         const audioElement = document.createElement('audio')
         audioElement.src = sound
         audioElements[selector] = audioElement
     }
 
-    // Attach event listeners to each element
+    //  Adjunta eventos a cada elemento
     for (const [selector, sound] of Object.entries(soundMappings)) {
         const element = document.querySelector(selector)
         element.addEventListener('click', () =>
@@ -218,6 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 
+    // pantalla completa 
     const button = document.getElementById('btn-fs')
     const section = document.getElementById('max--container')
 

@@ -90,7 +90,7 @@ document.addEventListener('click', function (event) {
 document.querySelectorAll('.share-button').forEach((button) => {
     button.addEventListener('click', function () {
         const platform = this.getAttribute('data-platform')
-        const url = window.location.href
+        // const url = window.location.href
         let shareUrl = ''
 
         const shareUrlBase = 'https://www.BeatSchool.com'
