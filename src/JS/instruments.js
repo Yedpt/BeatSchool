@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Mapeo de elementos a sus correspondientes archivos de audio.
     const soundMappings = {
-        '.instrument__container--hihat': '/public/assets/sounds/Hit_hat.wav',
-        '.instrument__container--crash': '/public/assets/sounds/Crash.mp3',
+        '.instrument__container--hihat': 'assets/sounds/Hit_hat.wav',
+        '.instrument__container--crash': 'assets/sounds/Crash.mp3',
         '.instrument__container--ride': '/public/assets/sounds/Ride.mp3',
         '.instrument__container--snare': '/public/assets/sounds/Snare-tape.wav',
         '.instrument__container--midtom': '/public/assets/sounds/Mid_tomb.mp3',
