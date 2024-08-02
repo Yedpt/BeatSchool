@@ -1,3 +1,32 @@
+   // Mapeo de elementos a sus correspondientes archivos de audio.
+   const soundMappings = {
+    '.instrument__container--hihat': 'assets/sounds/Hit_hat.wav',
+    '.instrument__container--crash': 'assets/sounds/Crash.mp3',
+    '.instrument__container--ride': 'assets/sounds/Ride.mp3',
+    '.instrument__container--snare': 'assets/sounds/Snare-tape.wav',
+    '.instrument__container--midtom': 'assets/sounds/Mid_tomb.mp3',
+    '.instrument__container--hightom': 'assets/sounds/High_tomb.wav',
+    '.instrument__container--tombase': 'assets/sounds/Tom_base.wav',
+    '.instrument__container--bassdrum': 'assets/sounds/bass-drum.wav'
+};
+
+const audioElements = {}
+
+// Crea elementos de audio para cada sonido.
+for (const [selector, sound] of Object.entries(soundMappings)) {
+    const audioElement = document.createElement('audio')
+    audioElement.src = sound
+    audioElements[selector] = audioElement
+}
+
+//  Adjunta eventos a cada elemento
+for (const [selector, sound] of Object.entries(soundMappings)) {
+    const element = document.querySelector(selector)
+    element.addEventListener('click', () =>
+        playSound(audioElements[selector])
+    )
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Function to play the audio
     function playSound(audioElement) {
@@ -5,36 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
         audioElement.play()
     }
 
-    // Mapeo de elementos a sus correspondientes archivos de audio.
-    const soundMappings = {
-        '.instrument__container--hihat': 'assets/sounds/Hit_hat.wav',
-        '.instrument__container--crash': 'assets/sounds/Crash.mp3',
-        '.instrument__container--ride': '/public/assets/sounds/Ride.mp3',
-        '.instrument__container--snare': '/public/assets/sounds/Snare-tape.wav',
-        '.instrument__container--midtom': '/public/assets/sounds/Mid_tomb.mp3',
-        '.instrument__container--hightom':
-            '/public/assets/sounds/High_tomb.wav',
-        '.instrument__container--tombase': '/public/assets/sounds/Tom_base.wav',
-        '.instrument__container--bassdrum':
-            '/public/assets/sounds/bass-drum.wav',
-    }
-
-    const audioElements = {}
-
-    // Crea elementos de audio para cada sonido.
-    for (const [selector, sound] of Object.entries(soundMappings)) {
-        const audioElement = document.createElement('audio')
-        audioElement.src = sound
-        audioElements[selector] = audioElement
-    }
-
-    //  Adjunta eventos a cada elemento
-    for (const [selector, sound] of Object.entries(soundMappings)) {
-        const element = document.querySelector(selector)
-        element.addEventListener('click', () =>
-            playSound(audioElements[selector])
-        )
-    }
+ 
+    
 
     // HIT HAT
     document.getElementById('hi_hat_i').addEventListener('click', hihatimage)
