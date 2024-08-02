@@ -1,13 +1,13 @@
    // Mapeo de elementos a sus correspondientes archivos de audio.
    const soundMappings = {
-    '.instrument__container--hihat': 'assets/sounds/Hit_hat.wav',
-    '.instrument__container--crash': 'assets/sounds/Crash.mp3',
-    '.instrument__container--ride': 'assets/sounds/Ride.mp3',
-    '.instrument__container--snare': 'assets/sounds/Snare-tape.wav',
-    '.instrument__container--midtom': 'assets/sounds/Mid_tomb.mp3',
-    '.instrument__container--hightom': 'assets/sounds/High_tomb.wav',
-    '.instrument__container--tombase': 'assets/sounds/Tom_base.wav',
-    '.instrument__container--bassdrum': 'assets/sounds/bass-drum.wav'
+    '.instrument__container--hihat': '/BeatSchool/public/assets/sounds/Hit_hat.wav',
+    '.instrument__container--crash': '/BeatSchool/public/assets/sounds/Hit_hat.wav',
+    '.instrument__container--ride': '/BeatSchool/public/assets/sounds/Hit_hat.wav',
+    '.instrument__container--snare': '/BeatSchool/public/assets/sounds/Hit_hat.wav',
+    '.instrument__container--midtom': '/BeatSchool/public/assets/sounds/Hit_hat.wav',
+    '.instrument__container--hightom': '/BeatSchool/public/assets/sounds/Hit_hat.wav',
+    '.instrument__container--tombase': '/BeatSchool/public/assets/sounds/Hit_hat.wav',
+    '.instrument__container--bassdrum': '/BeatSchool/public/assets/sounds/Hit_hat.wav'
 };
 
 const audioElements = {}
