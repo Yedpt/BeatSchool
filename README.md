@@ -94,7 +94,7 @@ Nuestro desarrollador principal, es el baterista que mantiene el ritmo en BeatSc
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yeder-pimentel/) 
 
 
-#### Wilder Alguilar (Equipo de Desarrollo)
+#### Wilder Aguilar (Equipo de Desarrollo)
 Ingeniero de software, es el técnico de sonido detrás de cada éxito
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/wilderaguilar) 
