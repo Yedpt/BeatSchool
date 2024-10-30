@@ -1,40 +1,41 @@
+   // Mapeo de elementos a sus correspondientes archivos de audio.
+   const soundMappings = {
+    '.instrument__container--hihat': '/BeatSchool/public/assets/sounds/Hit_hat.wav',
+    '.instrument__container--crash': '/BeatSchool/public/assets/sounds/Crash.mp3',
+    '.instrument__container--ride': '/BeatSchool/public/assets/sounds/Ride.mp3',
+    '.instrument__container--snare': '/BeatSchool/public/assets/sounds/Snare-tape.wav',
+    '.instrument__container--midtom': '/BeatSchool/public/assets/sounds/Mid_tomb.mp3',
+    '.instrument__container--hightom': '/BeatSchool/public/assets/sounds/High_tomb.wav',
+    '.instrument__container--tombase': '/BeatSchool/public/assets/sounds/Tom_base.wav',
+    '.instrument__container--bassdrum': '/BeatSchool/public/assets/sounds/bass-drum.wav'
+};
+
+const audioElements = {}
+
+// Crea elementos de audio para cada sonido.
+for (const [selector, sound] of Object.entries(soundMappings)) {
+    const audioElement = document.createElement('audio')
+    audioElement.src = sound
+    audioElements[selector] = audioElement
+}
+
+//  Adjunta eventos a cada elemento
+for (const [selector, sound] of Object.entries(soundMappings)) {
+    const element = document.querySelector(selector)
+    element.addEventListener('click', () =>
+        playSound(audioElements[selector])
+    )
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Function to play the audio
     function playSound(audioElement) {
-        audioElement.currentTime = 0 // Rewind to the start
+        audioElement.currentTime = 0 // vuelve al principio
         audioElement.play()
     }
 
-    // Mapping of elements to their corresponding audio files
-    const soundMappings = {
-        '.instrument__container--hihat': '/public/assets/sounds/Hit_hat.wav',
-        '.instrument__container--crash': '/public/assets/sounds/Crash.mp3',
-        '.instrument__container--ride': '/public/assets/sounds/Ride.mp3',
-        '.instrument__container--snare': '/public/assets/sounds/Snare-tape.wav',
-        '.instrument__container--midtom': '/public/assets/sounds/Mid_tomb.mp3',
-        '.instrument__container--hightom':
-            '/public/assets/sounds/High_tomb.wav',
-        '.instrument__container--tombase': '/public/assets/sounds/Tom_base.wav',
-        '.instrument__container--bassdrum':
-            '/public/assets/sounds/bass-drum.wav',
-    }
-
-    const audioElements = {}
-
-    // Create audio elements for each sound
-    for (const [selector, sound] of Object.entries(soundMappings)) {
-        const audioElement = document.createElement('audio')
-        audioElement.src = sound
-        audioElements[selector] = audioElement
-    }
-
-    // Attach event listeners to each element
-    for (const [selector, sound] of Object.entries(soundMappings)) {
-        const element = document.querySelector(selector)
-        element.addEventListener('click', () =>
-            playSound(audioElements[selector])
-        )
-    }
+ 
+    
 
     // HIT HAT
     document.getElementById('hi_hat_i').addEventListener('click', hihatimage)
@@ -218,6 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 
+    // pantalla completa 
     const button = document.getElementById('btn-fs')
     const section = document.getElementById('max--container')
 

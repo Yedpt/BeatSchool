@@ -270,7 +270,7 @@ footer {
 }
 .instrument__container--drum {
   width: 60%;
-  background-image: url(/public/assets/img/Bateria/BATERIAFINAL.png);
+  background-image: url(../../public/assets/img/BATERIAFINAL.png);
   background-size: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -283,8 +283,8 @@ footer {
 .instrument__container--hihat {
   width: 15.5vw;
   height: 30vw;
-  left: 4vw;
-  top: 21vw;
+  left: 3.5vw;
+  top: 22vw;
   display: flex;
   position: relative;
 }
@@ -303,7 +303,7 @@ footer {
   position: absolute;
   width: 14vw;
   height: 12.5vw;
-  background-image: url("/public/assets/img/Bateria/hihat.png");
+  background-image: url("../../public/assets/img/Bateria/hihat.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -311,7 +311,7 @@ footer {
   text-align: right;
   padding-top: 35%;
   padding-right: 15%;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .shorcut-text {
@@ -326,12 +326,12 @@ footer {
   position: absolute;
   width: 13.4vw;
   height: 12.5vw;
-  background-image: url("/public/assets/img/Bateria/hithatcolor.png");
+  background-image: url("../../public/assets/img/Bateria/hithatcolor.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 @keyframes vibrate {
@@ -371,7 +371,7 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/public/assets/img/Bateria/pedal-image-one.png");
+  background-image: url("../../public/assets/img/Bateria/pedal-image-one.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -382,7 +382,7 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/public/assets/img/Bateria/pedal-color-one.png");
+  background-image: url("../../public/assets/img/Bateria/pedal-color-one.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -393,7 +393,7 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/public/assets/img/Bateria/pedal-color-two.png");
+  background-image: url("../../public/assets/img/Bateria/pedal-color-two.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -403,8 +403,8 @@ footer {
 .instrument__container--crash {
   width: 15.5vw;
   height: 15.5vw;
-  left: 6vw;
-  bottom: 24vw;
+  left: 7vw;
+  bottom: 26vw;
   display: flex;
   position: relative;
   justify-content: flex-start;
@@ -415,33 +415,33 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/public/assets/img/Bateria/crash.png");
+  background-image: url("../../public/assets/img/Bateria/crash.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
   text-align: center;
   padding-top: 70%;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .crash-color {
   position: absolute;
   width: 98%;
   height: 98%;
-  background-image: url("/public/assets/img/Bateria/crashcolor.png");
+  background-image: url("../../public/assets/img/Bateria/crashcolor.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .instrument__container--ride {
   width: 15.7vw;
   height: 15.7vw;
   display: flex;
-  left: 40vw;
+  left: 40.5vw;
   bottom: 38vw;
   position: relative;
   justify-content: flex-start;
@@ -452,26 +452,26 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/public/assets/img/Bateria/ride.png");
+  background-image: url("../../public/assets/img/Bateria/ride.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
   text-align: center;
   padding-top: 75%;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .ride-color {
   position: absolute;
   width: 98%;
   height: 98%;
-  background-image: url("/public/assets/img/Bateria/ridecolor.png");
+  background-image: url("../../public/assets/img/Bateria/ridecolor.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .instrument__container--snare {
@@ -489,32 +489,32 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/public/assets/img/Bateria/snare.png");
+  background-image: url("../../public/assets/img/Bateria/snare.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
   text-align: center;
   padding-top: 65%;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .share-color {
   position: absolute;
   width: 98%;
   height: 98%;
-  background-image: url("/public/assets/img/Bateria/snarecolor.png");
+  background-image: url("../../public/assets/img/Bateria/snarecolor.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .instrument__container--midtom {
   width: 11vw;
   height: 11vw;
-  left: 19.1vw;
+  left: 18.5vw;
   bottom: 59.4vw;
   display: flex;
   position: relative;
@@ -526,26 +526,26 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/public/assets/img/Bateria/midtom.png");
+  background-image: url("../../public/assets/img/Bateria/midtom.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
   text-align: center;
   padding-top: 60%;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .mid-tom-color {
   position: absolute;
   width: 98%;
   height: 98%;
-  background-image: url("/public/assets/img/Bateria/midtomcolor.png");
+  background-image: url("../../public/assets/img/Bateria/midtomcolor.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .instrument__container--hightom {
@@ -563,26 +563,26 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/public/assets/img/Bateria/hightom.png");
+  background-image: url("../../public/assets/img/Bateria/hightom.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
   text-align: center;
   padding-top: 60%;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .high-tom-color {
   position: absolute;
   width: 98%;
   height: 98%;
-  background-image: url("/public/assets/img/Bateria/hightomcolor.png");
+  background-image: url("../../public/assets/img/Bateria/hightomcolor.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .instrument__container--tombase {
@@ -600,26 +600,26 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/public/assets/img/Bateria/tombase.png");
+  background-image: url("../../public/assets/img/Bateria/tombase.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
   text-align: center;
   padding-top: 63%;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .tom-base-color {
   position: absolute;
   width: 98%;
   height: 98%;
-  background-image: url("/public/assets/img/Bateria/tombasecolor.png");
+  background-image: url("../../public/assets/img/Bateria/tombasecolor.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
-  cursor: url("/public/assets/img/drumstrick-right-c.png"), auto;
+  cursor: url("../../public/assets/img/drumstrick-right-c.png"), auto;
 }
 
 .instrument__container--bassdrum {
@@ -637,7 +637,7 @@ footer {
   width: 6vw;
   height: 15vw;
   position: absolute;
-  background-image: url("/public/assets/img/Bateria/pedal-image-two.png");
+  background-image: url("../../public/assets/img/Bateria/pedal-image-two.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -650,7 +650,7 @@ footer {
   width: 6vw;
   height: 15vw;
   position: absolute;
-  background-image: url("/public/assets/img/Bateria/pedal-color-two.png");
+  background-image: url("../../public/assets/img/Bateria/pedal-color-two.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -662,7 +662,7 @@ footer {
   height: 19%;
   bottom: 80.6vw;
   left: 33vw;
-  background-image: url(/public/assets/img/Bateria/drumstick-left.png);
+  background-image: url(../../public/assets/img/Bateria/drumstick-left.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -677,7 +677,7 @@ footer {
   height: 19%;
   bottom: 92vw;
   left: 17vw;
-  background-image: url(/public/assets/img/Bateria/drumstrick-right.png);
+  background-image: url(../../public/assets/img/Bateria/drumstrick-right.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
