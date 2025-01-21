@@ -39,7 +39,7 @@ Paso 3: Explora toda nuestra web,pero sobre todo deténte en nuestra batería y 
 ## 🌅 Imágenes de la Web
 https://github.com/user-attachments/assets/83b0af0f-44a8-4bdf-8297-563b032a0a1d
 
-## 🌐 Colabora con BeatSchool y crece con nosoros
+## 🌐 Colabora con BeatSchool y crece con nosotros
 
 #### Paso 1: Crea tu rama
 ```bash
